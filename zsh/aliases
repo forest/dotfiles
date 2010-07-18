@@ -1,5 +1,11 @@
 # cd
 alias ..='cd ..'
+alias ...='cd ../..'
+alias home='cd ~'
+
+# other
+alias psg="ps ax | grep $1"
+alias c='clear'
 
 # ls
 alias ls="ls -F"
@@ -17,16 +23,60 @@ alias gco='git checkout'
 alias gb='git branch'
 alias gs='git status'
 alias grm="git status | grep deleted | awk '{print \$3}' | xargs git rm"
+alias gch='git cherry -v origin/master'
+function gbn {
+	if [ $# -ne 1 ]; then
+	         echo 1>&2 Usage: $0 branch_name
+	         exit 127
+	fi
+ 
+	set branch_name = $1
+	git push origin origin:refs/heads/${branch_name}
+	git fetch origin
+	git checkout --track -b ${branch_name} origin/${branch_name}
+	git pull
+}
 
 # rails
-alias sc='script/console'
-alias ss='script/server'
-alias sg='script/generate'
+alias rc='rails console'
+alias rs='rails server'
+alias rg='rails generate'
+alias rdb='rails dbconsole'
 alias a='autotest -rails'
 alias tlog='tail -f log/development.log'
 alias scaffold='script/generate nifty_scaffold'
 alias migrate='rake db:migrate db:test:clone'
 alias rst='touch tmp/restart.txt'
+alias rtf='rake test:functionals'
+alias rtu='rake test:units'
+alias rti='rake test:integration'
+alias sc='script/console'
+alias ss='script/server'
+alias sg='script/generate'
 
 # commands starting with % for pasting from web
 alias %=' '
+
+# textmate
+alias e='mate . &'
+
+# cheat
+alias csl='cheat sheets | less'
+alias csg='cheat sheets | grep $1'
+function cs {
+  cheat $1 | less;
+}
+function csm {
+  cheat $1 | mate;
+}
+
+# RVM
+function gsu {
+	if [ $# -ne 1 ]; then
+	  echo 1>&2 Usage: $0 gemset_name
+	  exit 127
+	fi
+ 
+	set gemset_name = $1
+	rvm gemset use ${gemset_name}
+}

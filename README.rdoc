@@ -22,10 +22,10 @@ the following command.
 
 == Features
 
-I normally place all of my coding projects in ~/code, so this directory 
-can easily be accessed (and tab completed) with the "c" command.
+I normally place all of my coding projects in ~/work/code/projects, so this directory 
+can easily be accessed (and tab completed) with the "p" command.
 
-  c railsca<tab>
+  p railsca<tab>
 
 There is also an "h" command which behaves similar, but acts on the 
 home path.
