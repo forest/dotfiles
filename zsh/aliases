@@ -25,11 +25,6 @@ alias gs='git status'
 alias grm="git status | grep deleted | awk '{print \$3}' | xargs git rm"
 alias gch='git cherry -v origin/master'
 function gbn {
-	if [ $# -ne 1 ]; then
-	         echo 1>&2 Usage: $0 branch_name
-	         exit 127
-	fi
- 
 	set branch_name = $1
 	git push origin origin:refs/heads/${branch_name}
 	git fetch origin
@@ -71,12 +66,4 @@ function csm {
 }
 
 # RVM
-function gsu {
-	if [ $# -ne 1 ]; then
-	  echo 1>&2 Usage: $0 gemset_name
-	  exit 127
-	fi
- 
-	set gemset_name = $1
-	rvm gemset use ${gemset_name}
-}
+alias gsu='rvm gemset use $1'
