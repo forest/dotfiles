@@ -1,1 +1,2 @@
-rails $2 -m http://github.com/ryanb/rails-templates/raw/master/$1.rb $*[3,-1]
+# rails $2 -m http://github.com/ryanb/rails-templates/raw/master/$1.rb $*[3,-1]
+rails new $1 -T -m http://github.com/forest/rails3_template/raw/master/main.rb $*[2,-1]
