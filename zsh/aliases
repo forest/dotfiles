@@ -67,3 +67,7 @@ function csm {
 
 # RVM
 alias gsu='rvm gemset use $1'
+
+# nginx
+alias ns='sh ~/.dotfiles/bin/nginx.sh'
+
