@@ -1,11 +1,11 @@
-= Ryan Bates Dot Files
+= Forest's Dot Files (forked from Ryan Bates)
 
 These are config files to set up a system the way I like it.
 
 
 == Installation
 
-  git clone git://github.com/ryanb/dotfiles ~/.dotfiles
+  git clone git://github.com/forest/dotfiles ~/.dotfiles
   cd ~/.dotfiles
   rake install
 
@@ -25,7 +25,7 @@ the following command.
 I normally place all of my coding projects in ~/work/code/projects, so this directory 
 can easily be accessed (and tab completed) with the "p" command.
 
-  p railsca<tab>
+  p proj<tab>
 
 There is also an "h" command which behaves similar, but acts on the 
 home path.
