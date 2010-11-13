@@ -71,3 +71,8 @@ alias gsu='rvm gemset use $1'
 # nginx
 alias ns='sh ~/.dotfiles/bin/nginx.sh'
 
+# passenger
+alias pss='passenger start'
+alias pssp='RAILS_ENV=production passenger start'
+
+

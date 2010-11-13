@@ -4,6 +4,12 @@ else
   export PS1='%3~$(git_info_for_prompt)%# '
 fi
 
+# required by TextMate
+# http://manual.macromates.com/en/bundles#setting_lc_ctype
+# You must set the LC_CTYPE variable to use UTF-8. If you do not, svn will give you an 
+# svn: Can't recode string error when it stumbles upon non-ASCII filenames (some of the bundle items use these).
+setenv LC_CTYPE en_US.UTF-8
+
 export EDITOR='mate -w'
 export PATH="$HOME/bin:$HOME/.bin:/usr/local/homebrew/bin:/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/usr/local/git/bin:$PATH"
 export MANPATH="/usr/local/man:/usr/local/mysql/man:/usr/local/git/man:$MANPATH"
