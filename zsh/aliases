@@ -20,13 +20,13 @@ alias gp='git push'
 alias gd='git diff'
 alias gc='git commit'
 alias gca='git commit -a'
-alias gco='git checkout'
+alias go='git checkout'
 alias gb='git branch'
 alias gs='git status'
 alias grm="git status | grep deleted | awk '{print \$3}' | xargs git rm"
 alias changelog='git log `git log -1 --format=%H -- CHANGELOG*`..; cat CHANGELOG*'
 alias gch='git cherry -v origin/master'
-alias glg='git log --pretty=format:"%h %ad | %s%d [%an]" --graph --date=short'
+alias gh='git log --pretty=format:"%h %ad | %s%d [%an]" --graph --date=short'
 function gbn {
 	set branch_name = $1
 	git push origin origin:refs/heads/${branch_name}
