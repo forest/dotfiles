@@ -7,4 +7,4 @@ shopt -s histappend
 
 # show git branch
 export PS1=['\w\[\033[00;33m\]`git branch 2>/dev/null|cut -f2 -d\* -s`\[\033[00m\]]\$ '
-export EDITOR="mate_wait"
+export EDITOR='mate -w'
