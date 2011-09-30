@@ -1,17 +1,6 @@
-# cd
-alias ..='cd ..'
-alias ...='cd ../..'
-alias home='cd ~'
-
 # other
 alias psg="ps ax | grep $1"
 alias c='clear'
-
-# ls
-alias ls="ls -F"
-alias l="ls -lAh"
-alias ll="ls -l"
-alias la='ls -A'
 
 # git
 alias gf='git fetch'
@@ -77,5 +66,4 @@ alias ns='sh ~/.dotfiles/bin/nginx.sh'
 # passenger
 alias pss='passenger start'
 alias pssp='RAILS_ENV=production passenger start'
-
 

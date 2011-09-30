@@ -31,8 +31,19 @@ task :install do
     end
   end
   
-  # link oh-my-zsh/custom/plugins into ~/.oh-my-zsh/custom/plugins
-  link_file('oh-my-zsh/custom/plugins')
+  # oh-my-zsh plugins
+  # link oh-my-zsh/plugins/* into ~/.oh-my-zsh/plugins/*
+  # need to put them in oh-my-zsh/plugins instead of oh-my-zsh/custom/plugins
+  # because the custom plugins don't support auto complete (lame)
+  Dir['oh-my-zsh/plugins/*'].each do |plugin|
+    link_file(plugin)
+  end
+  
+  # oh-my-zsh configs and aliases
+  # link oh-my-zsh/custom/* into ~/.oh-my-zsh/custom/*
+  Dir['oh-my-zsh/custom/*'].each do |file|
+    link_file(file)
+  end
 end
 
 def replace_file(file)
