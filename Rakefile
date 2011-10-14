@@ -5,7 +5,7 @@ desc "install the dot files into user's home directory"
 task :install do
   replace_all = false
   Dir['*'].each do |file|
-    next if %w[Rakefile README.rdoc LICENSE].include? file
+    next if %w[Rakefile README.rdoc LICENSE oh-my-zsh].include? file
     
     if File.exist?(File.join(ENV['HOME'], ".#{file.sub('.erb', '')}"))
       if File.identical? file, File.join(ENV['HOME'], ".#{file.sub('.erb', '')}")
@@ -29,6 +29,20 @@ task :install do
     else
       link_file(file)
     end
+  end
+  
+  # oh-my-zsh plugins
+  # link oh-my-zsh/plugins/* into ~/.oh-my-zsh/plugins/*
+  # need to put them in oh-my-zsh/plugins instead of oh-my-zsh/custom/plugins
+  # because the custom plugins don't support auto complete (lame)
+  Dir['oh-my-zsh/plugins/*'].each do |plugin|
+    link_file(plugin)
+  end
+  
+  # oh-my-zsh configs and aliases
+  # link oh-my-zsh/custom/* into ~/.oh-my-zsh/custom/*
+  Dir['oh-my-zsh/custom/*'].each do |file|
+    link_file(file)
   end
 end
 
