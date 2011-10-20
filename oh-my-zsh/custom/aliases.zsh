@@ -41,6 +41,24 @@ alias sc='script/console'
 alias ss='script/server'
 alias sg='script/generate'
 
+# bundler primary commands
+alias b='bundle'
+alias bi='bundle install'
+alias bu='bundle update'
+alias bp='bundle package'
+alias be='bundle exec'
+alias bconf='bundle config'
+
+# bundler utilities
+alias bc='bundle check'
+alias bl='bundle list'
+alias bs='bundle show'
+alias bcn='bundle console'
+alias bo='bundle open'
+alias bv='bundle viz'
+alias binit='bundle init'
+alias bg='bundle gem'
+
 # commands starting with % for pasting from web
 alias %=' '
 
