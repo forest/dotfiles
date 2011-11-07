@@ -7,7 +7,6 @@ alias gf='git fetch'
 alias gd='git diff'
 alias gs='git status'
 alias grm="git status | grep deleted | awk '{print \$3}' | xargs git rm"
-alias changelog='git log `git log -1 --format=%H -- CHANGELOG*`..; cat CHANGELOG*'
 alias gch='git cherry -v origin/master'
 alias gh='git log --pretty=format:"%h %ad | %s%d [%an]" --graph --date=short'
 function gbn {
