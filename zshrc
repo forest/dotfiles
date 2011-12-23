@@ -25,7 +25,7 @@ ZSH_THEME="steeef"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(h p rails3 git brew cap gem git git-flow github heroku redis-cli rvm mydirs powder bundler)
+plugins=(h p rails3 git brew cap gem git git-flow github heroku redis-cli rvm mydirs powder bundler autojump)
 
 source $ZSH/oh-my-zsh.sh
 
