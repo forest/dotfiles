@@ -1,3 +1,6 @@
+# aliases
+alias ealias='vi ~/.dotfiles/oh-my-zsh/custom/aliases.zsh'
+
 # other
 alias psg="ps ax | grep $1"
 alias c='clear'
@@ -19,12 +22,11 @@ function gbn {
 
 # rails
 alias rc='rails console'
-alias rs='rails server'
+alias rs='rails server thin'
 alias rg='rails generate'
 alias rdb='rails dbconsole'
-alias a='autotest -rails'
 alias tlog='tail -f log/development.log'
-alias scaffold='script/generate nifty_scaffold'
+alias scaffold='rails generate nifty_scaffold'
 alias migrate='rake db:migrate db:test:clone'
 alias rst='touch tmp/restart.txt'
 alias rtf='rake test:functionals'
