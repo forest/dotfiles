@@ -25,7 +25,7 @@ ZSH_THEME="steeef"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(h p rails3 git brew cap gem git git-flow github heroku redis-cli rvm mydirs powder bundler autojump)
+plugins=(h c rails3 git brew cap gem git git-flow github heroku redis-cli rvm mydirs powder bundler autojump)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -40,7 +40,7 @@ export LC_CTYPE=en_US.UTF-8
 
 export EDITOR='mate -w'
 
-export PATH="$HOME/bin:$HOME/.bin:/usr/local/homebrew/bin:/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/usr/local/git/bin:$PATH"
+export PATH="$HOME/bin:$HOME/.bin:/usr/local/homebrew/bin:/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:$PATH"
 export MANPATH="/usr/local/man:/usr/local/mysql/man:/usr/local/git/man:$MANPATH"
 export DYLD_LIBRARY_PATH="/usr/local/mysql/lib:$DYLD_LIBRARY_PATH"
 
