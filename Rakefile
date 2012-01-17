@@ -3,12 +3,17 @@ require 'erb'
 
 desc "install the dot files into user's home directory"
 task :install do
+  # clone oh-my-zsh if it doesn't already exist
+  unless File.directory?(File.join(ENV['HOME'], '.oh-my-zsh'))
+    system %Q{git clone git://github.com/robbyrussell/oh-my-zsh.git "$HOME/.oh-my-zsh"}
+  end
+  
   replace_all = false
   Dir['*'].each do |file|
     next if %w[Rakefile README.rdoc LICENSE oh-my-zsh].include? file
     
     if File.exist?(File.join(ENV['HOME'], ".#{file.sub('.erb', '')}"))
-      if File.identical? file, File.join(ENV['HOME'], ".#{file.sub('.erb', '')}")
+      if File.identical?(file, File.join(ENV['HOME'], ".#{file.sub('.erb', '')}"))
         puts "identical ~/.#{file.sub('.erb', '')}"
       elsif replace_all
         replace_file(file)
