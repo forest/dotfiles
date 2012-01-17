@@ -3,7 +3,7 @@ alias ealias='vi ~/.dotfiles/oh-my-zsh/custom/aliases.zsh'
 
 # other
 alias psg="ps ax | grep $1"
-alias c='clear'
+alias cl='clear'
 
 # git (not in oh-my-zsh)
 alias gf='git fetch'

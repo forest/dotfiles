@@ -41,7 +41,7 @@ task :install do
   # need to put them in oh-my-zsh/plugins instead of oh-my-zsh/custom/plugins
   # because the custom plugins don't support auto complete (lame)
   Dir['oh-my-zsh/plugins/*'].each do |plugin|
-    link_file(plugin)
+    link_folder(plugin)
   end
   
   # oh-my-zsh configs and aliases
@@ -66,4 +66,9 @@ def link_file(file)
     puts "linking ~/.#{file}"
     system %Q{ln -s "$PWD/#{file}" "$HOME/.#{file}"}
   end
+end
+
+def link_folder(folder)
+  puts "linking ~/.#{folder}"
+  system %Q{echo ln -s "$PWD/#{folder}/" "$HOME/.#{folder}"}
 end
