@@ -1,9 +1,10 @@
 # aliases
-alias ealias='vi ~/.dotfiles/oh-my-zsh/custom/aliases.zsh'
+alias ealias='vim ~/.dotfiles/oh-my-zsh/custom/aliases.zsh'
 
 # other
 alias psg="ps ax | grep $1"
 alias cl='clear'
+alias ipexternal='curl whatismyip.org'
 
 # git (not in oh-my-zsh)
 alias gf='git fetch'
@@ -87,3 +88,8 @@ alias pgstop='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
 # foreman
 alias fs='foreman start'
 
+#powify
+alias pws='powify start'
+alias pwr='powify restart'
+alias pwb='powify browse'
+alias pwl='powify logs'
