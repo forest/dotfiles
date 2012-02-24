@@ -1,0 +1,3 @@
+colorscheme railscasts
+set   guifont=Monaco:h14
+set   antialias " if compiled w/ this feature

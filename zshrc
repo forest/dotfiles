@@ -38,7 +38,7 @@ source $ZSH/oh-my-zsh.sh
 # svn: Can't recode string error when it stumbles upon non-ASCII filenames (some of the bundle items use these).
 export LC_CTYPE=en_US.UTF-8
 
-export EDITOR='vim'
+export EDITOR='mvim -f'
 
 export PATH="$HOME/bin:$HOME/.bin:/usr/local/homebrew/bin:/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:$PATH"
 export MANPATH="/usr/local/man:/usr/local/mysql/man:/usr/local/git/man:$MANPATH"

@@ -1,0 +1,5 @@
+colorscheme default
+
+let Tlist_Ctags_Cmd = "/usr/local/bin/ctags"
+:map <Leader>z :ConqueTerm zsh <Return>
+:imap jk <Esc>
