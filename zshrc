@@ -49,3 +49,5 @@ export DYLD_LIBRARY_PATH="/usr/local/mysql/lib:$DYLD_LIBRARY_PATH"
 
 # use .localrc for settings specific to one system
 [[ -f ~/.localrc ]] && . ~/.localrc
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting

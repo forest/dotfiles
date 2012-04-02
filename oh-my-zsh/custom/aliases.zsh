@@ -10,6 +10,7 @@ alias ipexternal='curl whatismyip.org'
 alias gf='git fetch'
 alias gd='git diff'
 alias gs='git status'
+alias gcd='git checkout development'
 alias grm="git status | grep deleted | awk '{print \$3}' | xargs git rm"
 alias gch='git cherry -v origin/master'
 alias gh='git log --pretty=format:"%h %ad | %s%d [%an]" --graph --date=short'
@@ -87,6 +88,8 @@ alias pgstop='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
 
 # foreman
 alias fs='foreman start'
+alias fsw='foreman start web'
+alias fsr='foreman start redis'
 
 #powify
 alias pws='powify start'
