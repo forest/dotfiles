@@ -8,13 +8,13 @@
   c = commit -m
   ca = commit --amend -C HEAD
   a = add
-  aa= !git add -u && git add . && git status
+  aa = !git add -u && git add . && git status
   cob = checkout -b
-  rmb = !sh -c 'git branch -d $1 && git push origin :$1'
+  rmb = !sh -c 'git branch -d $1 && git push origin :$1' -
   up = !git fetch origin && git rebase origin/master
   ir = !git rebase -i origin/master
   # working with features branches
-  cof = !'git checkout -b features/$1'
+  cof = !sh -c 'git checkout -b features/$1' -
   pfb = !"BRANCH=$(git symbolic-ref HEAD | sed 's|refs/heads/||') && git push origin $BRANCH"
   prb = !"BRANCH=$(git symbolic-ref HEAD | sed 's|refs/heads/features/||') && git push origin features/$BRANCH:reviews/$BRANCH"
   rmf = !"BRANCH=$(git symbolic-ref HEAD | sed 's|refs/heads/features/||') && git checkout development && git branch -D features/$BRANCH && git push origin :features/$BRANCH && git push origin :reviews/$BRANCH"
