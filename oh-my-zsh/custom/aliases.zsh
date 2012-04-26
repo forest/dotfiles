@@ -54,7 +54,6 @@ alias bcn='bundle console'
 alias bo='bundle open'
 alias bv='bundle viz'
 alias binit='bundle init'
-alias bg='bundle gem'
 
 # commands starting with % for pasting from web
 alias %=' '

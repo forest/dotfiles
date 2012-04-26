@@ -1,0 +1,22 @@
+# Add sass
+--type-set=sass=.scss
+
+# Add haml
+--type-set=haml=.haml
+
+# Add CoffeeScript
+--type-set=coffeescript=.coffee
+
+# Add Cucumber
+--type-set=cucumber=.feature
+
+# Add JSON
+--type-set=json=.json
+
+# For Rails
+--type-add=ruby=.haml,.feature
+--type-add=js=.coffee,.json
+--type-add=css=.scss
+
+# Use "less -r" as my pager
+--pager=less -r
