@@ -37,6 +37,7 @@ alias rti='rake test:integration'
 alias sc='script/console'
 alias ss='script/server'
 alias sg='script/generate'
+alias rake='noglob rake'
 
 # bundler primary commands
 alias b='bundle'
