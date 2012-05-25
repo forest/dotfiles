@@ -62,6 +62,9 @@ alias %=' '
 # textmate
 alias e='mate . &'
 
+# mvim
+alias v='mvim'
+
 # cheat
 alias csl='cheat sheets | less'
 alias csg='cheat sheets | grep $1'

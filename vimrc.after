@@ -3,3 +3,8 @@ colorscheme default
 let Tlist_Ctags_Cmd = "/usr/local/bin/ctags"
 :map <Leader>z :ConqueTerm zsh <Return>
 :imap jk <Esc>
+map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
+
+set colorcolumn=80
+highlight ColorColumn ctermbg=lightgrey ctermfg=black guibg=#131319 guifg=white
+
