@@ -29,8 +29,9 @@ plugins=(h c rails3 git brew cap gem git git-flow github heroku redis-cli rvm my
 
 source $ZSH/oh-my-zsh.sh
 
-# Customize to your needs...
-#
+# Remove after this pull request is closed
+# https://github.com/robbyrussell/oh-my-zsh/pull/1126#issuecomment-5881174
+for config_file ($ZSH_CUSTOM/*.zsh(N)) source $config_file
 
 # required by TextMate
 # http://manual.macromates.com/en/bundles#setting_lc_ctype
@@ -40,7 +41,7 @@ export LC_CTYPE=en_US.UTF-8
 
 export EDITOR='mvim -f'
 
-export PATH="$HOME/bin:$HOME/.bin:/usr/local/homebrew/bin:/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:$PATH"
+export PATH="$HOME/bin:$HOME/.bin:$HOME/.rvm/bin:/usr/local/homebrew/bin:/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:$PATH"
 export MANPATH="/usr/local/man:/usr/local/mysql/man:/usr/local/git/man:$MANPATH"
 export DYLD_LIBRARY_PATH="/usr/local/mysql/lib:$DYLD_LIBRARY_PATH"
 export MSGMERGE_PATH="/usr/local/Cellar/gettext/0.18.1.1/bin/msgmerge"
@@ -51,4 +52,9 @@ export MSGMERGE_PATH="/usr/local/Cellar/gettext/0.18.1.1/bin/msgmerge"
 # use .localrc for settings specific to one system
 [[ -f ~/.localrc ]] && . ~/.localrc
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+# @see http://vim.1045645.n5.nabble.com/MacVim-and-PATH-tt3388705.html#a3392363
+# Ensure MacVim has same shell as Terminal
+if [[ -a /etc/zshenv ]]; then
+  sudo mv /etc/zshenv /etc/zprofile
+fi
+
