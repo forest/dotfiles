@@ -11,7 +11,7 @@ task :install do
 
   replace_all = false
   Dir['*'].each do |file|
-    next if %w[Rakefile README.mkd LICENSE yadr].include? file
+    next if %w[Rakefile README.mkd LICENSE yadr gitconfig.sh].include? file
 
     if File.exist?(File.join(ENV['HOME'], ".#{file.sub('.erb', '')}"))
       if File.identical?(file, File.join(ENV['HOME'], ".#{file.sub('.erb', '')}"))
@@ -42,6 +42,11 @@ task :install do
   Dir['yadr/custom/*'].each do |folder|
     puts "linking ~/.#{folder}"
     system %Q{echo ln -s "$PWD/#{folder}" "$HOME/.#{folder}"}
+  end
+
+  # run custom setup scripts
+  Dir['*.sh'].each do |file|
+    system %Q{sh #{file}}
   end
 end
 
