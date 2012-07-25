@@ -25,7 +25,7 @@ ZSH_THEME="steeef"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(h c rails3 git brew cap gem git git-flow github heroku redis-cli rvm mydirs powder bundler autojump)
+plugins=(rails3 git brew cap gem git git-flow github heroku redis-cli rvm powder bundler fasd)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -35,7 +35,7 @@ for config_file ($ZSH_CUSTOM/*.zsh(N)) source $config_file
 
 # required by TextMate
 # http://manual.macromates.com/en/bundles#setting_lc_ctype
-# You must set the LC_CTYPE variable to use UTF-8. If you do not, svn will give you an 
+# You must set the LC_CTYPE variable to use UTF-8. If you do not, svn will give you an
 # svn: Can't recode string error when it stumbles upon non-ASCII filenames (some of the bundle items use these).
 export LC_CTYPE=en_US.UTF-8
 
@@ -43,7 +43,7 @@ export EDITOR='mvim -f'
 
 export PATH="$HOME/bin:$HOME/.bin:$HOME/.rvm/bin:/usr/local/homebrew/bin:/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:$PATH"
 export MANPATH="/usr/local/man:/usr/local/mysql/man:/usr/local/git/man:$MANPATH"
-export DYLD_LIBRARY_PATH="/usr/local/mysql/lib:$DYLD_LIBRARY_PATH"
+#export DYLD_LIBRARY_PATH="/usr/local/mysql/lib:$DYLD_LIBRARY_PATH"
 export MSGMERGE_PATH="/usr/local/Cellar/gettext/0.18.1.1/bin/msgmerge"
 
 # Load RVM into a shell session *as a function*

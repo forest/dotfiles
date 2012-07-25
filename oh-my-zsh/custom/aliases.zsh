@@ -1,5 +1,6 @@
 # aliases
-alias ealias='vim ~/.dotfiles/oh-my-zsh/custom/aliases.zsh'
+alias ealias='mvim ~/.dotfiles/oh-my-zsh/custom/aliases.zsh'
+alias reload='exec $SHELL'
 
 # other
 alias psg="ps ax | grep $1"
@@ -13,7 +14,7 @@ alias gs='git status'
 alias gcd='git checkout development'
 alias grm="git status | grep deleted | awk '{print \$3}' | xargs git rm"
 alias gch='git cherry -v origin/master'
-alias gh='git log --pretty=format:"%h %ad | %s%d [%an]" --graph --date=short'
+alias gh='git log --graph --date=short'
 function gbn {
 	set branch_name = $1
 	git push origin origin:refs/heads/${branch_name}
@@ -21,6 +22,7 @@ function gbn {
 	git checkout --track -b ${branch_name} origin/${branch_name}
 	git pull
 }
+alias migrations='git diff --name-only master development | ack migrations'
 
 # rails
 alias rc='rails console'
@@ -60,7 +62,10 @@ alias binit='bundle init'
 alias %=' '
 
 # textmate
-alias e='mate . &'
+#alias e='mate . &'
+
+# sublime edit
+alias e='subl -n .'
 
 # mvim
 alias v='mvim'
@@ -99,3 +104,7 @@ alias pws='powify start'
 alias pwr='powify restart'
 alias pwb='powify browse'
 alias pwl='powify logs'
+
+#fasd
+alias j='z'
+
