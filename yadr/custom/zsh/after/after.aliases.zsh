@@ -1,27 +1,30 @@
-# aliases
-alias ealias='mvim ~/.dotfiles/oh-my-zsh/custom/aliases.zsh'
+# overrides
+alias ash='cat $yadr/zsh/aliases.zsh'  #alias show
+alias ae='vi $yadr/custom/zsh/after/after.aliases.zsh' #alias edit
+alias ar='source $yadr/custom/zsh/after/after.aliases.zsh'  #alias reload
+
+# ls
+alias ls='ls -lAhFG'
+
+# shell
 alias reload='exec $SHELL'
 
 # other
-alias psg="ps ax | grep $1"
-alias cl='clear'
 alias ipexternal='curl whatismyip.org'
+alias hosts='sudo vim /private/etc/hosts'
 
-# git (not in oh-my-zsh)
-alias gf='git fetch'
-alias gd='git diff'
-alias gs='git status'
+# git (not in oh-my-zsh or yard)
+alias g='git'
 alias gcd='git checkout development'
 alias grm="git status | grep deleted | awk '{print \$3}' | xargs git rm"
 alias gch='git cherry -v origin/master'
-alias gh='git log --graph --date=short'
-function gbn {
-	set branch_name = $1
-	git push origin origin:refs/heads/${branch_name}
-	git fetch origin
-	git checkout --track -b ${branch_name} origin/${branch_name}
-	git pull
-}
+# function gbn {
+#   set branch_name = $1
+#   git push origin origin:refs/heads/${branch_name}
+#   git fetch origin
+#   git checkout --track -b ${branch_name} origin/${branch_name}
+#   git pull
+# }
 alias migrations='git diff --name-only master development | ack migrations'
 
 # rails
@@ -30,9 +33,8 @@ alias rs='rails server thin'
 alias rg='rails generate'
 alias rdb='rails dbconsole'
 alias tlog='tail -f log/development.log'
-alias scaffold='rails generate nifty_scaffold'
 alias migrate='rake db:migrate db:test:clone'
-alias rst='touch tmp/restart.txt'
+alias rrst='touch tmp/restart.txt'
 alias rtf='rake test:functionals'
 alias rtu='rake test:units'
 alias rti='rake test:integration'
@@ -99,12 +101,11 @@ alias fs='foreman start'
 alias fsw='foreman start web'
 alias fsr='foreman start redis'
 
-#powify
+# powify
 alias pws='powify start'
 alias pwr='powify restart'
 alias pwb='powify browse'
 alias pwl='powify logs'
 
-#fasd
+# fasd
 alias j='z'
-

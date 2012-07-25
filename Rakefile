@@ -5,13 +5,14 @@ desc "install the dot files into user's home directory"
 task :install do
   # clone oh-my-zsh if it doesn't already exist
   unless File.directory?(File.join(ENV['HOME'], '.oh-my-zsh'))
-    system %Q{git clone git://github.com/robbyrussell/oh-my-zsh.git "$HOME/.oh-my-zsh"}
+    system %Q{git clone https://github.com/sorin-ionescu/oh-my-zsh.git ~/.oh-my-zsh}
+    system %Q{cd ~/.oh-my-zsh && git submodule update --init --recursive && cd ..}
   end
-  
+
   replace_all = false
   Dir['*'].each do |file|
-    next if %w[Rakefile README.rdoc LICENSE oh-my-zsh].include? file
-    
+    next if %w[Rakefile README.mkd LICENSE yadr].include? file
+
     if File.exist?(File.join(ENV['HOME'], ".#{file.sub('.erb', '')}"))
       if File.identical?(file, File.join(ENV['HOME'], ".#{file.sub('.erb', '')}"))
         puts "identical ~/.#{file.sub('.erb', '')}"
@@ -35,19 +36,12 @@ task :install do
       link_file(file)
     end
   end
-  
-  # oh-my-zsh plugins
-  # link oh-my-zsh/plugins/* into ~/.oh-my-zsh/plugins/*
-  # need to put them in oh-my-zsh/plugins instead of oh-my-zsh/custom/plugins
-  # because the custom plugins don't support auto complete (lame)
-  Dir['oh-my-zsh/plugins/*'].each do |plugin|
-    link_folder(plugin)
-  end
-  
-  # oh-my-zsh configs and aliases
-  # link oh-my-zsh/custom/* into ~/.oh-my-zsh/custom/*
-  Dir['oh-my-zsh/custom/*'].each do |file|
-    link_file(file)
+
+  # yadr configs and aliases
+  # link yadr/custom/* into ~/.yadr/custom/*
+  Dir['yadr/custom/*'].each do |folder|
+    puts "linking ~/.#{folder}"
+    system %Q{echo ln -s "$PWD/#{folder}" "$HOME/.#{folder}"}
   end
 end
 
