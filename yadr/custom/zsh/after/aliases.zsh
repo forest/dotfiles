@@ -4,7 +4,7 @@ alias ae='vi $yadr/custom/zsh/after/after.aliases.zsh' #alias edit
 alias ar='source $yadr/custom/zsh/after/after.aliases.zsh'  #alias reload
 
 # ls
-alias ls='ls -lAhFG'
+# alias ls='ls -lAhFG'
 
 # shell
 alias reload='exec $SHELL'
@@ -15,6 +15,7 @@ alias hosts='sudo vim /private/etc/hosts'
 
 # git (not in oh-my-zsh or yard)
 alias g='git'
+alias gs='git status -sb'
 alias gcd='git checkout development'
 alias grm="git status | grep deleted | awk '{print \$3}' | xargs git rm"
 alias gch='git cherry -v origin/master'

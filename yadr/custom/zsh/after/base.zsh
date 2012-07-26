@@ -1,5 +1,11 @@
 # set or override options. two of my favorite are below.
 #
+
+# set the prompt
+autoload -Uz promptinit
+promptinit
+prompt steeef
+
 # Automatically cd to frequently used directories http://robots.thoughtbot.com/post/10849086566/cding-to-frequently-used-directories-in-zsh
 setopt auto_cd
 cdpath=($HOME/code)
