@@ -2,9 +2,9 @@
 #
 
 # set the prompt
-autoload -Uz promptinit
-promptinit
-prompt steeef
+# autoload -Uz promptinit
+# promptinit
+# prompt steeef
 
 # Automatically cd to frequently used directories http://robots.thoughtbot.com/post/10849086566/cding-to-frequently-used-directories-in-zsh
 setopt auto_cd

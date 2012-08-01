@@ -5,7 +5,8 @@ desc "install the dot files into user's home directory"
 task :install do
   # clone oh-my-zsh if it doesn't already exist
   unless File.directory?(File.join(ENV['HOME'], '.oh-my-zsh'))
-    system %Q{git clone https://github.com/sorin-ionescu/oh-my-zsh.git ~/.oh-my-zsh}
+    #system %Q{git clone https://github.com/sorin-ionescu/oh-my-zsh.git ~/.oh-my-zsh}
+    system %Q{git clone git://github.com/robbyrussell/oh-my-zsh.git "$HOME/.oh-my-zsh"}
     system %Q{cd ~/.oh-my-zsh && git submodule update --init --recursive && cd ..}
   end
 

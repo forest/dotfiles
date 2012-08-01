@@ -1,7 +1,7 @@
 # overrides
 alias ash='cat $yadr/zsh/aliases.zsh'  #alias show
-alias ae='vi $yadr/custom/zsh/after/after.aliases.zsh' #alias edit
-alias ar='source $yadr/custom/zsh/after/after.aliases.zsh'  #alias reload
+alias ae='vi $yadr/custom/zsh/after/aliases.zsh' #alias edit
+alias ar='source $yadr/custom/zsh/after/aliases.zsh'  #alias reload
 
 # ls
 # alias ls='ls -lAhFG'
@@ -27,6 +27,10 @@ alias gch='git cherry -v origin/master'
 #   git pull
 # }
 alias migrations='git diff --name-only master development | ack migrations'
+
+# gist
+alias gistd="g diff | gist -po -tdiff -d'$1'"
+function gistf() { g diff -- "$1" | gist -po -tdiff -d"$2" }
 
 # rails
 alias rc='rails console'
@@ -71,7 +75,8 @@ alias %=' '
 alias e='subl -n .'
 
 # mvim
-alias v='mvim'
+#alias v='mvim'
+alias vim='mvim'
 
 # cheat
 alias csl='cheat sheets | less'
