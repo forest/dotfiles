@@ -1,6 +1,7 @@
 # overrides
 alias ash='cat $yadr/zsh/aliases.zsh'  #alias show
-alias ae='vi $yadr/custom/zsh/after/aliases.zsh' #alias edit
+alias ashc='cat $yadr/custom/zsh/after/aliases.zsh'  #alias sho custom
+alias ae='vim $yadr/custom/zsh/after/aliases.zsh' #alias edit
 alias ar='source $yadr/custom/zsh/after/aliases.zsh'  #alias reload
 
 # ls
@@ -17,6 +18,7 @@ alias hosts='sudo vim /private/etc/hosts'
 alias g='git'
 alias gs='git status -sb'
 alias gcd='git checkout development'
+alias gcm='git checkout master'
 alias grm="git status | grep deleted | awk '{print \$3}' | xargs git rm"
 alias gch='git cherry -v origin/master'
 # function gbn {
@@ -75,7 +77,6 @@ alias %=' '
 alias e='subl -n .'
 
 # mvim
-#alias v='mvim'
 alias vim='mvim'
 
 # cheat
@@ -101,6 +102,10 @@ alias pssp='RAILS_ENV=production passenger start'
 # postgress
 alias pgstart='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
 alias pgstop='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
+
+# mysql
+alias mysstart='mysql.server start'
+alias mysstop='mysql.server stop'
 
 # foreman
 alias fs='foreman start'
