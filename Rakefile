@@ -4,11 +4,11 @@ require 'erb'
 desc "install the dot files into user's home directory"
 task :install do
   # clone oh-my-zsh if it doesn't already exist
-  unless File.directory?(File.join(ENV['HOME'], '.oh-my-zsh'))
-    #system %Q{git clone https://github.com/sorin-ionescu/oh-my-zsh.git ~/.oh-my-zsh}
-    system %Q{git clone git://github.com/robbyrussell/oh-my-zsh.git "$HOME/.oh-my-zsh"}
-    system %Q{cd ~/.oh-my-zsh && git submodule update --init --recursive && cd ..}
-  end
+  # unless File.directory?(File.join(ENV['HOME'], '.oh-my-zsh'))
+  #   #system %Q{git clone https://github.com/sorin-ionescu/oh-my-zsh.git ~/.oh-my-zsh}
+  #   system %Q{git clone git://github.com/robbyrussell/oh-my-zsh.git "$HOME/.oh-my-zsh"}
+  #   system %Q{cd ~/.oh-my-zsh && git submodule update --init --recursive && cd ..}
+  # end
 
   replace_all = false
   Dir['*'].each do |file|
@@ -41,8 +41,7 @@ task :install do
   # yadr configs and aliases
   # link yadr/custom/* into ~/.yadr/custom/*
   Dir['yadr/custom/*'].each do |folder|
-    puts "linking ~/.#{folder}"
-    system %Q{echo ln -s "$PWD/#{folder}" "$HOME/.#{folder}"}
+    link_folder(folder)
   end
 
   # run custom setup scripts
@@ -64,11 +63,11 @@ def link_file(file)
     end
   else
     puts "linking ~/.#{file}"
-    system %Q{ln -s "$PWD/#{file}" "$HOME/.#{file}"}
+    system %Q{ln -is "$PWD/#{file}" "$HOME/.#{file}"}
   end
 end
 
 def link_folder(folder)
   puts "linking ~/.#{folder}"
-  system %Q{echo ln -s "$PWD/#{folder}/" "$HOME/.#{folder}"}
+  system %Q{ln -is "$PWD/#{folder}/" "$HOME/.#{folder}"}
 end

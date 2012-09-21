@@ -139,13 +139,12 @@
   enabled = true
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
+	path =
 [mergetool "sourcetree"]
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
 [user]
-  name = $(GIT_AUTHOR_NAME)
-  email = $(GIT_AUTHOR_EMAIL)
+  name = Forest Carlisle
+  email = forestcarlisle@gmail.com
 [github]
-	user = $(GITHUB_USER) 
-	token = $(GITHUB_TOKEN)
+	user = forest

@@ -19,7 +19,7 @@ export PATH="$HOME/bin:$HOME/.bin:$HOME/.rvm/bin:/usr/local/homebrew/bin:/usr/lo
 export MSGMERGE_PATH="/usr/local/Cellar/gettext/0.18.1.1/bin/msgmerge"
 
 # use .localrc for settings specific to one system
-[[ -f ~/.localrc ]] && . ~/.localrc
+[[ -f ~/.localrc ]] && source ~/.localrc
 
 # @see http://vim.1045645.n5.nabble.com/MacVim-and-PATH-tt3388705.html#a3392363
 # Ensure MacVim has same shell as Terminal

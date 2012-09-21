@@ -104,8 +104,8 @@ alias pgstart='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/serv
 alias pgstop='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
 
 # mysql
-alias mysstart='mysql.server start'
-alias mysstop='mysql.server stop'
+alias mystart='mysql.server start'
+alias mystop='mysql.server stop'
 
 # foreman
 alias fs='foreman start'
