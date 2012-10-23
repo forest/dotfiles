@@ -40,9 +40,9 @@ task :install do
 
   # yadr configs and aliases
   # link yadr/custom/* into ~/.yadr/custom/*
-  Dir['yadr/custom/*'].each do |folder|
-    link_folder(folder)
-  end
+  # Dir['yadr/custom/*'].each do |folder|
+  #   link_folder(folder)
+  # end
 
   # run custom setup scripts
   Dir['*.sh'].each do |file|

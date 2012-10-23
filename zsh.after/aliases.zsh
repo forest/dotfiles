@@ -1,8 +1,8 @@
 # overrides
 alias ash='cat $yadr/zsh/aliases.zsh'  #alias show
-alias ashc='cat $yadr/custom/zsh/after/aliases.zsh'  #alias sho custom
-alias ae='vim $yadr/custom/zsh/after/aliases.zsh' #alias edit
-alias ar='source $yadr/custom/zsh/after/aliases.zsh'  #alias reload
+alias ashc='cat $HOME/zsh.after/aliases.zsh'  #alias sho custom
+alias ae='vim $HOME/zsh.after/aliases.zsh' #alias edit
+alias ar='source $HOME/zsh.after/aliases.zsh'  #alias reload
 
 # ls
 # alias ls='ls -lAhFG'
@@ -11,7 +11,7 @@ alias ar='source $yadr/custom/zsh/after/aliases.zsh'  #alias reload
 alias reload='exec $SHELL'
 
 # other
-alias ipexternal='curl whatismyip.org'
+alias myip='curl whatismyip.org'
 alias hosts='sudo vim /private/etc/hosts'
 
 # git (not in oh-my-zsh or yard)
@@ -120,3 +120,16 @@ alias pwl='powify logs'
 
 # fasd
 alias j='z'
+
+# office machines
+alias ldbmaster='ssh dbmaster1.lessonplanet.com'
+alias ldbslave='ssh dbslave1.lessonplanet.com'
+alias llb1='ssh lb1.lessonplanet.com'
+alias lredis='ssh redis1.lessonplanet.com'
+alias ljenkins='ssh -p 2222 ci-builder1.lessonplanet.com'
+alias lstage2='ssh -p 2223 ci-builder1.lessonplanet.com'
+alias lworker='ssh -p 2225 ci-builder1.lessonplanet.com'
+
+# chef
+alias knife='nocorrect knife'
+
