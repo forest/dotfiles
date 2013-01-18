@@ -1,7 +1,7 @@
 # overrides
 alias ash='cat $yadr/zsh/aliases.zsh'  #alias show
 alias ashc='cat $HOME/zsh.after/aliases.zsh'  #alias sho custom
-alias ae='vim $HOME/zsh.after/aliases.zsh' #alias edit
+alias ae='mvim $HOME/zsh.after/aliases.zsh' #alias edit
 alias ar='source $HOME/zsh.after/aliases.zsh'  #alias reload
 
 # ls
@@ -9,10 +9,12 @@ alias ar='source $HOME/zsh.after/aliases.zsh'  #alias reload
 
 # shell
 alias reload='exec $SHELL'
+alias tm='top -o rsize'
+alias tu='top -o cpu'
 
 # other
-alias myip='curl whatismyip.org'
-alias hosts='sudo vim /private/etc/hosts'
+alias myip='curl ifconfig.me'
+alias hosts='sudo mvim /private/etc/hosts'
 
 # git (not in oh-my-zsh or yard)
 alias g='git'
@@ -50,6 +52,15 @@ alias ss='script/server'
 alias sg='script/generate'
 alias rake='noglob rake'
 
+# RSpec shortcuts
+function bers() { bundle exec rake spec SPEC="$1" }
+function ber() { bundle exec rspec $1 }
+unalias zs # set by zeus plugin
+function zs() { zeus rspec $1 }
+
+# ruby
+alias rit='ri -T'
+
 # bundler primary commands
 alias b='bundle'
 alias bi='bundle install'
@@ -77,7 +88,10 @@ alias %=' '
 alias e='subl -n .'
 
 # mvim
-alias vim='mvim'
+alias mvim='nocorrect mvim'
+alias tree='nocorrect tree'
+alias v='mvim .'
+alias ctagsg="ctags -R --exclude=.git --exclude=log *"
 
 # cheat
 alias csl='cheat sheets | less'
@@ -100,12 +114,12 @@ alias pss='passenger start'
 alias pssp='RAILS_ENV=production passenger start'
 
 # postgress
-alias pgstart='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
-alias pgstop='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
+alias pgst='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
+alias pgsp='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
 
 # mysql
-alias mystart='mysql.server start'
-alias mystop='mysql.server stop'
+alias mysqlst='mysql.server start'
+alias mysqlsp='mysql.server stop'
 
 # foreman
 alias fs='foreman start'
@@ -133,3 +147,13 @@ alias lworker='ssh -p 2225 ci-builder1.lessonplanet.com'
 # chef
 alias knife='nocorrect knife'
 
+# gem readme
+alias gemr='gem readme -e cat'
+function gemro() { gemr $1 | marked > ~/Documentation/$1.html && open ~/Documentation/$1.html }
+
+# ack
+alias afind="ack --color -i"
+
+# https://github.com/robbyrussell/oh-my-zsh/issues/31
+# noglob Filename generation (globbing) is not performed on any of the words.
+alias curl='noglob curl'
