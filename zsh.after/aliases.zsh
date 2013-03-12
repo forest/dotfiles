@@ -1,8 +1,8 @@
 # overrides
 alias ash='cat $yadr/zsh/aliases.zsh'  #alias show
-alias ashc='cat $HOME/zsh.after/aliases.zsh'  #alias sho custom
-alias ae='mvim $HOME/zsh.after/aliases.zsh' #alias edit
-alias ar='source $HOME/zsh.after/aliases.zsh'  #alias reload
+alias ashc='cat $HOME/.dotfiles/zsh.after/aliases.zsh'  #alias show custom
+alias ae='mvim $HOME/.dotfiles/zsh.after/aliases.zsh' #alias edit
+alias ar='source $HOME/.dotfiles/zsh.after/aliases.zsh'  #alias reload
 
 # ls
 # alias ls='ls -lAhFG'
@@ -55,9 +55,15 @@ alias rake='noglob rake'
 # RSpec shortcuts
 function bers() { bundle exec rake spec SPEC="$1" }
 function ber() { bundle exec rspec $1 }
-unalias zs # set by zeus plugin
-function zs() { zeus rspec $1 }
 
+# zeus
+# unalias zs # set by zeus plugin
+function zs() { zeus rspec $1 }
+function zg() { zeus generate $1 }
+function zc() { zeus console $1 }
+function zr() { zeus rake $1 }
+function zsr() { zeus server $1 }
+ 
 # ruby
 alias rit='ri -T'
 
@@ -144,6 +150,15 @@ alias ljenkins='ssh -p 2222 ci-builder1.lessonplanet.com'
 alias lstage2='ssh -p 2223 ci-builder1.lessonplanet.com'
 alias lworker='ssh -p 2225 ci-builder1.lessonplanet.com'
 
+# work
+alias ztart='env RUBYLIB=/Applications/RubyMine.app/rb/testing/patch/common:/Applications/RubyMine.app/rb/testing/patch/bdd zeus start'
+alias lpst='mysqlst; cd ~/code/lessonplanet; neo4j start; bundle exec rake ts:start --trace; ztart'
+alias lpsp='cd ~/code/lessonplanet; bundle exec rake ts:stop; neo4j stop; mysqlsp'
+
+# sshuttle
+alias tunnel='sshuttle --dns --daemon --pidfile=/tmp/sshuttle.pid --remote=forest@ci-builder1.lessonplanet.com:2222 0/0'
+alias tunnelx='[[ -f /tmp/sshuttle.pid ]] && kill $(cat /tmp/sshuttle.pid) && echo "Disconnected."'
+
 # chef
 alias knife='nocorrect knife'
 
@@ -153,6 +168,7 @@ function gemro() { gemr $1 | marked > ~/Documentation/$1.html && open ~/Document
 
 # ack
 alias afind="ack --color -i"
+alias ackr='ack --ruby'
 
 # https://github.com/robbyrussell/oh-my-zsh/issues/31
 # noglob Filename generation (globbing) is not performed on any of the words.
