@@ -23,14 +23,11 @@ alias gcd='git checkout development'
 alias gcm='git checkout master'
 alias grm="git status | grep deleted | awk '{print \$3}' | xargs git rm"
 alias gch='git cherry -v origin/master'
-# function gbn {
-#   set branch_name = $1
-#   git push origin origin:refs/heads/${branch_name}
-#   git fetch origin
-#   git checkout --track -b ${branch_name} origin/${branch_name}
-#   git pull
-# }
 alias migrations='git diff --name-only master development | ack migrations'
+
+alias grb='git rebase -p'
+alias gup='git fetch origin && grb origin/$(git-branch-current)'
+alias gm='git merge --no-ff'
 
 # gist
 alias gistd="g diff | gist -po -tdiff -d'$1'"
@@ -57,7 +54,7 @@ function bers() { bundle exec rake spec SPEC="$1" }
 function ber() { bundle exec rspec $1 }
 
 # zeus
-# unalias zs # set by zeus plugin
+unalias zs # set by zeus plugin
 function zs() { zeus rspec $1 }
 function zg() { zeus generate $1 }
 function zc() { zeus console $1 }
@@ -97,6 +94,7 @@ alias e='subl -n .'
 alias mvim='nocorrect mvim'
 alias tree='nocorrect tree'
 alias v='mvim .'
+alias vim='mvim'
 alias ctagsg="ctags -R --exclude=.git --exclude=log *"
 
 # cheat
@@ -131,6 +129,7 @@ alias mysqlsp='mysql.server stop'
 alias fs='foreman start'
 alias fsw='foreman start web'
 alias fsr='foreman start redis'
+alias fsn='foreman start neo4j'
 
 # powify
 alias pws='powify start'
@@ -146,18 +145,16 @@ alias ldbmaster='ssh dbmaster1.lessonplanet.com'
 alias ldbslave='ssh dbslave1.lessonplanet.com'
 alias llb1='ssh lb1.lessonplanet.com'
 alias lredis='ssh redis1.lessonplanet.com'
-alias ljenkins='ssh -p 2222 ci-builder1.lessonplanet.com'
-alias lstage2='ssh -p 2223 ci-builder1.lessonplanet.com'
-alias lworker='ssh -p 2225 ci-builder1.lessonplanet.com'
 
 # work
 alias ztart='env RUBYLIB=/Applications/RubyMine.app/rb/testing/patch/common:/Applications/RubyMine.app/rb/testing/patch/bdd zeus start'
-alias lpst='mysqlst; cd ~/code/lessonplanet; neo4j start; bundle exec rake ts:start --trace; ztart'
-alias lpsp='cd ~/code/lessonplanet; bundle exec rake ts:stop; neo4j stop; mysqlsp'
 
 # sshuttle
 alias tunnel='sshuttle --dns --daemon --pidfile=/tmp/sshuttle.pid --remote=forest@ci-builder1.lessonplanet.com:2222 0/0'
 alias tunnelx='[[ -f /tmp/sshuttle.pid ]] && kill $(cat /tmp/sshuttle.pid) && echo "Disconnected."'
+
+# brew
+alias brew='nocorrect brew'
 
 # chef
 alias knife='nocorrect knife'

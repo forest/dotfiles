@@ -6,3 +6,7 @@ map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
 set colorcolumn=80
 highlight ColorColumn ctermbg=lightgrey ctermfg=black guibg=#131319 guifg=white
 
+set incsearch
+
+autocmd Filetype gitcommit setlocal spell textwidth=72
+
