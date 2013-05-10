@@ -13,5 +13,3 @@ fi
 # Customize to your needs...
 
 for config_file ($HOME/.yadr/zsh/*.zsh) source $config_file
-
-PATH=$PATH:/Users/forest/.rvm/bin # Add RVM to PATH for scripting
