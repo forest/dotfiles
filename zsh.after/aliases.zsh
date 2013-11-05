@@ -29,6 +29,14 @@ alias grb='git rebase -p'
 alias gup='git fetch origin && grb origin/$(git-branch-current)'
 alias gm='git merge --no-ff'
 
+# git-process
+alias gnf='git new-fb'
+alias gsy='git sync'
+alias gpr='git pull-request'
+
+# ruby-appraiser
+alias check='ruby-appraiser --mode=last --all'
+
 # gist
 alias gistd="g diff | gist -po -tdiff -d'$1'"
 function gistf() { g diff -- "$1" | gist -po -tdiff -d"$2" }
@@ -54,6 +62,7 @@ function bers() { bundle exec rake spec SPEC="$1" }
 function ber() { bundle exec rspec $1 }
 
 # zeus
+alias ztart='zeus start'
 unalias zs # set by zeus plugin
 function zs() { zeus rspec $1 }
 function zg() { zeus generate $1 }
@@ -66,7 +75,7 @@ alias rit='ri -T'
 
 # bundler primary commands
 alias b='bundle'
-alias bi='bundle install'
+alias bi='bundle install; bower install'
 alias bu='bundle update'
 alias bp='bundle package'
 alias be='bundle exec'
@@ -80,6 +89,9 @@ alias bcn='bundle console'
 alias bo='bundle open'
 alias bv='bundle viz'
 alias binit='bundle init'
+
+# bower
+alias bower='noglob bower'
 
 # commands starting with % for pasting from web
 alias %=' '
@@ -146,11 +158,9 @@ alias ldbslave='ssh dbslave1.lessonplanet.com'
 alias llb1='ssh lb1.lessonplanet.com'
 alias lredis='ssh redis1.lessonplanet.com'
 
-# work
-alias ztart='env RUBYLIB=/Applications/RubyMine.app/rb/testing/patch/common:/Applications/RubyMine.app/rb/testing/patch/bdd zeus start'
-
 # sshuttle
-alias tunnel='sshuttle --dns --daemon --pidfile=/tmp/sshuttle.pid --remote=forest@ci-builder1.lessonplanet.com:2222 0/0'
+alias tunnel='sshuttle --dns -vvr forest@ci-builder1.lessonplanet.com:2222 0/0'
+alias tunneld='sshuttle --dns --daemon --pidfile=/tmp/sshuttle.pid --remote=forest@ci-builder1.lessonplanet.com:2222 0/0'
 alias tunnelx='[[ -f /tmp/sshuttle.pid ]] && kill $(cat /tmp/sshuttle.pid) && echo "Disconnected."'
 
 # brew
