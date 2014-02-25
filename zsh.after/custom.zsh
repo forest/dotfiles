@@ -1,5 +1,5 @@
-export VISUAL="/usr/local/bin/mvim"
-export EDITOR="/usr/local/bin/mvim"
+export VISUAL="/opt/boxen/homebrew/bin/vi"
+export EDITOR="/opt/boxen/homebrew/bin/vi"
 
 # Faster ruby
 # https://gist.github.com/burke/1688857
