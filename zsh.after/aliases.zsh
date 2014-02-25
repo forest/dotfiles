@@ -30,9 +30,9 @@ alias gup='git fetch origin && grb origin/$(git-branch-current)'
 alias gm='git merge --no-ff'
 
 # git-process
-alias gnf='git new-fb'
-alias gsy='git sync'
-alias gpr='git pull-request'
+alias gnf='git-new-fb'
+alias gsy='git-sync'
+alias gpr='git-pull-req'
 
 # ruby-appraiser
 alias check='ruby-appraiser --mode=last --all'
