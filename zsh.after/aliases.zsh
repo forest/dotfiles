@@ -131,8 +131,8 @@ alias pss='passenger start'
 alias pssp='RAILS_ENV=production passenger start'
 
 # postgress
-alias pgst='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
-alias pgsp='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
+alias pgst='pg_ctl -D $BOXEN_DATA_DIR/postgresql -l $BOXEN_LOG_DIR/postgresql/server.log start'
+alias pgsp='pg_ctl -D $BOXEN_DATA_DIR/postgresql stop -s -m fast'
 
 # mysql
 alias mysqlst='mysql.server start'
