@@ -101,6 +101,7 @@ alias %=' '
 
 # sublime edit
 alias e='subl -n .'
+alias subl='subl3'
 
 # mvim
 alias mvim='nocorrect mvim'
