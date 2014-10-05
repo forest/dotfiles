@@ -69,7 +69,7 @@ function zg() { zeus generate $1 }
 function zc() { zeus console $1 }
 function zr() { zeus rake $1 }
 function zsr() { zeus server $1 }
- 
+
 # ruby
 alias rit='ri -T'
 
@@ -92,6 +92,9 @@ alias binit='bundle init'
 
 # bower
 alias bower='noglob bower'
+
+# heroku
+alias staging='nocorrect staging'
 
 # commands starting with % for pasting from web
 alias %=' '

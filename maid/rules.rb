@@ -14,18 +14,18 @@
 #
 Maid.rules do
   # NOTE: Currently, only Mac OS X supports `duration_s`.
-  rule 'MP3s likely to be music' do
-    dir('~/Downloads/*.mp3').each do |path|
-      if duration_s(path) > 30.0
-        move(path, '~/Music/iTunes/iTunes Media/Automatically Add to iTunes/')
-      end
-    end
-  end
-  
+  # rule 'MP3s likely to be music' do
+  #   dir('~/Downloads/*.mp3').each do |path|
+  #     if duration_s(path) > 30.0
+  #       move(path, '~/Music/iTunes/iTunes Media/Automatically Add to iTunes/')
+  #     end
+  #   end
+  # end
+
   # NOTE: Currently, only Mac OS X supports `downloaded_from`.
   rule 'Old files downloaded while developing/testing' do
     dir('~/Downloads/*').each do |path|
-      if downloaded_from(path).any? {|u| u.match 'http://localhost' || u.match('http://beta.lessonplanet.com') } && 1.week.since?(last_accessed(path))
+      if downloaded_from(path).any? {|u| u.match 'http://localhost' || u.match('http://staging.lessonplanet.com') } && 1.week.since?(last_accessed(path))
         trash(path)
       end
     end
