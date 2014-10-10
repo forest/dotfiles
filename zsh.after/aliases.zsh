@@ -62,13 +62,13 @@ function bers() { bundle exec rake spec SPEC="$1" }
 function ber() { bundle exec rspec $1 }
 
 # zeus
-alias ztart='zeus start'
-unalias zs # set by zeus plugin
-function zs() { zeus rspec $1 }
-function zg() { zeus generate $1 }
-function zc() { zeus console $1 }
-function zr() { zeus rake $1 }
-function zsr() { zeus server $1 }
+# alias ztart='zeus start'
+# unalias zs # set by zeus plugin
+# function zs() { zeus rspec $1 }
+# function zg() { zeus generate $1 }
+# function zc() { zeus console $1 }
+# function zr() { zeus rake $1 }
+# function zsr() { zeus server $1 }
 
 # ruby
 alias rit='ri -T'
@@ -103,8 +103,8 @@ alias %=' '
 #alias e='mate . &'
 
 # sublime edit
-alias e='subl -n .'
-alias subl='subl3'
+# alias e='subl -n .'
+# alias subl='subl3'
 
 # mvim
 alias mvim='nocorrect mvim'
@@ -124,18 +124,18 @@ function csm {
 }
 
 # RVM
-alias gsu='rvm gemset use $1'
+# alias gsu='rvm gemset use $1'
 
 # nginx
-alias ns='sh ~/.dotfiles/bin/nginx.sh'
+# alias ns='sh ~/.dotfiles/bin/nginx.sh'
 
 # passenger
-alias pss='passenger start'
-alias pssp='RAILS_ENV=production passenger start'
+# alias pss='passenger start'
+# alias pssp='RAILS_ENV=production passenger start'
 
 # postgress
-alias pgst='pg_ctl -D $BOXEN_DATA_DIR/postgresql -l $BOXEN_LOG_DIR/postgresql/server.log start'
-alias pgsp='pg_ctl -D $BOXEN_DATA_DIR/postgresql stop -s -m fast'
+# alias pgst='pg_ctl -D $BOXEN_DATA_DIR/postgresql -l $BOXEN_LOG_DIR/postgresql/server.log start'
+# alias pgsp='pg_ctl -D $BOXEN_DATA_DIR/postgresql stop -s -m fast'
 
 # mysql
 alias mysqlst='mysql.server start'
@@ -148,19 +148,19 @@ alias fsr='foreman start redis'
 alias fsn='foreman start neo4j'
 
 # powify
-alias pws='powify start'
-alias pwr='powify restart'
-alias pwb='powify browse'
-alias pwl='powify logs'
+# alias pws='powify start'
+# alias pwr='powify restart'
+# alias pwb='powify browse'
+# alias pwl='powify logs'
 
 # fasd
 alias j='z'
 
 # office machines
-alias ldbmaster='ssh dbmaster1.lessonplanet.com'
-alias ldbslave='ssh dbslave1.lessonplanet.com'
-alias llb1='ssh lb1.lessonplanet.com'
-alias lredis='ssh redis1.lessonplanet.com'
+# alias ldbmaster='ssh dbmaster1.lessonplanet.com'
+# alias ldbslave='ssh dbslave1.lessonplanet.com'
+# alias llb1='ssh lb1.lessonplanet.com'
+# alias lredis='ssh redis1.lessonplanet.com'
 
 # sshuttle
 alias tunnel='sshuttle --dns -vvr forest@ci-builder1.lessonplanet.com:2222 0/0'
