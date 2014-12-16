@@ -15,6 +15,8 @@ setopt extendedglob
 
 export GOPATH=$HOME/.go
 export GOOGLE_CLOUD_SDK_PATH=$HOME/code/google-cloud-sdk
+export JAVA_HOME=$(/usr/libexec/java_home)
+export JIRA_HOME=~/code/jira_home
 
 export PATH="./bin:./.bin:$HOME/bin:$HOME/.bin:/usr/local/homebrew/bin:$GOPATH/bin:$GOOGLE_CLOUD_SDK_PATH/bin:/usr/local/share/npm/bin:/usr/local/heroku/bin:/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:$PATH"
 #export MANPATH="/usr/local/man:/usr/local/mysql/man:/usr/local/git/man:$MANPATH"
