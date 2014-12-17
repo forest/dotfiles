@@ -1,7 +1,7 @@
 # overrides
 alias ash='cat $yadr/zsh/aliases.zsh'  #alias show
 alias ashc='cat $HOME/.dotfiles/zsh.after/aliases.zsh'  #alias show custom
-alias ae='mvim $HOME/.dotfiles/zsh.after/aliases.zsh' #alias edit
+alias ae='vim $HOME/.dotfiles/zsh.after/aliases.zsh' #alias edit
 alias ar='source $HOME/.dotfiles/zsh.after/aliases.zsh'  #alias reload
 
 # ls
@@ -14,7 +14,7 @@ alias tu='top -o cpu'
 
 # other
 alias myip='curl ifconfig.me'
-alias hosts='sudo mvim /private/etc/hosts'
+alias hosts='sudo vim /private/etc/hosts'
 
 # git (not in oh-my-zsh or yard)
 alias g='git'
@@ -106,11 +106,11 @@ alias %=' '
 # alias e='subl -n .'
 # alias subl='subl3'
 
-# mvim
-alias mvim='nocorrect mvim'
+# vim
+alias vim='nocorrect vim'
 alias tree='nocorrect tree'
-alias v='mvim .'
-alias vim='mvim'
+alias v='vim .'
+alias vim='vim'
 alias ctagsg="ctags -R --exclude=.git --exclude=log *"
 
 # cheat
@@ -134,6 +134,9 @@ function csm {
 # alias pssp='RAILS_ENV=production passenger start'
 
 # postgress
+alias pgst='pg_ctl -D /usr/local/var/postgres start'
+alias pgsp='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
+
 # alias pgst='pg_ctl -D $BOXEN_DATA_DIR/postgresql -l $BOXEN_LOG_DIR/postgresql/server.log start'
 # alias pgsp='pg_ctl -D $BOXEN_DATA_DIR/postgresql stop -s -m fast'
 
