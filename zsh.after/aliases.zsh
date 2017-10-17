@@ -1,7 +1,7 @@
 # overrides
 alias ash='cat $yadr/zsh/aliases.zsh'  #alias show
 alias ashc='cat $HOME/.dotfiles/zsh.after/aliases.zsh'  #alias show custom
-alias ae='vim $HOME/.dotfiles/zsh.after/aliases.zsh' #alias edit
+alias ae='code $HOME/.dotfiles/zsh.after/aliases.zsh' #alias edit
 alias ar='source $HOME/.dotfiles/zsh.after/aliases.zsh'  #alias reload
 
 # ls
@@ -14,7 +14,7 @@ alias tu='top -o cpu'
 
 # other
 alias myip='curl ifconfig.me'
-alias hosts='sudo vim /private/etc/hosts'
+alias hosts='sudo code /private/etc/hosts'
 
 # git (not in oh-my-zsh or yard)
 alias g='git'
@@ -110,7 +110,6 @@ alias %=' '
 alias vim='nocorrect vim'
 alias tree='nocorrect tree'
 alias v='vim .'
-alias vim='vim'
 alias ctagsg="ctags -R --exclude=.git --exclude=log *"
 
 # cheat
@@ -137,12 +136,29 @@ function csm {
 alias pgst='pg_ctl -D /usr/local/var/postgres start'
 alias pgsp='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
 
-# alias pgst='pg_ctl -D $BOXEN_DATA_DIR/postgresql -l $BOXEN_LOG_DIR/postgresql/server.log start'
-# alias pgsp='pg_ctl -D $BOXEN_DATA_DIR/postgresql stop -s -m fast'
-
 # mysql
 alias mysqlst='mysql.server start'
 alias mysqlsp='mysql.server stop'
+
+# php development
+alias nginx.start='sudo launchctl load /Library/LaunchDaemons/homebrew.mxcl.nginx.plist'
+alias nginx.stop='sudo launchctl unload /Library/LaunchDaemons/homebrew.mxcl.nginx.plist'
+alias nginx.restart='nginx.stop && nginx.start'
+alias php-fpm.start="launchctl load -w /usr/local/opt/php55/homebrew.mxcl.php55.plist"
+alias php-fpm.stop="launchctl unload -w /usr/local/opt/php55/homebrew.mxcl.php55.plist"
+alias php-fpm.restart='php-fpm.stop && php-fpm.start'
+alias hssh="ssh vagrant@127.0.0.1 -p 2222"
+
+# alias mysql.start="launchctl load -w ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist"
+# alias mysql.stop="launchctl unload -w ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist"
+# alias mysql.restart='mysql.stop && mysql.start'
+alias nginx.logs.error='tail -250f /usr/local/etc/nginx/logs/error.log'
+alias nginx.logs.access='tail -250f /usr/local/etc/nginx/logs/access.log'
+alias nginx.logs.default.access='tail -250f /usr/local/etc/nginx/logs/default.access.log'
+alias nginx.logs.default-ssl.access='tail -250f /usr/local/etc/nginx/logs/default-ssl.access.log'
+alias nginx.logs.phpmyadmin.error='tail -250f /usr/local/etc/nginx/logs/phpmyadmin.error.log'
+alias nginx.logs.phpmyadmin.access='tail -250f /usr/local/etc/nginx/logs/phpmyadmin.access.log'
+
 
 # foreman
 alias fs='foreman start'

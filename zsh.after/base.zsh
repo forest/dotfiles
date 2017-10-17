@@ -17,8 +17,11 @@ export GOPATH=$HOME/.go
 export GOOGLE_CLOUD_SDK_PATH=$HOME/code/google-cloud-sdk
 export JAVA_HOME=$(/usr/libexec/java_home)
 export JIRA_HOME=~/code/jira_home
+export PHPPATH=$(brew --prefix homebrew/php/php56)
+export HOMEBREW_PREFIX=/usr/local
+export HOMEBREW_CELLAR=/usr/local/Cellar
 
-export PATH="./bin:./.bin:$HOME/bin:$HOME/.bin:/usr/local/homebrew/bin:$GOPATH/bin:$GOOGLE_CLOUD_SDK_PATH/bin:/usr/local/share/npm/bin:/usr/local/heroku/bin:/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:$PATH"
+export PATH="./bin:./.bin:$HOME/bin:$HOME/.bin:/usr/local/homebrew/bin:$PHPPATH/sbin:$GOPATH/bin:$GOOGLE_CLOUD_SDK_PATH/bin:/usr/local/share/npm/bin:/usr/local/heroku/bin:/usr/local:/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:$PATH"
 #export MANPATH="/usr/local/man:/usr/local/mysql/man:/usr/local/git/man:$MANPATH"
 #export DYLD_LIBRARY_PATH="/usr/local/mysql/lib:$DYLD_LIBRARY_PATH"
 export MSGMERGE_PATH="/usr/local/Cellar/gettext/0.18.1.1/bin/msgmerge"
@@ -31,3 +34,9 @@ export MSGMERGE_PATH="/usr/local/Cellar/gettext/0.18.1.1/bin/msgmerge"
 # if [[ -a /etc/zshenv ]]; then
 #   sudo mv /etc/zshenv /etc/zprofile
 # fi
+
+source /usr/local/share/zsh/site-functions/_aws
+
+autoload bashcompinit
+bashcompinit
+source $HOME/.dotfiles/config/gh_complete.sh
