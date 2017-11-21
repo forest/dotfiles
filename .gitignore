@@ -1,1 +1,2 @@
-config/configstore
+# config folder (expept explicit adds)
+config

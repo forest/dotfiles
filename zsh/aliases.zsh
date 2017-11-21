@@ -21,6 +21,7 @@ alias g='git'
 alias gs='git status -sb'
 alias gcd='git checkout development'
 alias gcm='git checkout master'
+alias gpl='git pull'
 alias grm="git status | grep deleted | awk '{print \$3}' | xargs git rm"
 alias gch='git cherry -v origin/master'
 alias migrations='git diff --name-only master development | ack migrations'
