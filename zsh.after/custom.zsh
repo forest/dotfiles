@@ -11,7 +11,7 @@ export RUBY_GC_HEAP_INIT_SLOTS=40000
 
 # export RUBYLIB=/Applications/RubyMine.app/rb/testing/patch/common:/Applications/RubyMine.app/rb/testing/patch/bdd
 
-export GITHUB_TOKEN=1fc6b63fd0531c610b1a77883f42b2d85f767ff2
+export GITHUB_TOKEN=
 
 # load direnv
 # if which direnv > /dev/null; then eval "$(direnv hook zsh)"; fi
