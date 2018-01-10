@@ -1,8 +1,8 @@
 # overrides
-alias ash='cat $yadr/zsh/aliases.zsh'  #alias show
-alias ashc='cat $HOME/.dotfiles/zsh.after/aliases.zsh'  #alias show custom
-alias ae='code $HOME/.dotfiles/zsh.after/aliases.zsh' #alias edit
-alias ar='source $HOME/.dotfiles/zsh.after/aliases.zsh'  #alias reload
+alias ash='cat $HOME/.dotfiles/zshrc.alias'  #alias show
+alias ashc='cat $HOME/.dotfiles/zshrc.alias'  #alias show custom
+alias ae='code $HOME/.dotfiles/zshrc.alias' #alias edit
+alias ar='source $HOME/.dotfiles/zshrc.alias'  #alias reload
 
 # ls
 # alias ls='ls -lAhFG'

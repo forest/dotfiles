@@ -214,7 +214,7 @@ zplug "plugins/dnf", from:oh-my-zsh
 # zplug "plugins/golang", from:oh-my-zsh
 zplug "plugins/nmap", from:oh-my-zsh
 zplug "plugins/sudo", from:oh-my-zsh
-zplug "plugins/tmux", from:oh-my-zsh
+# zplug "plugins/tmux", from:oh-my-zsh
 
 # Install plugins if there are plugins that have not been installed
 if ! zplug check --verbose; then
@@ -395,24 +395,24 @@ iterm-profile() {
 # =============================================================================
 
 # Load SSH and GPG agents via keychain.
-setup_agents() {
-  [[ $UID -eq 0 ]] && return
+# setup_agents() {
+#   [[ $UID -eq 0 ]] && return
 
-  local -a ssh_keys gpg_keys
-  ssh_keys=(~/.ssh/**/*pub(.N:r))
-  gpg_keys=$(gpg -K --with-colons 2>/dev/null | awk -F : '$1 == "sec" { print $5 }')
+#   local -a ssh_keys gpg_keys
+#   ssh_keys=(~/.ssh/**/*pub(.N:r))
+#   gpg_keys=$(gpg -K --with-colons 2>/dev/null | awk -F : '$1 == "sec" { print $5 }')
 
-  if which keychain > /dev/null 2>&1; then
-    if (( $#ssh_keys > 0 )) || (( $#gpg_keys > 0 )); then
-	  #alias keychain='() { $(whence -p keychain) --quiet --eval --inherit any-once --agents ssh,gpg $ssh_keys ${(f)gpg_keys} }'
-	  alias run_agent='() { $(whence -p keychain) --quiet --eval --inherit any-once --agents ssh,gpg $ssh_keys ${(f)gpg_keys} }'
-	  #[[ -t ${fd:-0} || -p /dev/stdin ]] && eval "$keychain)"
-	  [[ -t ${fd:-0} || -p /dev/stdin ]] && eval $keychain
-    fi
-  fi
-}
-setup_agents
-unfunction setup_agents
+#   if which keychain > /dev/null 2>&1; then
+#     if (( $#ssh_keys > 0 )) || (( $#gpg_keys > 0 )); then
+# 	  #alias keychain='() { $(whence -p keychain) --quiet --eval --inherit any-once --agents ssh,gpg $ssh_keys ${(f)gpg_keys} }'
+# 	  alias run_agent='() { $(whence -p keychain) --quiet --eval --inherit any-once --agents ssh,gpg $ssh_keys ${(f)gpg_keys} }'
+# 	  #[[ -t ${fd:-0} || -p /dev/stdin ]] && eval "$keychain)"
+# 	  [[ -t ${fd:-0} || -p /dev/stdin ]] && eval $keychain
+#     fi
+#   fi
+# }
+# setup_agents
+# unfunction setup_agents
 
 # Fixes for alt-backspace and arrows keys
 bindkey '^[^?' backward-kill-word
@@ -422,11 +422,6 @@ bindkey "^[[1;5D" backward-word
 # Source local customizations.
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
 [[ -f ~/.zshrc.alias ]] && source ~/.zshrc.alias
-
-# load extra files
-source $HOME/.dotfiles/zsh/base.zsh
-source $HOME/.dotfiles/zsh/custom.zsh
-source $HOME/.dotfiles/zsh/aliases.zsh
 
 # init stuff
 eval "$(fasd --init auto)"
