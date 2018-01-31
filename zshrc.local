@@ -31,6 +31,7 @@ export MSGMERGE_PATH="/usr/local/Cellar/gettext/0.18.1.1/bin/msgmerge"
 # fi
 
 # source /usr/local/share/zsh/site-functions/_aws
+# /usr/local/homebrew/share/zsh/site-functions
 
 test -s "$HOME/.kiex/scripts/kiex" && source "$HOME/.kiex/scripts/kiex"
 
@@ -57,5 +58,5 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 
 # asdf: extendable version manager
 # Supported languages include Ruby, Node.js, Elixir and more.
-# source $HOME/.asdf/asdf.sh
-# source $HOME/.asdf/completions/asdf.bash
+source $HOME/.asdf/asdf.sh
+source $HOME/.asdf/completions/asdf.bash

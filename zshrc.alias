@@ -1,6 +1,5 @@
 # overrides
 alias ash='cat $HOME/.dotfiles/zshrc.alias'  #alias show
-alias ashc='cat $HOME/.dotfiles/zshrc.alias'  #alias show custom
 alias ae='code $HOME/.dotfiles/zshrc.alias' #alias edit
 alias ar='source $HOME/.dotfiles/zshrc.alias'  #alias reload
 
@@ -45,7 +44,6 @@ function gistf() { g diff -- "$1" | gist -po -tdiff -d"$2" }
 # rails
 alias rc='rails console'
 alias rs='rails server thin'
-alias rg='rails generate'
 alias rdb='rails dbconsole'
 alias tlog='tail -f log/development.log'
 alias migrate='rake db:migrate db:test:clone'
