@@ -9,7 +9,11 @@
 # brew install erlang
 
 # https://github.com/taylor/kiex
-curl -sSL https://raw.githubusercontent.com/taylor/kiex/master/install | bash -s
+# curl -sSL https://raw.githubusercontent.com/taylor/kiex/master/install | bash -s
 
-kiex install master
-kiex use master
+# kiex install master
+# kiex use master
+
+# Cheat Sheets
+curl https://cht.sh/:cht.sh > ~/bin/cht.sh
+chmod +x ~/bin/cht.sh

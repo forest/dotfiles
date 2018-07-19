@@ -60,3 +60,9 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 # Supported languages include Ruby, Node.js, Elixir and more.
 source $HOME/.asdf/asdf.sh
 source $HOME/.asdf/completions/asdf.bash
+
+source <(kubectl completion zsh)
+# source <(jx completion zsh)
+
+# add completions
+fpath=($HOME/.dotfiles/zsh.d/ $fpath)
