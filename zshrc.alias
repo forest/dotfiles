@@ -174,12 +174,6 @@ alias fsn='foreman start neo4j'
 # fasd
 alias j='z'
 
-# office machines
-# alias ldbmaster='ssh dbmaster1.lessonplanet.com'
-# alias ldbslave='ssh dbslave1.lessonplanet.com'
-# alias llb1='ssh lb1.lessonplanet.com'
-# alias lredis='ssh redis1.lessonplanet.com'
-
 # sshuttle
 alias tunnel='sshuttle --dns -vvr forest@ci-builder1.lessonplanet.com:2222 0/0'
 alias tunneld='sshuttle --dns --daemon --pidfile=/tmp/sshuttle.pid --remote=forest@ci-builder1.lessonplanet.com:2222 0/0'
@@ -202,3 +196,18 @@ alias ackr='ack --ruby'
 # https://github.com/robbyrussell/oh-my-zsh/issues/31
 # noglob Filename generation (globbing) is not performed on any of the words.
 alias curl='noglob curl'
+
+# Docker-compose
+alias dco='docker-compose'
+alias dcb='docker-compose build'
+alias dce='docker-compose exec'
+alias dcps='docker-compose ps'
+alias dcrm='docker-compose rm'
+alias dcr='docker-compose run'
+alias dcstop='docker-compose stop'
+alias dcup='docker-compose up'
+alias dcupd='docker-compose up -d'
+alias dcdn='docker-compose down'
+alias dcl='docker-compose logs'
+alias dclf='docker-compose logs -f'
+alias dcstart='docker-compose start'

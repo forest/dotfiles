@@ -425,3 +425,5 @@ bindkey "^[[1;5D" backward-word
 
 # init stuff
 eval "$(fasd --init auto)"
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"

@@ -61,8 +61,10 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 source $HOME/.asdf/asdf.sh
 source $HOME/.asdf/completions/asdf.bash
 
+# k8s
 source <(kubectl completion zsh)
-# source <(jx completion zsh)
+function kubectl() { echo "+ kubectl $@"; command kubectl $@; }
+[[ -f ~/.kubectl.alias ]] && source ~/.kubectl.alias
 
 # add completions
 fpath=($HOME/.dotfiles/zsh.d/ $fpath)
