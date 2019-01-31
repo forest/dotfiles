@@ -15,6 +15,9 @@ alias tu='top -o cpu'
 alias myip='curl ifconfig.me'
 alias hosts='sudo code /private/etc/hosts'
 
+# make
+alias m='make'
+
 # git (not in oh-my-zsh or yard)
 alias g='git'
 alias gs='git status -sb'
