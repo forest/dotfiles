@@ -8,7 +8,10 @@
 # Fancy globbing http://linuxshellaccount.blogspot.com/2008/07/fancy-globbing-with-zsh-on-linux-and.html
 # setopt extendedglob
 
+# Golang
 export GOPATH=$HOME/.go
+export GOROOT=$(go env GOROOT)
+
 export GOOGLE_CLOUD_SDK_PATH=$HOME/code/google-cloud-sdk
 # export JAVA_HOME=$(/usr/libexec/java_home)
 # export PHPPATH=$(brew --prefix homebrew/php/php56)
@@ -16,7 +19,7 @@ export GOOGLE_CLOUD_SDK_PATH=$HOME/code/google-cloud-sdk
 # export HOMEBREW_CELLAR=/usr/local/Cellar
 export ERL_LIBS=$HOME/.kiex/elixirs/elixir-master/lib/elixir/lib
 
-export PATH="./bin:./.bin:$HOME/bin:$HOME/.bin:/usr/local/homebrew/bin:$GOPATH/bin:$GOOGLE_CLOUD_SDK_PATH/bin:/usr/local:/usr/local/bin:/usr/local/sbin:$PATH"
+export PATH="./bin:./.bin:$HOME/bin:$HOME/.bin:/usr/local/homebrew/bin:$GOPATH/bin:$GOROOT/bin:$GOOGLE_CLOUD_SDK_PATH/bin:/usr/local:/usr/local/bin:/usr/local/sbin:$PATH"
 #export MANPATH="/usr/local/man:/usr/local/mysql/man:/usr/local/git/man:$MANPATH"
 #export DYLD_LIBRARY_PATH="/usr/local/mysql/lib:$DYLD_LIBRARY_PATH"
 export MSGMERGE_PATH="/usr/local/Cellar/gettext/0.18.1.1/bin/msgmerge"
