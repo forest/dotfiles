@@ -214,3 +214,6 @@ alias dcdn='docker-compose down'
 alias dcl='docker-compose logs'
 alias dclf='docker-compose logs -f'
 alias dcstart='docker-compose start'
+
+# cognizant-softvision
+alias devup="docker run -it --rm -v $HOME/code/cognizant-softvision:/code -v $HOME/.ssh:/root/.ssh registry.gitlab.com/cognizant-softvision/workspace-setup:latest --projectbase '/code'"
