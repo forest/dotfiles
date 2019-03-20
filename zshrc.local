@@ -10,7 +10,7 @@
 
 # Golang
 export GOPATH=$HOME/.go
-export GOROOT=$(go env GOROOT)
+#export GOROOT=$(go env GOROOT)
 
 export GOOGLE_CLOUD_SDK_PATH=$HOME/code/google-cloud-sdk
 # export JAVA_HOME=$(/usr/libexec/java_home)
