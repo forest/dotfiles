@@ -185,7 +185,7 @@ zplug "bhilburn/powerlevel9k", use:powerlevel9k.zsh-theme, at:next
 zplug "seebi/dircolors-solarized", ignore:"*", as:plugin
 # zplug "zsh-users/zsh-autosuggestions", at:develop
 # zplug "zsh-users/zsh-completions", defer:2
-# zplug "zsh-users/zsh-history-substring-search"
+zplug "zsh-users/zsh-history-substring-search"
 # zplug "zsh-users/zsh-syntax-highlighting", defer:2
 
 
@@ -193,26 +193,21 @@ zplug "seebi/dircolors-solarized", ignore:"*", as:plugin
 # Set the priority when loading
 # after executing compinit command and sourcing other plugins
 # (If the defer tag is given 2 or above, run after compinit command)
-zplug "modules/autosuggestions", from:prezto, defer:2
 zplug "modules/completion", from:prezto
 zplug "modules/directory", from:prezto
 zplug "modules/fasd", from:prezto
 zplug "modules/git", from:prezto
-zplug "modules/history-substring-search", from:prezto
-zplug "modules/history", from:prezto
 zplug "modules/homebrew", from:prezto
 zplug "modules/osx", from:prezto
 zplug "modules/ruby", from:prezto
 zplug "modules/ssh", from:prezto
 zplug "modules/terminal", from:prezto
-zplug "modules/utility", from:prezto
 zplug "zdharma/fast-syntax-highlighting", defer:2
 
 # Supports oh-my-zsh plugins and the like
 zplug "plugins/dnf", from:oh-my-zsh
 # zplug "plugins/go", from:oh-my-zsh
 # zplug "plugins/golang", from:oh-my-zsh
-zplug "plugins/nmap", from:oh-my-zsh
 zplug "plugins/sudo", from:oh-my-zsh
 # zplug "plugins/tmux", from:oh-my-zsh
 
