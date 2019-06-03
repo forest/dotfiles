@@ -189,7 +189,6 @@ zplug "seebi/dircolors-solarized", ignore:"*", as:plugin
 zplug "zsh-users/zsh-history-substring-search"
 # zplug "zsh-users/zsh-syntax-highlighting", defer:2
 
-
 # Also prezto
 # Set the priority when loading
 # after executing compinit command and sourcing other plugins
@@ -211,6 +210,10 @@ zplug "plugins/dnf", from:oh-my-zsh
 # zplug "plugins/golang", from:oh-my-zsh
 zplug "plugins/sudo", from:oh-my-zsh
 # zplug "plugins/tmux", from:oh-my-zsh
+zplug "plugins/docker", from:oh-my-zsh
+zplug "plugins/docker-compose", from:oh-my-zsh
+
+zplug "nocttuam/autodotenv", use:autoenv.plugin.zsh
 
 # Install plugins if there are plugins that have not been installed
 if ! zplug check --verbose; then
