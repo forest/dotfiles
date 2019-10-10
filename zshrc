@@ -213,7 +213,7 @@ zplug "plugins/sudo", from:oh-my-zsh
 zplug "plugins/docker", from:oh-my-zsh
 zplug "plugins/docker-compose", from:oh-my-zsh
 
-zplug "nocttuam/autodotenv", use:autoenv.plugin.zsh
+# zplug "nocttuam/autodotenv", use:autoenv.plugin.zsh
 
 # Install plugins if there are plugins that have not been installed
 if ! zplug check --verbose; then

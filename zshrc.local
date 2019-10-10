@@ -18,7 +18,7 @@ export GOPATH=$HOME/.go
 # export HOMEBREW_CELLAR=/usr/local/Cellar
 export ERL_LIBS=$HOME/.kiex/elixirs/elixir-master/lib/elixir/lib
 
-export PATH="./bin:./.bin:$HOME/bin:$HOME/.bin:/usr/local/homebrew/bin:$GOPATH/bin:$GOROOT/bin:$GOOGLE_CLOUD_SDK_PATH/bin:/usr/local:/usr/local/bin:/usr/local/sbin:$PATH"
+export PATH="./bin:./.bin:$HOME/bin:$HOME/.bin:/usr/local/homebrew/bin:$GOPATH/bin:$GOROOT/bin:$GOOGLE_CLOUD_SDK_PATH/bin:/usr/local:/usr/local/bin:/usr/local/sbin:/usr/local/share/dotnet:$HOME/.dotnet/tools:$PATH"
 #export MANPATH="/usr/local/man:/usr/local/mysql/man:/usr/local/git/man:$MANPATH"
 #export DYLD_LIBRARY_PATH="/usr/local/mysql/lib:$DYLD_LIBRARY_PATH"
 export MSGMERGE_PATH="/usr/local/Cellar/gettext/0.18.1.1/bin/msgmerge"
@@ -67,7 +67,7 @@ source $HOME/.asdf/completions/asdf.bash
 
 # k8s
 source <(kubectl completion zsh)
-function kubectl() { echo "+ kubectl $@"; command kubectl $@; }
+# function kubectl() { echo "+ kubectl $@"; command kubectl $@; }
 [[ -f ~/.kubectl.alias ]] && source ~/.kubectl.alias
 
 # add completions
