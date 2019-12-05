@@ -234,3 +234,8 @@ alias igl='kubectl -n istio-system logs $(kubectl -n istio-system get pods -list
 # Get the logs of the first istio-pilot pod
 # Shows issues with configurations or connecting to the Envoy proxies
 alias ipl='kubectl -n istio-system logs $(kubectl -n istio-system get pods -listio=pilot -o=jsonpath="{.items[0].metadata.name}") discovery --tail=300'
+
+# gitlab-runners
+alias gitlab-start='docker run -d --name gitlab-runner --restart always -v ~/.docker/config.json:/root/.docker/config.json -v /Users/forest/code/gitlab-runner/config:/etc/gitlab-runner -v /var/run/docker.sock:/var/run/docker.sock gitlab/gitlab-runner:alpine'
+alias gitlab-restart='docker restart gitlab-runner'
+alias gitlab-stop='docker stop gitlab-runner'
