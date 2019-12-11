@@ -21,9 +21,10 @@ alias m='make'
 # git (not in oh-my-zsh or yard)
 alias g='git'
 alias gs='git status -sb'
-alias gcd='git checkout development'
+alias gcd='git checkout dev'
 alias gcm='git checkout master'
 alias gpl='git pull'
+alias gplr='git pull --rebase'
 alias grm="git status | grep deleted | awk '{print \$3}' | xargs git rm"
 alias gch='git cherry -v origin/master'
 alias migrations='git diff --name-only master development | ack migrations'
@@ -35,7 +36,7 @@ alias gm='git merge --no-ff'
 # git-process
 alias gnf='git-new-fb'
 alias gsy='git-sync'
-alias gpr='git-pull-req'
+#alias gpr='git-pull-req'
 
 # ruby-appraiser
 alias check='ruby-appraiser --mode=last --all'
@@ -239,3 +240,7 @@ alias ipl='kubectl -n istio-system logs $(kubectl -n istio-system get pods -list
 alias gitlab-start='docker run -d --name gitlab-runner --restart always -v ~/.docker/config.json:/root/.docker/config.json -v /Users/forest/code/gitlab-runner/config:/etc/gitlab-runner -v /var/run/docker.sock:/var/run/docker.sock gitlab/gitlab-runner:alpine'
 alias gitlab-restart='docker restart gitlab-runner'
 alias gitlab-stop='docker stop gitlab-runner'
+
+# PennyMac VPN
+alias pnmac-vpn-off='sudo route -n change -net default 192.168.86.1'
+alias pnmac-vpn-on='sudo route -n change -net default 10.3.220.229'
