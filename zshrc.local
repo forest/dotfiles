@@ -23,6 +23,8 @@ export PATH="./bin:./.bin:$HOME/bin:$HOME/.bin:/usr/local/homebrew/bin:$GOPATH/b
 #export DYLD_LIBRARY_PATH="/usr/local/mysql/lib:$DYLD_LIBRARY_PATH"
 export MSGMERGE_PATH="/usr/local/Cellar/gettext/0.18.1.1/bin/msgmerge"
 
+export PLUG_EDITOR='vscode://file/__FILE__:__LINE__'
+
 # use .localrc for settings specific to one system
 [[ -f ~/.localrc ]] && source ~/.localrc
 
