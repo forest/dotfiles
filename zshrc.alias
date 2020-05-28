@@ -37,6 +37,9 @@ alias gm='git merge --no-ff'
 alias gnf='git-new-fb'
 alias gsy='git-sync'
 #alias gpr='git-pull-req'
+alias gib='git config gitProcess.integrationBranch $1'
+alias gib-dev='git config gitProcess.integrationBranch dev'
+alias gib-master='git config gitProcess.integrationBranch master'
 
 # ruby-appraiser
 alias check='ruby-appraiser --mode=last --all'
