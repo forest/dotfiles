@@ -34,13 +34,12 @@ export PLUG_EDITOR='vscode://file/__FILE__:__LINE__'
 #   sudo mv /etc/zshenv /etc/zprofile
 # fi
 
-# source /usr/local/share/zsh/site-functions/_aws
-# /usr/local/homebrew/share/zsh/site-functions
+if type brew &>/dev/null; then
+  FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
 
-test -s "$HOME/.kiex/scripts/kiex" && source "$HOME/.kiex/scripts/kiex"
-
-autoload bashcompinit
-bashcompinit
+  autoload -Uz compinit
+  compinit
+fi
 
 export VISUAL="/usr/local/bin/code"
 export EDITOR="/usr/local/bin/code"
@@ -63,9 +62,10 @@ fi
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 # asdf: extendable version manager
-# Supported languages include Ruby, Node.js, Elixir and more.
-source $HOME/.asdf/asdf.sh
-source $HOME/.asdf/completions/asdf.bash
+source $(brew --prefix asdf)/asdf.sh
+
+# direnv
+eval "$(direnv hook zsh)"
 
 # k8s
 source <(kubectl completion zsh)
