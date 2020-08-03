@@ -1,0 +1,79 @@
+[include]
+  path = ~/.gitconfig.local
+[init]
+  templatedir = ~/.git_template
+[core]
+  editor = /usr/local/bin/nvim
+  pager = diff-so-fancy | less --tabs=4 -RFX
+[alias]
+  r = !GIT_NO_PAGER=1 git l -30
+  ra = !git r --all
+  l = !git pretty-log
+  la = !git l --all
+  co = checkout
+  cl = clone
+  c  = commit
+  a  = add
+  aa = add -A
+  ap = add --patch
+  addup = remote add upstream
+  f = fetch
+  fu = fetch upstream
+  d  = diff
+  ds = diff --staged
+  wip = commit -m "WIP"
+  graft = merge --no-ff
+  rb = rebase
+  grog = log --graph --abbrev-commit --decorate --all --format=format:\"%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(dim white) - %an%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n %C(white)%s%C(reset)\"
+[color]
+  ui = auto
+[color "diff"]
+  meta = yellow bold
+  commit = green
+  frag = magenta bold
+  old = red bold
+  new = green
+  whitespace = red reverse
+[color "diff-highlight"]
+  oldNormal = red bold
+  oldHighlight = "red bold 52"
+  newNormal = "green"
+  newHighlight = "green 22"
+[color "branch"]
+  current = yellow reverse
+  local = yellow
+  remote = green
+[color "status"]
+  added = yellow
+  changed = green
+  untracked = cyan
+[commit]
+  template = ~/.gitmessage
+	gpgsign = false
+[diff]
+  compactionHeuristic = true
+[rebase]
+  autosquash = true
+[pager]
+  log  = diff-highlight | less
+  diff = diff-so-fancy | less --tabs=4 -RFX
+  show = diff-so-fancy | less --tabs=4 -RFX
+; [interactive]
+;   diffFilter = "diff-so-fancy"
+[color "diff-highlight"]
+  oldNormal = red bold
+  oldHighlight = red bold 52
+  newNormal = green
+  newHighlight = green 22
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[user]
+  name = Forest Carlisle
+  email = forestcarlisle@gmail.com
+[github]
+	user = forest
+[hub]
+  protocol = https

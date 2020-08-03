@@ -1,0 +1,21 @@
+#!/bin/bash
+
+BRANCH_PREFIX="%(HEAD)"
+BRANCH_REF="%(color:red)%(color:bold)%(refname:short)%(color:reset)"
+BRANCH_HASH="%(color:yellow)%(objectname:short)%(color:reset)"
+BRANCH_DATE="%(color:green)(%(committerdate:relative))%(color:reset)"
+BRANCH_AUTHOR="%(color:blue)%(color:bold)<%(authorname)>%(color:reset)"
+BRANCH_CONTENTS="%(contents:subject)"
+
+BRANCH_FORMAT="$BRANCH_PREFIX}$BRANCH_REF}$BRANCH_HASH}$BRANCH_DATE}$BRANCH_AUTHOR}$BRANCH_CONTENTS"
+
+format() {
+  # Replace (2 years ago) with (2 years)
+  sed -Ee 's/(^[^<]*) ago\)/\1)/' |
+  # Replace (2 years, 5 months) with (2 years)
+  sed -Ee 's/(^[^<]*), [[:digit:]]+ .*months?\)/\1)/' |
+  # Line columns up based on } delimiter
+  column -s '}' -t
+}
+
+git branch -v --color=always --format=${BRANCH_FORMAT} --sort=-committerdate $* | format
