@@ -1,12 +1,5 @@
 function gpc -d 'Push current branch to origin'
-  git push origin (__fish_git_current_branch) $argv
-end
-
-function __fish_git_current_head
-  git symbolic-ref HEAD ^ /dev/null
-  or git describe --contains --all HEAD
-end
-
-function __fish_git_current_branch
-  __fish_git_current_head | sed -e "s#^refs/heads/##"
+    git_is_repo; and begin
+        command git push origin (git_branch_name) $argv
+    end
 end
