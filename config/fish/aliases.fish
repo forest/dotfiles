@@ -1,9 +1,19 @@
-function ..    ; cd .. ; end
-function ...   ; cd ../.. ; end
-function ....  ; cd ../../.. ; end
-function ..... ; cd ../../../.. ; end
+function ..
+    cd ..
+end
+function ...
+    cd ../..
+end
+function ....
+    cd ../../..
+end
+function .....
+    cd ../../../..
+end
 
-function grep     ; command grep --color=auto $argv ; end
+function grep
+    command grep --color=auto $argv
+end
 
 alias i='iex'
 alias im='iex -S mix'
@@ -24,7 +34,7 @@ alias gl='git log'
 alias gpr="git pull-request -o"
 alias gcm="git remote show origin | awk '/HEAD branch:/ {print \$3}' | xargs git checkout"
 alias gcd='git checkout dev'
-#alias gpl='git pull'
+alias gpl='git pull'
 alias gplr='git pull --rebase'
 
 # git-process
@@ -44,9 +54,9 @@ alias bi="bundle install"
 # alias tea="tc start 3 --growl --beep"
 
 # alias
-alias ash='cat $HOME/dotfiles/config/fish/aliases.fish'  #alias show
+alias ash='cat $HOME/dotfiles/config/fish/aliases.fish' #alias show
 alias ae='code $HOME/dotfiles/config/fish/aliases.fish' #alias edit
-alias ar='source $HOME/dotfiles/config/fish/aliases.fish'  #alias reload
+alias ar='source $HOME/dotfiles/config/fish/aliases.fish' #alias reload
 
 # shell
 alias reload='exec $SHELL'
