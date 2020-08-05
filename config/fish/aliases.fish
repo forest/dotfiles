@@ -41,7 +41,6 @@ alias gplr='git pull --rebase'
 alias gnf='git-new-fb'
 alias gsy='git-sync'
 #alias gpr='git-pull-req'
-alias gib='git config gitProcess.integrationBranch $1'
 
 # Bundler
 alias be="bundle exec"
