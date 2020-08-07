@@ -7,7 +7,6 @@ add_newline = false
 prompt_order = [
   "username",
   "hostname",
-  "kubernetes",
   "directory",
   "git_branch",
   "git_commit",
@@ -37,6 +36,7 @@ prompt_order = [
   # "conda",
   "memory_usage",
   # "aws",
+  "kubernetes",
   "env_var",
   # "crystal",
   "cmd_duration",
@@ -51,6 +51,6 @@ prompt_order = [
 # Wait 10 milliseconds for starship to check files under the current directory.
 scan_timeout = 10
 
-# [kubernetes]
-# disabled = true
+[kubernetes]
+disabled = false
 # symbol = "⛵ "

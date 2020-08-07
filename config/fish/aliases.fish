@@ -21,7 +21,7 @@ alias m='mix'
 alias mr='mix run'
 alias mt='mix test'
 alias mtf='mix test --only focus:true'
-alias mps='mix phoenix.server'
+alias mps='mix phx.server'
 alias mdg='mix deps.get'
 alias mc='mix compile'
 
@@ -54,8 +54,7 @@ alias bi="bundle install"
 
 # alias
 alias ash='cat $HOME/dotfiles/config/fish/aliases.fish' #alias show
-alias ae='code $HOME/dotfiles/config/fish/aliases.fish' #alias edit
-alias ar='source $HOME/dotfiles/config/fish/aliases.fish' #alias reload
+alias de='code $HOME/dotfiles' # dotfiles edit
 
 # shell
 alias reload='exec $SHELL'
