@@ -81,6 +81,9 @@ if ! command -v rustup > /dev/null
 then
   fancy_echo "Installing rustup..."
   curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+
+  fancy_echo "Installing rust apps..."
+  cargo install tealdeer
 fi
 
 # if [[ ! $(psql -U postgres -c '\du' | grep 'postgres') ]]
