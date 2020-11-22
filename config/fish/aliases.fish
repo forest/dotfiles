@@ -24,6 +24,7 @@ alias mtf='mix test --only focus:true'
 alias mps='mix phx.server'
 alias mdg='mix deps.get'
 alias mc='mix compile'
+alias mqc='mix qc'
 
 # git
 alias gb='git branch'

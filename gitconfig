@@ -72,9 +72,11 @@
 	process = git-lfs filter-process
 	required = true
 [user]
-  name = Forest Carlisle
+	name = Forest Carlisle
   email = forestcarlisle@gmail.com
 [github]
 	user = forest
 [hub]
   protocol = https
+[gitProcess]
+	keepLocalIntegrationBranch = true
