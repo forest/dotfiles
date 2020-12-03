@@ -1,3 +1,4 @@
 lists/*.todo
 
 config/fish/functions/private
+Brewfile.lock.json

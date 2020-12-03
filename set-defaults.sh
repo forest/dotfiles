@@ -8,7 +8,7 @@ sudo -v
 defaults write -g ApplePressAndHoldEnabled -bool false
 
 # Open Finders in list view.
-defaults write com.apple.Finder FXPreferredViewStyle Nlsv
+# defaults write com.apple.Finder FXPreferredViewStyle Nlsv
 
 # Show the ~/Library folder.
 chflags nohidden ~/Library

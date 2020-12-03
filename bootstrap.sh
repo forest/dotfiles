@@ -77,21 +77,6 @@ then
   asdf plugin-add ruby https://github.com/asdf-vm/asdf-ruby.git
 fi
 
-if ! command -v rustup > /dev/null
-then
-  fancy_echo "Installing rustup..."
-  curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-
-  fancy_echo "Installing rust apps..."
-  cargo install tealdeer
-fi
-
-# if [[ ! $(psql -U postgres -c '\du' | grep 'postgres') ]]
-# then
-#   fancy_echo "Setting up postgres"
-#   createuser -s postgres
-# fi
-
 if grep -Fxq "$(which fish)" /etc/shells
 then
     fancy_echo "Already set up fish shell"
@@ -107,3 +92,20 @@ case "$SHELL" in
       chsh -s "$(which fish)"
     ;;
 esac
+
+if ! command -v rustup > /dev/null
+then
+  fancy_echo "Installing rustup..."
+  curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+
+  fancy_echo "Installing rust apps..."
+  cargo install tealdeer
+fi
+
+if [[ ! $(psql -U postgres -c '\du' | grep 'postgres') ]]
+then
+  fancy_echo "Setting up postgres"
+  ln -sfv /usr/local/opt/postgresql/*.plist ~/Library/LaunchAgents
+  launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
+  createuser -s postgres
+fi
