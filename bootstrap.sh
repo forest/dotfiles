@@ -105,7 +105,8 @@ fi
 if [[ ! $(psql -U postgres -c '\du' | grep 'postgres') ]]
 then
   fancy_echo "Setting up postgres"
-  ln -sfv /usr/local/opt/postgresql/*.plist ~/Library/LaunchAgents
-  launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
+  # ln -sfv /usr/local/opt/postgresql/*.plist ~/Library/LaunchAgents
+  # launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
+  pg_ctl -D /usr/local/var/postgres start
   createuser -s postgres
 fi

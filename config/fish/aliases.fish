@@ -68,8 +68,8 @@ alias hosts='sudo code /private/etc/hosts'
 alias m='make'
 
 # postgress
-alias pgst='launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist'
-alias pgsp='launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist'
+alias pgst='pg_ctl -D /usr/local/var/postgres start'
+alias pgsp='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
 
 # cognizant-softvision
 # https://github.com/uber-common/docker-ssh-agent-forward
