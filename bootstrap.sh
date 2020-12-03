@@ -77,6 +77,13 @@ then
   asdf plugin-add ruby https://github.com/asdf-vm/asdf-ruby.git
 fi
 
+if ! asdf plugin-list | grep nodejs > /dev/null
+then
+  fancy_echo "Installing nodejs asdf plugin..."
+  bash -c '${ASDF_DATA_DIR:=$HOME/.asdf}/plugins/nodejs/bin/import-release-team-keyring'
+  asdf plugin-add nodejs https://github.com/asdf-vm/asdf-nodejs.git
+fi
+
 if grep -Fxq "$(which fish)" /etc/shells
 then
     fancy_echo "Already set up fish shell"

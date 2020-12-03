@@ -28,10 +28,9 @@ brew 'the_silver_searcher'
 #brew 'vim'#, args: ['with-lua', 'with-luajit']
 #brew 'neovim'
 brew 'wget'
+brew 'gpg'
 
 #cask 'docker'
-#cask 'gpg-suite'
-#cask 'iterm2'
 #cask 'ngrok'
 #cask 'google-cloud-sdk'
 #cask 'dbeaver-community'
