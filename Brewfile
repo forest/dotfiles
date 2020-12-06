@@ -29,6 +29,7 @@ brew 'the_silver_searcher'
 #brew 'neovim'
 brew 'wget'
 brew 'gpg'
+brew 'openjdk'
 
 #cask 'docker'
 #cask 'ngrok'
