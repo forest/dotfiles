@@ -84,6 +84,12 @@ then
   asdf plugin-add nodejs https://github.com/asdf-vm/asdf-nodejs.git
 fi
 
+if ! asdf plugin-list | grep direnv > /dev/null
+then
+  fancy_echo "Installing direnv asdf plugin..."
+  asdf plugin-add direnv https://github.com/asdf-community/asdf-direnv
+fi
+
 if grep -Fxq "$(which fish)" /etc/shells
 then
     fancy_echo "Already set up fish shell"

@@ -80,3 +80,5 @@
   protocol = https
 [gitProcess]
 	keepLocalIntegrationBranch = true
+[pull]
+	rebase = true
