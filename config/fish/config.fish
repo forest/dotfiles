@@ -2,6 +2,7 @@ source ~/.config/fish/path.fish
 source ~/.config/fish/aliases.fish
 source (brew --prefix asdf)/asdf.fish
 starship init fish | source
+direnv hook fish | source
 
 if test -e ~/.localenv
     source ~/.localenv
