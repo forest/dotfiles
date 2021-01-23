@@ -146,7 +146,7 @@
 			<key>Git</key>
 			<dict>
 				<key>date</key>
-				<date>2021-01-09T17:45:28Z</date>
+				<date>2021-01-23T16:00:11Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -562,7 +562,7 @@
 			<key>absinthe</key>
 			<dict>
 				<key>date</key>
-				<date>2021-01-09T17:46:03Z</date>
+				<date>2021-01-16T23:02:41Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -646,7 +646,7 @@
 			<key>ecto</key>
 			<dict>
 				<key>date</key>
-				<date>2021-01-09T17:45:35Z</date>
+				<date>2021-01-21T15:33:43Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -660,7 +660,7 @@
 			<key>ecto_sql</key>
 			<dict>
 				<key>date</key>
-				<date>2021-01-09T17:45:54Z</date>
+				<date>2021-01-21T15:33:43Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -683,6 +683,20 @@
 					<string>hex</string>
 					<key>uniqueIdentifier</key>
 					<string>ex_machina</string>
+				</dict>
+			</dict>
+			<key>finch</key>
+			<dict>
+				<key>date</key>
+				<date>2021-01-22T06:29:31Z</date>
+				<key>entry</key>
+				<dict>
+					<key>name</key>
+					<string>finch</string>
+					<key>platform</key>
+					<string>hex</string>
+					<key>uniqueIdentifier</key>
+					<string>finch</string>
 				</dict>
 			</dict>
 			<key>flow</key>
@@ -725,6 +739,20 @@
 					<string>hex</string>
 					<key>uniqueIdentifier</key>
 					<string>jason</string>
+				</dict>
+			</dict>
+			<key>mint</key>
+			<dict>
+				<key>date</key>
+				<date>2021-01-22T06:29:39Z</date>
+				<key>entry</key>
+				<dict>
+					<key>name</key>
+					<string>mint</string>
+					<key>platform</key>
+					<string>hex</string>
+					<key>uniqueIdentifier</key>
+					<string>mint</string>
 				</dict>
 			</dict>
 			<key>mix_test_watch</key>
@@ -884,7 +912,7 @@
 			<key>phoenix_swagger</key>
 			<dict>
 				<key>date</key>
-				<date>2021-01-09T17:45:56Z</date>
+				<date>2021-01-15T23:00:07Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
