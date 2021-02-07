@@ -562,7 +562,7 @@
 			<key>absinthe</key>
 			<dict>
 				<key>date</key>
-				<date>2021-01-16T23:02:41Z</date>
+				<date>2021-02-05T17:00:16Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -618,7 +618,7 @@
 			<key>credo</key>
 			<dict>
 				<key>date</key>
-				<date>2021-01-09T17:45:55Z</date>
+				<date>2021-02-06T17:00:13Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -646,7 +646,7 @@
 			<key>ecto</key>
 			<dict>
 				<key>date</key>
-				<date>2021-01-21T15:33:43Z</date>
+				<date>2021-02-07T17:33:36Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -716,7 +716,7 @@
 			<key>gen_stage</key>
 			<dict>
 				<key>date</key>
-				<date>2021-01-09T17:45:52Z</date>
+				<date>2021-02-05T17:00:15Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -744,7 +744,7 @@
 			<key>mint</key>
 			<dict>
 				<key>date</key>
-				<date>2021-01-22T06:29:39Z</date>
+				<date>2021-02-05T17:00:16Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -814,7 +814,7 @@
 			<key>oban</key>
 			<dict>
 				<key>date</key>
-				<date>2021-01-09T17:45:35Z</date>
+				<date>2021-02-07T17:33:37Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -884,7 +884,7 @@
 			<key>phoenix_live_view</key>
 			<dict>
 				<key>date</key>
-				<date>2021-01-09T17:45:49Z</date>
+				<date>2021-01-27T16:00:11Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -991,6 +991,20 @@
 					<string>hex</string>
 					<key>uniqueIdentifier</key>
 					<string>telemetry</string>
+				</dict>
+			</dict>
+			<key>triplex</key>
+			<dict>
+				<key>date</key>
+				<date>2021-02-04T06:03:47Z</date>
+				<key>entry</key>
+				<dict>
+					<key>name</key>
+					<string>triplex</string>
+					<key>platform</key>
+					<string>hex</string>
+					<key>uniqueIdentifier</key>
+					<string>triplex</string>
 				</dict>
 			</dict>
 		</dict>

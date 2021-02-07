@@ -30,3 +30,6 @@ export VISUAL="code"
 set -g fish_user_paths "/usr/local/opt/gettext/bin" $fish_user_paths
 export ERL_AFLAGS="-kernel shell_history enabled"
 export FZF_DEFAULT_OPTS='--height 30%'
+
+# build Erlang with docs
+export KERL_BUILD_DOCS="yes"
