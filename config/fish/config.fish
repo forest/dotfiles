@@ -1,6 +1,7 @@
 source ~/.config/fish/path.fish
 source ~/.config/fish/aliases.fish
 source (brew --prefix asdf)/asdf.fish
+
 starship init fish | source
 direnv hook fish | source
 
@@ -33,3 +34,8 @@ export FZF_DEFAULT_OPTS='--height 30%'
 
 # build Erlang with docs
 export KERL_BUILD_DOCS="yes"
+
+# set JDK_HOME / JAVA_HOME
+# source ~/.asdf/plugins/java/set-java-home.fish
+set -gx JDK_HOME (dirname (dirname (asdf which java)))
+set -gx JAVA_HOME (dirname (dirname (asdf which java)))
