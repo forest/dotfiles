@@ -37,5 +37,7 @@ export KERL_BUILD_DOCS="yes"
 
 # set JDK_HOME / JAVA_HOME
 # source ~/.asdf/plugins/java/set-java-home.fish
-set -gx JDK_HOME (dirname (dirname (asdf which java)))
-set -gx JAVA_HOME (dirname (dirname (asdf which java)))
+if asdf which java 2>/dev/null
+    set -gx JDK_HOME (dirname (dirname (asdf which java)))
+    set -gx JAVA_HOME (dirname (dirname (asdf which java)))
+end
