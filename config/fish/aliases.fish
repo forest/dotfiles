@@ -40,9 +40,9 @@ alias gpl='git pull'
 alias gplr='git pull --rebase'
 
 # git-process
-alias gnf='git-new-fb'
-alias gsy='git-sync'
-#alias gpr='git-pull-req'
+# alias gnf='git-new-fb'
+# alias gsy='git-sync'
+# alias gpr='git-pull-req'
 
 # Bundler
 alias be="bundle exec"
