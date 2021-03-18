@@ -2,5 +2,4 @@ nodejs 12.11.1
 ruby 2.4.10
 elixir 1.11.3
 erlang 23.2
-direnv 2.21.3
 java adoptopenjdk-15.0.2+7

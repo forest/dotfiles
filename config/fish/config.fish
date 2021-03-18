@@ -28,7 +28,7 @@ set -gx LESS_TERMCAP_us \e'[04;38;5;146m' # begin underline
 export EDITOR="vim"
 export VISUAL="code"
 
-set -g fish_user_paths "/usr/local/opt/gettext/bin" $fish_user_paths
+set -g fish_user_paths /usr/local/opt/gettext/bin $fish_user_paths
 export ERL_AFLAGS="-kernel shell_history enabled"
 export FZF_DEFAULT_OPTS='--height 30%'
 
@@ -37,7 +37,7 @@ export KERL_BUILD_DOCS="yes"
 
 # set JDK_HOME / JAVA_HOME
 # source ~/.asdf/plugins/java/set-java-home.fish
-if asdf which java 2>/dev/null
-    set -gx JDK_HOME (dirname (dirname (asdf which java)))
-    set -gx JAVA_HOME (dirname (dirname (asdf which java)))
-end
+# if asdf which java 2>/dev/null
+#     set -gx JDK_HOME (dirname (dirname (asdf which java)))
+#     set -gx JAVA_HOME (dirname (dirname (asdf which java)))
+# end

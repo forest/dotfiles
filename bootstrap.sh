@@ -71,23 +71,17 @@ then
     asdf plugin-add erlang https://github.com/asdf-vm/asdf-erlang.git
 fi
 
-if ! asdf plugin-list | grep ruby > /dev/null
-then
-  fancy_echo "Installing ruby asdf plugin..."
-  asdf plugin-add ruby https://github.com/asdf-vm/asdf-ruby.git
-fi
+# if ! asdf plugin-list | grep ruby > /dev/null
+# then
+#   fancy_echo "Installing ruby asdf plugin..."
+#   asdf plugin-add ruby https://github.com/asdf-vm/asdf-ruby.git
+# fi
 
 if ! asdf plugin-list | grep nodejs > /dev/null
 then
   fancy_echo "Installing nodejs asdf plugin..."
-  bash -c '${ASDF_DATA_DIR:=$HOME/.asdf}/plugins/nodejs/bin/import-release-team-keyring'
   asdf plugin-add nodejs https://github.com/asdf-vm/asdf-nodejs.git
-fi
-
-if ! asdf plugin-list | grep direnv > /dev/null
-then
-  fancy_echo "Installing direnv asdf plugin..."
-  asdf plugin-add direnv https://github.com/asdf-community/asdf-direnv
+  bash -c '${ASDF_DATA_DIR:=$HOME/.asdf}/plugins/nodejs/bin/import-release-team-keyring'
 fi
 
 if grep -Fxq "$(which fish)" /etc/shells
@@ -115,11 +109,11 @@ then
   cargo install tealdeer
 fi
 
-if [[ ! $(psql -U postgres -c '\du' | grep 'postgres') ]]
-then
-  fancy_echo "Setting up postgres"
-  # ln -sfv /usr/local/opt/postgresql/*.plist ~/Library/LaunchAgents
-  # launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
-  pg_ctl -D /usr/local/var/postgres start
-  createuser -s postgres
-fi
+# if [[ ! $(psql -U postgres -c '\du' | grep 'postgres') ]]
+# then
+#   fancy_echo "Setting up postgres"
+#   # ln -sfv /usr/local/opt/postgresql/*.plist ~/Library/LaunchAgents
+#   # launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
+#   pg_ctl -D /usr/local/var/postgres start
+#   createuser -s postgres
+# fi
