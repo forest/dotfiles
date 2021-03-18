@@ -32,6 +32,7 @@ brew 'the_silver_searcher'
 brew 'wget'
 # brew 'gpg'
 
+cask 'hammerspoon'
 #cask 'docker'
 #cask 'ngrok'
 #cask 'google-cloud-sdk'
