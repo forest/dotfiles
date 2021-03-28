@@ -31,7 +31,7 @@ function gsy -d 'Sync branch with upstream integration branch.'
         command git fetch -p origin
 
         echo "Rebasing $current_branch against origin/$current_branch"
-        command git rebase "origin/$current_branch" 2>&1; or return
+        command git rebase "origin/$current_branch" 2>&1
 
         echo "Rebasing $current_branch against origin/$int_branch"
         command git rebase "origin/$int_branch" 2>&1; or return
