@@ -2,11 +2,11 @@
   path = ~/.gitconfig.local
 [init]
   templatedir = ~/.git_template
-	defaultBranch = main
+  defaultBranch = main
 [core]
   editor = /usr/local/bin/code
   pager = diff-so-fancy | less --tabs=4 -RFX
-	excludesFile = ~/.gitignore
+  excludesFile = ~/.gitignore
 [alias]
   r = !GIT_NO_PAGER=1 git l -30
   ra = !git r --all
@@ -51,7 +51,7 @@
   untracked = cyan
 [commit]
   template = ~/.gitmessage
-	gpgsign = false
+  gpgsign = false
 [diff]
   compactionHeuristic = true
 [rebase]
@@ -68,18 +68,24 @@
   newNormal = green
   newHighlight = green 22
 [filter "lfs"]
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
-	required = true
+  clean = git-lfs clean -- %f
+  smudge = git-lfs smudge -- %f
+  process = git-lfs filter-process
+  required = true
 [user]
-	name = Forest Carlisle
+  name = Forest Carlisle
   email = forestcarlisle@gmail.com
 [github]
-	user = forest
+  user = forest
 [hub]
   protocol = https
 [gitProcess]
-	keepLocalIntegrationBranch = true
+  keepLocalIntegrationBranch = true
 [pull]
-	rebase = true
+  rebase = true
+[difftool "sourcetree"]
+  cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+  path =
+[mergetool "sourcetree"]
+  cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+  trustExitCode = true
