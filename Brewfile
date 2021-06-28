@@ -33,6 +33,7 @@ brew 'wget'
 # brew 'gpg'
 
 cask 'hammerspoon'
+cask 'meetingbar'
 #cask 'docker'
 #cask 'ngrok'
 #cask 'google-cloud-sdk'
