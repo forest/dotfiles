@@ -1,6 +1,7 @@
 cask_args appdir: '/Applications'
 
 tap 'homebrew/bundle'
+tap 'homebrew/services'
 tap 'thoughtbot/formulae'
 
 brew 'ack'

@@ -11,3 +11,8 @@ set PATH $PATH \
     ~/.cargo/bin \
     $GOPATH \
     $GOPATH/bin
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f "$HOME/code/google-cloud-sdk/path.fish.inc" ]
+    . "$HOME/code/google-cloud-sdk/path.fish.inc"
+end
