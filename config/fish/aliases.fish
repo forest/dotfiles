@@ -38,6 +38,8 @@ alias gcm="git remote show origin | awk '/HEAD branch:/ {print \$3}' | xargs git
 alias gcd='git checkout dev'
 alias gpl='git pull'
 alias gplr='git pull --rebase'
+alias gsh='git stash'
+alias gshp='git stash pop'
 
 # git-process
 # alias gnf='git-new-fb'

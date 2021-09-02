@@ -1161,6 +1161,20 @@
 					<string>triplex</string>
 				</dict>
 			</dict>
+			<key>vapor</key>
+			<dict>
+				<key>date</key>
+				<date>2021-09-02T15:09:09Z</date>
+				<key>entry</key>
+				<dict>
+					<key>name</key>
+					<string>vapor</string>
+					<key>platform</key>
+					<string>hex</string>
+					<key>uniqueIdentifier</key>
+					<string>vapor</string>
+				</dict>
+			</dict>
 		</dict>
 		<key>uninstalled</key>
 		<dict/>
