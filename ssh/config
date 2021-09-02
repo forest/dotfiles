@@ -11,3 +11,9 @@ Host w.github.com
 	User git
 	IdentityFile ~/.ssh/w_id_ed25519
 	AddKeysToAgent yes
+
+Host github.com
+	HostName github.com
+	User git
+	IdentityFile ~/.ssh/w_id_ed25519
+	AddKeysToAgent yes
