@@ -562,7 +562,7 @@
 			<key>absinthe</key>
 			<dict>
 				<key>date</key>
-				<date>2021-08-03T17:16:52Z</date>
+				<date>2021-09-29T16:23:01Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -590,7 +590,7 @@
 			<key>broadway</key>
 			<dict>
 				<key>date</key>
-				<date>2021-08-30T15:35:56Z</date>
+				<date>2021-10-13T16:13:42Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -618,7 +618,7 @@
 			<key>credo</key>
 			<dict>
 				<key>date</key>
-				<date>2021-07-17T17:00:52Z</date>
+				<date>2021-09-24T21:13:52Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -660,7 +660,7 @@
 			<key>ecto_sql</key>
 			<dict>
 				<key>date</key>
-				<date>2021-08-20T16:17:22Z</date>
+				<date>2021-10-13T16:13:42Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -716,7 +716,7 @@
 			<key>finch</key>
 			<dict>
 				<key>date</key>
-				<date>2021-07-27T15:58:43Z</date>
+				<date>2021-10-17T16:40:01Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -744,7 +744,7 @@
 			<key>gen_stage</key>
 			<dict>
 				<key>date</key>
-				<date>2021-08-16T15:59:20Z</date>
+				<date>2021-10-08T20:23:28Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -786,7 +786,7 @@
 			<key>mint</key>
 			<dict>
 				<key>date</key>
-				<date>2021-07-17T17:00:51Z</date>
+				<date>2021-09-12T20:48:13Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -814,7 +814,7 @@
 			<key>money</key>
 			<dict>
 				<key>date</key>
-				<date>2021-07-17T17:00:44Z</date>
+				<date>2021-09-09T04:28:52Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -842,7 +842,7 @@
 			<key>new_relic_agent</key>
 			<dict>
 				<key>date</key>
-				<date>2021-08-04T23:16:04Z</date>
+				<date>2021-09-24T21:13:51Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -884,7 +884,7 @@
 			<key>oban</key>
 			<dict>
 				<key>date</key>
-				<date>2021-07-31T22:40:24Z</date>
+				<date>2021-09-28T16:23:09Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -926,7 +926,7 @@
 			<key>phoenix</key>
 			<dict>
 				<key>date</key>
-				<date>2021-08-27T15:59:56Z</date>
+				<date>2021-10-10T16:13:42Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -940,7 +940,7 @@
 			<key>phoenix_html</key>
 			<dict>
 				<key>date</key>
-				<date>2021-08-20T16:17:22Z</date>
+				<date>2021-10-25T16:12:13Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -954,7 +954,7 @@
 			<key>phoenix_live_view</key>
 			<dict>
 				<key>date</key>
-				<date>2021-08-27T15:59:55Z</date>
+				<date>2021-10-25T16:12:15Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -996,7 +996,7 @@
 			<key>prom_ex</key>
 			<dict>
 				<key>date</key>
-				<date>2021-09-01T15:35:58Z</date>
+				<date>2021-09-07T04:28:56Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -1066,7 +1066,7 @@
 			<key>surface</key>
 			<dict>
 				<key>date</key>
-				<date>2021-07-28T15:58:47Z</date>
+				<date>2021-10-21T16:40:32Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -1094,7 +1094,7 @@
 			<key>surface_catalogue</key>
 			<dict>
 				<key>date</key>
-				<date>2021-07-17T23:52:10Z</date>
+				<date>2021-10-21T16:40:31Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -1108,7 +1108,7 @@
 			<key>surface_font_awesome</key>
 			<dict>
 				<key>date</key>
-				<date>2021-09-02T00:02:38Z</date>
+				<date>2021-10-21T16:40:31Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -1459,7 +1459,7 @@
 		</dict>
 	</dict>
 	<key>isPinned</key>
-	<false/>
+	<true/>
 	<key>menuIconBehavior</key>
 	<integer>1</integer>
 	<key>placeholderDelimiter</key>
