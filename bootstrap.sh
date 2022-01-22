@@ -84,21 +84,8 @@ then
   bash -c '${ASDF_DATA_DIR:=$HOME/.asdf}/plugins/nodejs/bin/import-release-team-keyring'
 fi
 
-if grep -Fxq "$(which fish)" /etc/shells
-then
-    fancy_echo "Already set up fish shell"
-else
-    fancy_echo "Adding fish to shell list"
-    echo "$(which fish)" | sudo tee -a /etc/shells
-fi
-
-case "$SHELL" in
-  */fish) : ;;
-  *)
-    fancy_echo "Changing your shell to fish..."
-      chsh -s "$(which fish)"
-    ;;
-esac
+# install ohmyzsh
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 if ! command -v rustup > /dev/null
 then

@@ -146,7 +146,7 @@
 			<key>Git</key>
 			<dict>
 				<key>date</key>
-				<date>2021-07-17T17:00:26Z</date>
+				<date>2022-01-07T16:17:51Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -335,6 +335,29 @@
 					<string>cheatsheet</string>
 					<key>uniqueIdentifier</key>
 					<string>Mac_Startup_Keys</string>
+				</dict>
+			</dict>
+			<key>Oh-My-Zsh_Git</key>
+			<dict>
+				<key>date</key>
+				<date>2021-10-27T04:22:33Z</date>
+				<key>entry</key>
+				<dict>
+					<key>aliases</key>
+					<array>
+						<string>ohmyzsh</string>
+						<string>oh my zsh</string>
+						<string>terminal</string>
+						<string>shell</string>
+						<string>bash</string>
+						<string>zsh</string>
+					</array>
+					<key>name</key>
+					<string>Oh-My-Zsh Git</string>
+					<key>platform</key>
+					<string>cheatsheet</string>
+					<key>uniqueIdentifier</key>
+					<string>Oh-My-Zsh_Git</string>
 				</dict>
 			</dict>
 			<key>Prezto</key>
@@ -562,7 +585,7 @@
 			<key>absinthe</key>
 			<dict>
 				<key>date</key>
-				<date>2021-09-29T16:23:01Z</date>
+				<date>2022-01-20T16:29:20Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -590,7 +613,7 @@
 			<key>broadway</key>
 			<dict>
 				<key>date</key>
-				<date>2021-10-13T16:13:42Z</date>
+				<date>2022-01-12T16:07:18Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -618,7 +641,7 @@
 			<key>credo</key>
 			<dict>
 				<key>date</key>
-				<date>2021-09-24T21:13:52Z</date>
+				<date>2022-01-18T02:09:25Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -702,7 +725,7 @@
 			<key>faker</key>
 			<dict>
 				<key>date</key>
-				<date>2021-07-17T23:52:37Z</date>
+				<date>2021-12-06T21:58:37Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -716,7 +739,7 @@
 			<key>finch</key>
 			<dict>
 				<key>date</key>
-				<date>2021-10-17T16:40:01Z</date>
+				<date>2022-01-12T16:07:16Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -725,6 +748,34 @@
 					<string>hex</string>
 					<key>uniqueIdentifier</key>
 					<string>finch</string>
+				</dict>
+			</dict>
+			<key>flop</key>
+			<dict>
+				<key>date</key>
+				<date>2022-01-12T05:29:36Z</date>
+				<key>entry</key>
+				<dict>
+					<key>name</key>
+					<string>flop</string>
+					<key>platform</key>
+					<string>hex</string>
+					<key>uniqueIdentifier</key>
+					<string>flop</string>
+				</dict>
+			</dict>
+			<key>flop_phoenix</key>
+			<dict>
+				<key>date</key>
+				<date>2022-01-12T05:29:39Z</date>
+				<key>entry</key>
+				<dict>
+					<key>name</key>
+					<string>flop_phoenix</string>
+					<key>platform</key>
+					<string>hex</string>
+					<key>uniqueIdentifier</key>
+					<string>flop_phoenix</string>
 				</dict>
 			</dict>
 			<key>flow</key>
@@ -772,7 +823,7 @@
 			<key>jason</key>
 			<dict>
 				<key>date</key>
-				<date>2021-07-17T17:00:33Z</date>
+				<date>2021-12-21T15:36:09Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -884,7 +935,7 @@
 			<key>oban</key>
 			<dict>
 				<key>date</key>
-				<date>2021-09-28T16:23:09Z</date>
+				<date>2021-11-10T16:45:56Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -912,7 +963,7 @@
 			<key>open_api_spex</key>
 			<dict>
 				<key>date</key>
-				<date>2021-07-17T17:00:40Z</date>
+				<date>2021-10-29T16:23:41Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -926,7 +977,7 @@
 			<key>phoenix</key>
 			<dict>
 				<key>date</key>
-				<date>2021-10-10T16:13:42Z</date>
+				<date>2022-01-05T16:17:02Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -940,7 +991,7 @@
 			<key>phoenix_html</key>
 			<dict>
 				<key>date</key>
-				<date>2021-10-25T16:12:13Z</date>
+				<date>2021-12-20T04:48:14Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -954,7 +1005,7 @@
 			<key>phoenix_live_view</key>
 			<dict>
 				<key>date</key>
-				<date>2021-10-25T16:12:15Z</date>
+				<date>2022-01-19T03:49:09Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -993,10 +1044,24 @@
 					<string>phoenix_swagger</string>
 				</dict>
 			</dict>
+			<key>polymorphic_embed</key>
+			<dict>
+				<key>date</key>
+				<date>2022-01-12T16:40:17Z</date>
+				<key>entry</key>
+				<dict>
+					<key>name</key>
+					<string>polymorphic_embed</string>
+					<key>platform</key>
+					<string>hex</string>
+					<key>uniqueIdentifier</key>
+					<string>polymorphic_embed</string>
+				</dict>
+			</dict>
 			<key>prom_ex</key>
 			<dict>
 				<key>date</key>
-				<date>2021-09-07T04:28:56Z</date>
+				<date>2021-12-23T15:59:41Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -1066,7 +1131,7 @@
 			<key>surface</key>
 			<dict>
 				<key>date</key>
-				<date>2021-10-21T16:40:32Z</date>
+				<date>2022-01-13T16:24:21Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -1094,7 +1159,7 @@
 			<key>surface_catalogue</key>
 			<dict>
 				<key>date</key>
-				<date>2021-10-21T16:40:31Z</date>
+				<date>2022-01-14T16:24:17Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -1108,7 +1173,7 @@
 			<key>surface_font_awesome</key>
 			<dict>
 				<key>date</key>
-				<date>2021-10-21T16:40:31Z</date>
+				<date>2021-10-27T16:14:20Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -1122,7 +1187,7 @@
 			<key>surface_markdown</key>
 			<dict>
 				<key>date</key>
-				<date>2021-09-02T00:02:38Z</date>
+				<date>2022-01-14T16:24:17Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -1221,7 +1286,7 @@
 			<key>Terraform</key>
 			<dict>
 				<key>date</key>
-				<date>2021-08-17T16:17:41Z</date>
+				<date>2021-11-09T16:44:57Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>

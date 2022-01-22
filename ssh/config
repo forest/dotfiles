@@ -1,29 +1,25 @@
 Host *
-  IgnoreUnknown UseKeychain
+  AddKeysToAgent yes
+  UseKeychain yes
+	IgnoreUnknown UseKeychain
 
 # personal account
 Host p.github.com
 	HostName github.com
 	User git
 	IdentityFile ~/.ssh/id_ed25519
-	AddKeysToAgent yes
-	UseKeychain yes
 
 # work account
 Host w.github.com
 	HostName github.com
 	User git
 	IdentityFile ~/.ssh/w_id_ed25519
-	AddKeysToAgent yes
-	UseKeychain yes
 
 # work account
 Host github.com
 	HostName github.com
 	User git
 	IdentityFile ~/.ssh/w_id_ed25519
-	AddKeysToAgent yes
-	UseKeychain yes
 
 Host *.hgdata.info *.hgdata.com *.hginsights.com *.hginsights.info
   PasswordAuthentication no

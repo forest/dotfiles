@@ -1,4 +1,4 @@
 lists/*.todo
 
-config/fish/functions/private
+zshrc.local
 Brewfile.lock.json

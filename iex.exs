@@ -1,9 +1,30 @@
-timestamp = fn ->
-  {_date, {hour, minute, _second}} = :calendar.local_time
-  [hour, minute]
-  |> Enum.map(&(String.pad_leading(Integer.to_string(&1), 2, "0")))
-  |> Enum.join(":")
+if :mix not in Enum.map(Application.loaded_applications(), &elem(&1, 0)) do
+  Mix.install([
+    :decimal,
+    :req,
+    # {:req, path: "~/code/req"},
+  ])
 end
+
+defmodule MyInspect do
+  def inspect(%URI{} = url, _opts) do
+    "#URI[" <> URI.to_string(url) <> "]"
+  end
+
+  def inspect(%Date.Range{step: 1} = daterange, _opts) do
+    "~Date.Range[#{daterange.first}/#{daterange.last}]"
+  end
+
+  def inspect(%Date.Range{} = daterange, _opts) do
+    "~Date.Range[#{daterange.first}/#{daterange.last}//#{daterange.step}]"
+  end
+
+  def inspect(term, opts) do
+    Inspect.inspect(term, opts)
+  end
+end
+
+Inspect.Opts.default_inspect_fun(&MyInspect.inspect/2)
 
 IEx.configure(
   colors: [
@@ -17,18 +38,6 @@ IEx.configure(
     eval_result: [ :cyan, :bright ],
   ],
 
-  # default_prompt:
-  # "#{IO.ANSI.green}%prefix#{IO.ANSI.reset} " <>
-  # "[#{IO.ANSI.magenta}#{timestamp.()}#{IO.ANSI.reset} " <>
-  # ":: #{IO.ANSI.cyan}%counter#{IO.ANSI.reset}] >",
-
-  # alive_prompt:
-  # "#{IO.ANSI.green}%prefix#{IO.ANSI.reset} " <>
-       # "#{IO.ANSI.yellow}%node#{IO.ANSI.reset}"
-    # <> "[#{IO.ANSI.magenta}#{timestamp.()}#{IO.ANSI.reset} "
-    # ":: #{IO.ANSI.cyan}%counter#{IO.ANSI.reset}] >",
-    # <> ">",
-
   history_size: 50,
 
   inspect: [
@@ -39,3 +48,5 @@ IEx.configure(
 
   width: 80
 )
+
+# import Sigils

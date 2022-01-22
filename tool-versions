@@ -1,5 +1,5 @@
 nodejs 12.11.1
 ruby 2.4.10
-elixir 1.12.2-otp-23
+elixir 1.13.1-otp-23
 erlang 23.2.3
-direnv 2.21.3
+direnv 2.29.0
