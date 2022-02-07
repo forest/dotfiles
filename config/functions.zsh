@@ -35,22 +35,16 @@ function gsy() {
     int_branch="main"
   fi
 
-  echo "Doing rebase-based sync"
+  echo "Doing merge-based sync"
 
   echo "Fetching the latest changes from the server"
   command git fetch -p origin
 
-  echo "Rebasing $current_branch against origin/$current_branch"
-  command git rebase "origin/$current_branch" 2>&1
-
-  echo "Rebasing $current_branch against origin/$int_branch"
-  command git rebase "origin/$int_branch" 2>&1 || return
+  echo "Merging $current_branch against origin/$int_branch"
+  command git merge "origin/$int_branch" 2>&1 || return
 
   echo "Pushing to '$current_branch' on 'origin'"
-  command git push origin -f "$current_branch:$current_branch" 2>&1
-
-  echo "Fetching the latest changes from the server"
-  command git fetch -p origin
+  command git push origin "$current_branch" 2>&1
 }
 
 # Set gitProcess.integrationBranch branch
