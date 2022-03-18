@@ -19,7 +19,7 @@ Host w.github.com
 Host github.com
 	HostName github.com
 	User git
-	IdentityFile ~/.ssh/w_id_ed25519
+	IdentityFile ~/.ssh/id_ed25519
 
 Host *.hgdata.info *.hgdata.com *.hginsights.com *.hginsights.info
   PasswordAuthentication no
