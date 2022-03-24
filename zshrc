@@ -75,7 +75,7 @@ eval "$(starship init zsh)"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(aliases brew asdf colored-man-pages command-not-found common-aliases direnv docker fzf git gitfast mix-fast npm pip z)
+plugins=(aliases brew asdf colored-man-pages command-not-found common-aliases direnv docker fzf git gitfast history-substring-search mix-fast npm pip z)
 
 # brew completions
 FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"

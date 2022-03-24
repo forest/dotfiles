@@ -6,11 +6,13 @@ alias mr='mix run'
 alias mt='mix test'
 alias mtf='mix test --only focus:true'
 alias mtw='mix test.watch '
+alias mtws='mix test.watch --stale'
 alias mps='iex -S mix phx.server '
 alias mpso='iex -S mix phx.server --open '
 alias mdg='mix deps.get'
 alias mc='mix compile'
 alias mqc='mix qc'
+alias mcov='mix coveralls.html && open ./cover/excoveralls.html'
 
 # livebook
 alias notebooks='livebook server --open --root-path ~/code/notebooks'

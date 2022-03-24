@@ -1,15 +1,15 @@
 if :mix not in Enum.map(Application.loaded_applications(), &elem(&1, 0)) do
   Mix.install([
     :decimal,
-    :req,
+    :req
     # {:req, path: "~/code/req"},
   ])
 end
 
 defmodule MyInspect do
-  def inspect(%URI{} = url, _opts) do
-    "#URI[" <> URI.to_string(url) <> "]"
-  end
+  # def inspect(%URI{} = url, _opts) do
+  #   "#URI[" <> URI.to_string(url) <> "]"
+  # end
 
   def inspect(%Date.Range{step: 1} = daterange, _opts) do
     "~Date.Range[#{daterange.first}/#{daterange.last}]"
@@ -33,19 +33,16 @@ IEx.configure(
       atom: :light_cyan,
       string: :yellow,
       boolean: :red,
-      nil: [:magenta, :bright],
+      nil: [:magenta, :bright]
     ],
-    eval_result: [ :cyan, :bright ],
+    eval_result: [:cyan, :bright]
   ],
-
   history_size: 50,
-
   inspect: [
     pretty: true,
     limit: :infinity,
     width: 80
   ],
-
   width: 80
 )
 
