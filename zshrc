@@ -124,6 +124,9 @@ source <(kubectl completion zsh)
 # Add completions
 fpath=($HOME/dotfiles/zsh.d/ $fpath)
 
+# 1Password CLI completions
+eval "$(op completion zsh)"; compdef _op op
+
 # Source functions and aliases.
 alias reload='exec $SHELL'
 
