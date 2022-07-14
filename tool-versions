@@ -1,5 +1,4 @@
 nodejs 16.2.0
-ruby 2.4.10
-erlang 24.1.1
-elixir 1.13.3
+erlang 25.0
+elixir 1.13.4-otp-25
 direnv 2.31.0

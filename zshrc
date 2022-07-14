@@ -118,7 +118,7 @@ export KERL_CONFIGURE_OPTIONS="--without-jinterface --without-hipe"
 export KERL_BUILD_DOCS="no"
 
 # k8s
-source <(kubectl completion zsh)
+# source <(kubectl completion zsh)
 # function kubectl() { echo "+ kubectl $@"; command kubectl $@; }
 
 # Add completions

@@ -37,10 +37,10 @@ if ! command -v git >/dev/null; then
   brew install git
 fi
 
-if [ ! -d "$dir" ]; then
-  fancy_echo "Cloning dotfiles..."
-  git clone git://github.com/forest/dotfiles.git ~/dotfiles
-fi
+# if [ ! -d "$dir" ]; then
+#   fancy_echo "Cloning dotfiles..."
+#   git clone git://github.com/forest/dotfiles.git ~/dotfiles
+# fi
 
 if [ ! -d "$HOME/bin" ]; then
   fancy_echo "Creating bin directory..."
