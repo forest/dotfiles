@@ -47,8 +47,9 @@ alias tarx='tar xzvf '
 alias m='make'
 
 # postgress
-alias pgst='pg_ctl -D /usr/local/var/postgres start'
-alias pgsp='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
+# > initdb --locale=C -E UTF-8 $(brew --prefix)/var/postgres -U postgres -W
+alias pgst='pg_ctl -D $(brew --prefix)/var/postgres start'
+alias pgsp='pg_ctl -D $(brew --prefix)/var/postgres stop -s -m fast'
 
 # brew
 alias ibrew='/usr/local/bin/brew'
