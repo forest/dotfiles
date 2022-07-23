@@ -90,6 +90,10 @@ source $ZSH/oh-my-zsh.sh
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
+# Snowflake ODBC
+export ODBCSYSINI=~/Library/ODBC
+export ODBCINI=~/Library/ODBC/odbc.ini
+
 # You may need to manually set your language environment
 export LANG=en_US.UTF-8
 

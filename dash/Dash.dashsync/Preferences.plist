@@ -694,6 +694,34 @@
 					<string>ecto_sql</string>
 				</dict>
 			</dict>
+			<key>ex_aws</key>
+			<dict>
+				<key>date</key>
+				<date>2022-07-22T16:46:27Z</date>
+				<key>entry</key>
+				<dict>
+					<key>name</key>
+					<string>ex_aws</string>
+					<key>platform</key>
+					<string>hex</string>
+					<key>uniqueIdentifier</key>
+					<string>ex_aws</string>
+				</dict>
+			</dict>
+			<key>ex_aws_ses</key>
+			<dict>
+				<key>date</key>
+				<date>2022-07-22T16:46:36Z</date>
+				<key>entry</key>
+				<dict>
+					<key>name</key>
+					<string>ex_aws_ses</string>
+					<key>platform</key>
+					<string>hex</string>
+					<key>uniqueIdentifier</key>
+					<string>ex_aws_ses</string>
+				</dict>
+			</dict>
 			<key>ex_machina</key>
 			<dict>
 				<key>date</key>
@@ -935,7 +963,7 @@
 			<key>oban</key>
 			<dict>
 				<key>date</key>
-				<date>2022-07-14T04:09:10Z</date>
+				<date>2022-07-21T20:43:42Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -963,7 +991,7 @@
 			<key>open_api_spex</key>
 			<dict>
 				<key>date</key>
-				<date>2022-07-14T04:09:31Z</date>
+				<date>2022-07-21T20:43:32Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -1131,7 +1159,7 @@
 			<key>surface</key>
 			<dict>
 				<key>date</key>
-				<date>2022-07-14T04:08:56Z</date>
+				<date>2022-07-21T20:43:36Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>

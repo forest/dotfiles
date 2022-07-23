@@ -50,15 +50,3 @@ alias m='make'
 # > initdb --locale=C -E UTF-8 $(brew --prefix)/var/postgres -U postgres -W
 alias pgst='pg_ctl -D $(brew --prefix)/var/postgres start'
 alias pgsp='pg_ctl -D $(brew --prefix)/var/postgres stop -s -m fast'
-
-# brew
-alias ibrew='/usr/local/bin/brew'
-alias mbrew='/opt/homebrew/bin/brew'
-
-# gimme-snowflake-creds
-alias gimme-snowflake-creds="docker run -it --rm \
-      -v ~/.okta_snowflake_login_config:/root/.okta_snowflake_login_config \
-      -v ~/.dbt:/root/.dbt \
-      -v ~/Library/ODBC:/root/Library/ODBC \
-      -v ~/.gsc:/root/.gsc \
-      hgdata1/gimme-snowflake-creds"
