@@ -15,7 +15,7 @@ alias mqc='mix qc'
 alias mcov='mix coveralls.html && open ./cover/excoveralls.html'
 
 # livebook
-alias notebooks='livebook server --open --root-path ~/code/notebooks'
+alias notebooks='livebook server --home ~/code/notebooks'
 
 # git
 alias gb='git branch'
