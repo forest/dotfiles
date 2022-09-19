@@ -16,14 +16,6 @@ fancy_echo() {
   printf "\n$fmt\n" "$@"
 }
 
-install_latest() {
-  if [ ! -d "~/.asdf/installs/$1" ]
-  then
-    fancy_echo "Installing $1..."
-    asdf list-all $1 | tail -1 | xargs asdf install $1
-  fi
-}
-
 # fancy_echo "Setting MacOs defaults..."
 # source ~/dotfiles/set-defaults.sh
 
@@ -37,19 +29,9 @@ if ! command -v git >/dev/null; then
   brew install git
 fi
 
-# if [ ! -d "$dir" ]; then
-#   fancy_echo "Cloning dotfiles..."
-#   git clone git://github.com/forest/dotfiles.git ~/dotfiles
-# fi
-
 if [ ! -d "$HOME/bin" ]; then
   fancy_echo "Creating bin directory..."
   mkdir ~/bin
-fi
-
-if [ ! -d "$HOME/go" ]; then
-  fancy_echo "Creating go directory..."
-  mkdir ~/go
 fi
 
 fancy_echo "Updating Homebrew..."
