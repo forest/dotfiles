@@ -641,7 +641,7 @@
 			<key>credo</key>
 			<dict>
 				<key>date</key>
-				<date>2022-07-16T15:43:02Z</date>
+				<date>2022-09-03T18:17:26Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -697,7 +697,7 @@
 			<key>ex_aws</key>
 			<dict>
 				<key>date</key>
-				<date>2022-07-22T16:46:27Z</date>
+				<date>2022-09-07T20:40:10Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -750,6 +750,20 @@
 					<string>ex_twilio</string>
 				</dict>
 			</dict>
+			<key>external_service</key>
+			<dict>
+				<key>date</key>
+				<date>2022-08-10T16:35:09Z</date>
+				<key>entry</key>
+				<dict>
+					<key>name</key>
+					<string>external_service</string>
+					<key>platform</key>
+					<string>hex</string>
+					<key>uniqueIdentifier</key>
+					<string>external_service</string>
+				</dict>
+			</dict>
 			<key>faker</key>
 			<dict>
 				<key>date</key>
@@ -767,7 +781,7 @@
 			<key>finch</key>
 			<dict>
 				<key>date</key>
-				<date>2022-07-14T04:09:11Z</date>
+				<date>2022-07-27T16:57:30Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -781,7 +795,7 @@
 			<key>flop</key>
 			<dict>
 				<key>date</key>
-				<date>2022-07-14T04:09:05Z</date>
+				<date>2022-08-25T16:52:37Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -795,7 +809,7 @@
 			<key>flop_phoenix</key>
 			<dict>
 				<key>date</key>
-				<date>2022-07-14T04:09:06Z</date>
+				<date>2022-08-25T16:52:27Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -837,7 +851,7 @@
 			<key>guardian</key>
 			<dict>
 				<key>date</key>
-				<date>2022-07-14T04:09:17Z</date>
+				<date>2022-09-02T17:29:41Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -851,7 +865,7 @@
 			<key>jason</key>
 			<dict>
 				<key>date</key>
-				<date>2022-07-14T04:09:02Z</date>
+				<date>2022-09-12T23:20:32Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -860,6 +874,20 @@
 					<string>hex</string>
 					<key>uniqueIdentifier</key>
 					<string>jason</string>
+				</dict>
+			</dict>
+			<key>mimic</key>
+			<dict>
+				<key>date</key>
+				<date>2022-08-10T16:35:20Z</date>
+				<key>entry</key>
+				<dict>
+					<key>name</key>
+					<string>mimic</string>
+					<key>platform</key>
+					<string>hex</string>
+					<key>uniqueIdentifier</key>
+					<string>mimic</string>
 				</dict>
 			</dict>
 			<key>mint</key>
@@ -893,7 +921,7 @@
 			<key>money</key>
 			<dict>
 				<key>date</key>
-				<date>2022-07-14T04:09:30Z</date>
+				<date>2022-08-15T16:39:00Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -921,7 +949,7 @@
 			<key>new_relic_agent</key>
 			<dict>
 				<key>date</key>
-				<date>2022-07-14T04:09:33Z</date>
+				<date>2022-09-08T20:40:18Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -930,6 +958,48 @@
 					<string>hex</string>
 					<key>uniqueIdentifier</key>
 					<string>new_relic_agent</string>
+				</dict>
+			</dict>
+			<key>nimble_csv</key>
+			<dict>
+				<key>date</key>
+				<date>2022-08-16T04:27:08Z</date>
+				<key>entry</key>
+				<dict>
+					<key>name</key>
+					<string>nimble_csv</string>
+					<key>platform</key>
+					<string>hex</string>
+					<key>uniqueIdentifier</key>
+					<string>nimble_csv</string>
+				</dict>
+			</dict>
+			<key>nimble_ets</key>
+			<dict>
+				<key>date</key>
+				<date>2022-08-16T04:27:11Z</date>
+				<key>entry</key>
+				<dict>
+					<key>name</key>
+					<string>nimble_ets</string>
+					<key>platform</key>
+					<string>hex</string>
+					<key>uniqueIdentifier</key>
+					<string>nimble_ets</string>
+				</dict>
+			</dict>
+			<key>nimble_options</key>
+			<dict>
+				<key>date</key>
+				<date>2022-08-16T04:26:55Z</date>
+				<key>entry</key>
+				<dict>
+					<key>name</key>
+					<string>nimble_options</string>
+					<key>platform</key>
+					<string>hex</string>
+					<key>uniqueIdentifier</key>
+					<string>nimble_options</string>
 				</dict>
 			</dict>
 			<key>norm</key>
@@ -963,7 +1033,7 @@
 			<key>oban</key>
 			<dict>
 				<key>date</key>
-				<date>2022-07-21T20:43:42Z</date>
+				<date>2022-09-07T20:40:10Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -1005,7 +1075,7 @@
 			<key>phoenix</key>
 			<dict>
 				<key>date</key>
-				<date>2022-07-14T04:09:21Z</date>
+				<date>2022-09-06T20:28:02Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -1075,7 +1145,7 @@
 			<key>polymorphic_embed</key>
 			<dict>
 				<key>date</key>
-				<date>2022-07-15T15:43:05Z</date>
+				<date>2022-09-03T18:17:26Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -1112,6 +1182,20 @@
 					<string>hex</string>
 					<key>uniqueIdentifier</key>
 					<string>recon</string>
+				</dict>
+			</dict>
+			<key>retry</key>
+			<dict>
+				<key>date</key>
+				<date>2022-08-27T17:25:32Z</date>
+				<key>entry</key>
+				<dict>
+					<key>name</key>
+					<string>retry</string>
+					<key>platform</key>
+					<string>hex</string>
+					<key>uniqueIdentifier</key>
+					<string>retry</string>
 				</dict>
 			</dict>
 			<key>statistex</key>
@@ -1159,7 +1243,7 @@
 			<key>surface</key>
 			<dict>
 				<key>date</key>
-				<date>2022-07-21T20:43:36Z</date>
+				<date>2022-09-16T23:20:42Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -1187,7 +1271,7 @@
 			<key>surface_catalogue</key>
 			<dict>
 				<key>date</key>
-				<date>2022-07-14T04:08:59Z</date>
+				<date>2022-09-08T20:40:19Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -1215,7 +1299,7 @@
 			<key>surface_markdown</key>
 			<dict>
 				<key>date</key>
-				<date>2022-07-14T04:08:52Z</date>
+				<date>2022-09-01T17:29:50Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -1314,15 +1398,19 @@
 			<key>Terraform</key>
 			<dict>
 				<key>date</key>
-				<date>2022-07-14T04:08:52Z</date>
+				<date>2022-09-13T23:20:27Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
-					<array/>
+					<array>
+						<string>terraform</string>
+						<string>tf</string>
+						<string>terra</string>
+					</array>
 					<key>authorLinkHref</key>
 					<string>https://github.com/Kapeli/Dash-User-Contributions/tree/master/docsets/Terraform#readme</string>
 					<key>authorLinkText</key>
-					<string>rolandjohann</string>
+					<string>Roberth Kulbin</string>
 					<key>name</key>
 					<string>Terraform</string>
 					<key>platform</key>
@@ -1439,7 +1527,7 @@
 			<key>http://kapeli.com/feeds/JavaScript.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2021-07-17T17:02:33Z</date>
+				<date>2022-07-30T00:01:48Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/Man_Pages.xml</key>
 			<dict>
@@ -1459,12 +1547,12 @@
 			<key>http://kapeli.com/feeds/MongoDB.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2021-07-17T17:02:15Z</date>
+				<date>2022-07-30T00:01:38Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/MySQL.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2021-07-17T17:01:53Z</date>
+				<date>2022-07-30T00:01:41Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/Nginx.xml</key>
 			<dict>
@@ -1479,17 +1567,17 @@
 			<key>http://kapeli.com/feeds/NumPy.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2021-07-17T17:02:26Z</date>
+				<date>2022-07-30T00:01:21Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/Pandas.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2021-07-17T17:02:37Z</date>
+				<date>2022-07-30T00:01:41Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/Python_3.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2021-07-17T17:02:33Z</date>
+				<date>2022-07-30T00:01:44Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/R.xml</key>
 			<dict>
@@ -1504,22 +1592,22 @@
 			<key>http://kapeli.com/feeds/Redis.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2021-07-17T17:02:27Z</date>
+				<date>2022-07-30T00:01:39Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/Ruby_2.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2021-07-17T17:02:45Z</date>
+				<date>2022-07-30T00:01:52Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/Ruby_on_Rails_6.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2021-07-17T17:02:50Z</date>
+				<date>2022-07-30T00:01:52Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/Sass.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2021-07-17T17:02:35Z</date>
+				<date>2022-07-30T00:01:42Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/Spring_Framework.xml</key>
 			<dict>
@@ -1529,12 +1617,12 @@
 			<key>http://kapeli.com/feeds/TypeScript.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2021-07-17T17:02:41Z</date>
+				<date>2022-07-30T00:01:46Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/VueJS.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2021-07-17T17:02:41Z</date>
+				<date>2022-07-30T00:01:50Z</date>
 			</dict>
 		</dict>
 		<key>uninstalled</key>
@@ -1548,6 +1636,11 @@
 			<dict>
 				<key>date</key>
 				<date>2020-02-15T16:40:34Z</date>
+			</dict>
+			<key>http://kapeli.com/feeds/Rust.xml</key>
+			<dict>
+				<key>date</key>
+				<date>2022-07-30T00:01:14Z</date>
 			</dict>
 		</dict>
 	</dict>

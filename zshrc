@@ -75,7 +75,7 @@ eval "$(starship init zsh)"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(aliases brew asdf colored-man-pages command-not-found common-aliases direnv docker fzf git gitfast history-substring-search mix-fast npm pip z)
+plugins=(aliases brew asdf colored-man-pages command-not-found common-aliases direnv docker fzf git gitfast history-substring-search kubectl mix-fast npm pip z)
 
 # brew completions
 FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
@@ -90,7 +90,7 @@ source $ZSH/oh-my-zsh.sh
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
-# Snowflake ODBC
+# ODBC
 export ODBCSYSINI=~/Library/ODBC
 export ODBCINI=~/Library/ODBC/odbc.ini
 
@@ -107,9 +107,6 @@ fi
 # 1Password SSH Agent
 export SSH_AUTH_SOCK=~/Library/Group\ Containers/2BUA8C4S2C.com.1password/t/agent.sock
 
-# Compilation flags
-# export ARCHFLAGS="-arch x86_64"
-
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
@@ -125,7 +122,7 @@ export KERL_CONFIGURE_OPTIONS="--without-jinterface --without-hipe"
 export KERL_BUILD_DOCS="no"
 
 # k8s
-# source <(kubectl completion zsh)
+source <(kubectl completion zsh)
 # function kubectl() { echo "+ kubectl $@"; command kubectl $@; }
 
 # Add completions
