@@ -51,7 +51,7 @@
   untracked = cyan
 [commit]
   template = ~/.gitmessage
-  gpgsign = false
+	gpgsign = true
 [diff]
   compactionHeuristic = true
 [rebase]
@@ -75,6 +75,7 @@
 [user]
 	name = Forest Carlisle
   email = 7829+forest@users.noreply.github.com
+	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINg7+AajrV3SkswIwWw/w6nZ6EBnWKT/59SnLgFwGXhs
 [github]
   user = forest
 [hub]
@@ -89,3 +90,7 @@
 [mergetool "sourcetree"]
 	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
+[gpg]
+	format = ssh
+[gpg "ssh"]
+	program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
