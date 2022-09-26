@@ -6,7 +6,7 @@ I :heart: dotfiles.
 
 Dotfiles are what power your system. These are mine. They're mostly for OS X since that's what I use. My default shell
 these days is zsh. I use [oh-my-zsh](https://ohmyz.sh/) for managing lots of common stuff. All of the dotfile
-management is done with [rcm](https://github.colsrcm/thoughtbot/rcm) and packages are managed with homebrew.
+management is done with [rcm](https://github.com/thoughtbot/rcm) and packages are managed with homebrew.
 
 ## Whats in it?
 
