@@ -18,18 +18,12 @@ alias mcov='mix coveralls.html && open ./cover/excoveralls.html'
 alias notebooks='livebook server --home ~/code/notebooks'
 
 # git
-alias gb='git branch'
-alias gs='git status -sb'
+# aliases on top of https://github.com/davidde/git#aliases-cheatsheet
+# alias gcm="git remote show origin | awk '/HEAD branch:/ {print \$3}' | xargs git checkout"
 alias gdc='git diff --cached'
-alias gc!='git commit -v --amend'
-alias gl='git log'
-alias gcm="git remote show origin | awk '/HEAD branch:/ {print \$3}' | xargs git checkout"
-alias gcd='git checkout dev'
-alias gpl='git pull'
-alias gplr='git pull --rebase'
-alias gsh='git stash'
-alias gshp='git stash pop'
 alias gpc='git push origin $(git_current_branch)'
+alias gs='git status -sb'
+alias gstp='git stash pop'
 
 
 # alias pubkey="pbcopy < ~/.ssh/id_rsa.pub"

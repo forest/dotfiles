@@ -69,13 +69,14 @@ eval "$(starship init zsh)"
 
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
+ZSH_CUSTOM=$HOME/.config/ohmyzsh/custom
 
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(aliases brew asdf colored-man-pages command-not-found common-aliases direnv docker fzf git gitfast history-substring-search kubectl mix-fast npm pip z)
+plugins=(aliases brew asdf colored-man-pages command-not-found common-aliases direnv docker fzf z fz git gitfast history-substring-search kubectl mix-fast npm pip)
 
 # brew completions
 FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
@@ -87,6 +88,10 @@ export FZF_DEFAULT_OPTS='--height 40% --border'
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
+
+# Keybinding
+bindkey "^[[1;5C" forward-word
+bindkey "^[[1;5D" backward-word
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
