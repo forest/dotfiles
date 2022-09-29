@@ -31,7 +31,7 @@ you can simply run `rcup` in the dotfiles dir.
 
 ### Git
 
-- `gcm` - check out the default branch
+- `gcom` - check out the default branch
 - `gib` - set the integration branch (defaults to `main`)
 - `gnf` - create a new feature branch based on the integration branch
 - `gsy` - sync branch with upstream integration branch and push to origin
