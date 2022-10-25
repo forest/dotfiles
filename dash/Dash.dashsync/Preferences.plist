@@ -114,7 +114,7 @@
 			<key>Elixir_Guards</key>
 			<dict>
 				<key>date</key>
-				<date>2022-07-14T04:08:41Z</date>
+				<date>2022-10-06T18:34:55Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -340,7 +340,7 @@
 			<key>Oh-My-Zsh_Git</key>
 			<dict>
 				<key>date</key>
-				<date>2022-07-14T04:08:42Z</date>
+				<date>2022-10-10T20:22:36Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -683,7 +683,7 @@
 			<key>ecto</key>
 			<dict>
 				<key>date</key>
-				<date>2022-09-27T14:29:56Z</date>
+				<date>2022-10-06T18:35:02Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -809,7 +809,7 @@
 			<key>flop</key>
 			<dict>
 				<key>date</key>
-				<date>2022-08-25T16:52:37Z</date>
+				<date>2022-10-19T23:56:30Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -823,7 +823,7 @@
 			<key>flop_phoenix</key>
 			<dict>
 				<key>date</key>
-				<date>2022-09-22T21:03:18Z</date>
+				<date>2022-10-10T20:22:44Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -879,7 +879,7 @@
 			<key>jason</key>
 			<dict>
 				<key>date</key>
-				<date>2022-09-12T23:20:32Z</date>
+				<date>2022-10-16T23:56:13Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -1075,7 +1075,7 @@
 			<key>open_api_spex</key>
 			<dict>
 				<key>date</key>
-				<date>2022-09-27T14:29:56Z</date>
+				<date>2022-10-24T14:45:06Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -1089,7 +1089,7 @@
 			<key>phoenix</key>
 			<dict>
 				<key>date</key>
-				<date>2022-09-06T20:28:02Z</date>
+				<date>2022-10-10T20:22:53Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -1117,7 +1117,7 @@
 			<key>phoenix_live_view</key>
 			<dict>
 				<key>date</key>
-				<date>2022-09-29T12:24:05Z</date>
+				<date>2022-10-04T17:52:41Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -1159,7 +1159,7 @@
 			<key>polymorphic_embed</key>
 			<dict>
 				<key>date</key>
-				<date>2022-09-29T12:24:06Z</date>
+				<date>2022-09-30T12:23:44Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -1412,7 +1412,7 @@
 			<key>Terraform</key>
 			<dict>
 				<key>date</key>
-				<date>2022-09-27T14:30:22Z</date>
+				<date>2022-10-24T14:44:59Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
