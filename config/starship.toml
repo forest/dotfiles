@@ -13,17 +13,13 @@ format = """\
   $git_state\
   $git_status\
   $docker_context\
-  $dotnet\
   $elixir\
-  $elm\
   $erlang\
   $golang\
-  $java\
   $python\
   $ruby\
   $rust\
   $terraform\
-  $memory_usage\
   $kubernetes\
   $env_var\
   $cmd_duration\
@@ -35,12 +31,20 @@ format = """\
   $character\
   """
 
+# right_format = """\
+#   $memory_usage\
+#   $aws
+# """
+
 # Wait 10 milliseconds for starship to check files under the current directory.
 scan_timeout = 10
 
 command_timeout = 5000
 
+continuation_prompt = '[->> ](bold green)'
+
 [aws]
+format = '[$symbol($profile )(\($region\) )(\[$duration\] )]($style)'
 symbol = "  "
 
 [buf]
@@ -88,9 +92,13 @@ symbol = " "
 [kubernetes]
 disabled = false
 symbol = "☸ "
+# detect_files = ['k8s']
 
 [memory_usage]
 symbol = " "
+format = '[R: ${ram_pct}|S: ${swap_pct}]($style) '
+disabled = false
+threshold = 75
 
 [nim]
 symbol = " "

@@ -1,4 +1,5 @@
 nodejs 16.2.0
-erlang 25.0.3
-elixir 1.14.0-otp-25
+erlang 25.1.2
+elixir 1.14.4-otp-25
 direnv 2.31.0
+tflint 0.38.1

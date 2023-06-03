@@ -16,6 +16,7 @@ alias mcov='mix coveralls.html && open ./cover/excoveralls.html'
 
 # livebook
 alias notebooks='livebook server --home ~/code/notebooks'
+alias livebookup='mix escript.install hex livebook'
 
 # git
 # aliases on top of https://github.com/davidde/git#aliases-cheatsheet
@@ -24,7 +25,7 @@ alias gdc='git diff --cached'
 alias gpc='git push origin $(git_current_branch)'
 alias gs='git status -sb'
 alias gstp='git stash pop'
-
+alias gl="git log --graph --all --pretty='format:%C(auto)%h %C(cyan)%ar %C(auto)%d %C(magenta)%an %C(auto)%s'"
 
 # alias pubkey="pbcopy < ~/.ssh/id_rsa.pub"
 # alias p="cd $PROJECTS"

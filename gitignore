@@ -60,7 +60,6 @@ Session.vim
 # Logs and databases #
 ######################
 *.log
-*.sql
 *.sqlite
 
 # Ruby related files #
@@ -78,3 +77,4 @@ npm-debug.log
 # VS Code / Elixir #
 ######################
 .elixir_ls/
+.mix_tasks

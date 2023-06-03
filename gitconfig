@@ -1,12 +1,15 @@
 [include]
   path = ~/.gitconfig.local
+
 [init]
-  templatedir = ~/.git_template
+  # templatedir = ~/.git_template
   defaultBranch = main
+
 [core]
   editor = vim
-  pager = diff-so-fancy | less --tabs=4 -RFX
+  # pager = delta
 	excludesfile = ~/.gitignore
+
 [alias]
   r = !GIT_NO_PAGER=1 git l -30
   ra = !git r --all
@@ -26,71 +29,121 @@
   wip = commit -m "WIP"
   graft = merge --no-ff
   rb = rebase
-  grog = log --graph --abbrev-commit --decorate --all --format=format:\"%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(dim white) - %an%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n %C(white)%s%C(reset)\"
+  dft = difftool
+
 [color]
   ui = auto
-[color "diff"]
-  meta = yellow bold
-  commit = green
-  frag = magenta bold
-  old = red bold
-  new = green
-  whitespace = red reverse
-[color "diff-highlight"]
-  oldNormal = red bold
-  oldHighlight = "red bold 52"
-  newNormal = "green"
-  newHighlight = "green 22"
-[color "branch"]
-  current = yellow reverse
-  local = yellow
-  remote = green
-[color "status"]
-  added = yellow
-  changed = green
-  untracked = cyan
+
+# [color "diff"]
+#   meta = yellow bold
+#   commit = green
+#   frag = magenta bold
+#   old = red bold
+#   new = green
+#   whitespace = red reverse
+# [color "diff-highlight"]
+#   oldNormal = red bold
+#   oldHighlight = "red bold 52"
+#   newNormal = "green"
+#   newHighlight = "green 22"
+# [color "branch"]
+#   current = yellow reverse
+#   local = yellow
+#   remote = green
+# [color "status"]
+#   added = yellow
+#   changed = green
+#   untracked = cyan
+
 [commit]
   template = ~/.gitmessage
-	gpgsign = true
+  gpgsign = true
+
+[merge]
+  conflictstyle = diff3
+
 [diff]
-  compactionHeuristic = true
+  tool = difftastic
+  # colorMoved = default
+  # compactionHeuristic = true
+	external = difft
+
+[difftool]
+        prompt = false
+
+[difftool "difftastic"]
+        cmd = difft "$LOCAL" "$REMOTE"
+
 [rebase]
   autosquash = true
+
 [pager]
-  log  = diff-highlight | less
-  diff = diff-so-fancy | less --tabs=4 -RFX
-  show = diff-so-fancy | less --tabs=4 -RFX
-; [interactive]
-;   diffFilter = "diff-so-fancy"
-[color "diff-highlight"]
-  oldNormal = red bold
-  oldHighlight = red bold 52
-  newNormal = green
-  newHighlight = green 22
+  difftool = true
+  # log  = diff-highlight | less -r
+  # diff = diff-so-fancy | less --tabs=4 -RFX
+  # show = diff-so-fancy | less --tabs=4 -RFX
+
+# [interactive]
+#   diffFilter = delta --color-only --features=interactive
+
+# [color "diff-highlight"]
+#   oldNormal = red bold
+#   oldHighlight = red bold 52
+#   newNormal = green
+#   newHighlight = green 22
+
 [filter "lfs"]
   clean = git-lfs clean -- %f
   smudge = git-lfs smudge -- %f
   process = git-lfs filter-process
   required = true
+
 [user]
-	name = Forest Carlisle
+  name = Forest Carlisle
   email = 7829+forest@users.noreply.github.com
-	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINg7+AajrV3SkswIwWw/w6nZ6EBnWKT/59SnLgFwGXhs
+  signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINg7+AajrV3SkswIwWw/w6nZ6EBnWKT/59SnLgFwGXhs
+
 [github]
   user = forest
+
 [hub]
   protocol = https
+
 [gitProcess]
   keepLocalIntegrationBranch = true
+
 [pull]
-	rebase = true
+  rebase = true
+
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path =
+
 [mergetool "sourcetree"]
 	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
+
 [gpg]
-	format = ssh
+  format = ssh
+
 [gpg "ssh"]
-	program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
+  program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
+
+[delta]
+  features = side-by-side line-numbers decorations
+  syntax-theme = Dracula
+  plus-style = syntax "#003800"
+  minus-style = syntax "#3f0001"
+  navigate = true
+
+[delta "decorations"]
+  commit-decoration-style = bold yellow box ul
+  file-style = bold yellow ul
+  file-decoration-style = none
+  hunk-header-decoration-style = cyan box ul
+
+[delta "line-numbers"]
+  line-numbers-left-style = cyan
+  line-numbers-right-style = cyan
+  line-numbers-minus-style = 124
+  line-numbers-plus-style = 28

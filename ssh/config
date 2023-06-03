@@ -1,13 +1,15 @@
 Host *
 	IdentityAgent "~/Library/Group Containers/2BUA8C4S2C.com.1password/t/agent.sock"
+  PubkeyAcceptedKeyTypes=+ssh-rsa
+  HostKeyAlgorithms=+ssh-rsa
 
 Host github.com
-  IdentityFile ~/.ssh/id_ed25519.pub
+  IdentityFile ~/.ssh/id_ed25519
   IdentitiesOnly yes
 
 Host *.hgdata.info *.hgdata.com *.hginsights.com *.hginsights.info
   PasswordAuthentication no
   ForwardAgent yes
-	IdentityFile ~/.ssh/w_id_ed25519.pub
-	IdentitiesOnly yes
+  IdentityFile ~/.ssh/w_id_rsa
+  IdentitiesOnly yes
 
