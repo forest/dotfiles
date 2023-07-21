@@ -26,6 +26,14 @@ alias gpc='git push origin $(git_current_branch)'
 alias gs='git status -sb'
 alias gstp='git stash pop'
 alias gl="git log --graph --all --pretty='format:%C(auto)%h %C(cyan)%ar %C(auto)%d %C(magenta)%an %C(auto)%s'"
+alias gibd='gib develop'
+alias gibm='gib main'
+
+# DANGER! Only run these if you are sure you want to delete unmerged branches.
+# delete all local merged branches
+alias gdlm='git branch --merged | egrep -v "(^\*|main|master|develop)" | xargs git branch -D'
+# delete all local branches (merged and unmerged).
+alias gdla='git branch | egrep -v "(^\*|main|master|develop)" | xargs git branch -D'
 
 # alias pubkey="pbcopy < ~/.ssh/id_rsa.pub"
 # alias p="cd $PROJECTS"

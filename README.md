@@ -38,6 +38,33 @@ you can simply run `rcup` in the dotfiles dir.
 - `gpl` - pull
 - `gpc` - push the current branch to origin
 
+```mermaid
+flowchart TD
+    CLONE[Clone Repo]
+    DEVELOP[Checkout develop branch \n <code>> gcod</code>]
+    INTEGRATION[Configure integration branch \n <code>> gib develop gibd </code>]
+    FEAT[Create a Feature branch \n <code>> gnf TK-421-my-feature-name </code>]
+    COMMIT[Commit some code \n <code>> git commit ... </code>]
+    SYNC[Push code upstream, sync with integration branch \n <code>> gsy </code>]
+    PR_EXISTS?{PR Exists?}
+    PR[Create a PR, maybe a draft]
+    MERGE_CONFLICTS?{Merge conflicts?}
+    RESOLVE_MERGE[Resolve merge conflicts]
+    FEATURE_COMPLETE?{Is the feature \n complete?}
+
+
+    CLONE  --> DEVELOP  --> INTEGRATION --> FEAT --> COMMIT --> SYNC --> PR_EXISTS?
+
+    PR_EXISTS? -->|no| PR -->|keep going| COMMIT
+    PR_EXISTS? -->|yes| MERGE_CONFLICTS?
+
+    MERGE_CONFLICTS? -->|no| FEATURE_COMPLETE?
+    MERGE_CONFLICTS? -->|yes| RESOLVE_MERGE -->|run again, stopped due to conflict| SYNC
+
+    FEATURE_COMPLETE? -->|yes| DONE
+    FEATURE_COMPLETE? -->|no, keep going| COMMIT
+```
+
 ### Elixir
 
 - `im` - run app in iex
