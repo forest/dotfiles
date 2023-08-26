@@ -35,6 +35,9 @@ function gsy() {
     int_branch="main"
   fi
 
+  echo "Pulling latest changes from origin (w/ rebase)"
+  command git pull --rebase
+
   echo "Doing merge-based sync"
 
   echo "Fetching the latest changes from the server"
