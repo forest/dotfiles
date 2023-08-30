@@ -1,11 +1,18 @@
 #!/bin/bash
 
-LIVEBOOK_HOME=~/code/notebooks
+#######
+# https://github.com/livebook-dev/livebook#environment-variables
+# When running Livebook Desktop, Livebook will invoke on boot a file
+# named ~/.livebookdesktop.sh on macOS or %USERPROFILE%\.livebookdesktop.bat on Windows.
+# This file can set environment variables used by Livebook, such as:
+#
+# the PATH environment variable
+#
+#   set LIVEBOOK_DISTRIBUTION=name to enable notebooks to
+#   communicate with nodes in other machines
+#
+#   or to configure the Erlang VM, for instance, by setting
+#   ERL_AFLAGS="-proto_dist inet6_tcp" if you need Livebook to run over IPv6
+#######
 
-eval "$(
-  cat ~/.gsc/spog-dev/credentials | awk '!/^\s*#/' | awk '!/^\s*$/' | while IFS='' read -r line; do
-    key=$(echo "$line" | cut -d '=' -f 1 | sed 's/^[ \t]*//;s/[ \t]*$//')
-    value=$(echo "$line" | cut -d '=' -f 2- | sed 's/^[ \t]*//;s/[ \t]*$//')
-    echo "export $key=\"$value\""
-  done
-)"
+export LIVEBOOK_HOME=~/code/notebooks
