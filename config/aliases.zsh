@@ -53,3 +53,7 @@ alias m='make'
 # > initdb --locale=C -E UTF-8 $(brew --prefix)/var/postgres -U postgres -W
 alias pgst='pg_ctl -D $(brew --prefix)/var/postgres start'
 alias pgsp='pg_ctl -D $(brew --prefix)/var/postgres stop -s -m fast'
+
+# list (ls)
+alias la='exa --long --header --git --no-user'
+alias lt='exa --long --header --git --no-user --tree --git-ignore'

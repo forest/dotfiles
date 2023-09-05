@@ -30,6 +30,7 @@
   graft = merge --no-ff
   rb = rebase
   dft = difftool
+	project-summary = !which onefetch && onefetch
 
 [color]
   ui = auto
