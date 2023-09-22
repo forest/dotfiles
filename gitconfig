@@ -102,7 +102,7 @@
 [user]
   name = Forest Carlisle
   email = 7829+forest@users.noreply.github.com
-  signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINg7+AajrV3SkswIwWw/w6nZ6EBnWKT/59SnLgFwGXhs
+  signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIK3d/97XZ3IU+EQtXAxfNqOiblwwK+Lv4MYuq1sKFzRu
 
 [github]
   user = forest

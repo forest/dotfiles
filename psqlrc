@@ -12,7 +12,7 @@
 \set PROMPT2 '[more] %R > '
 
 -- Show how long each query takes to execute
-\timing
+\timing off
 
 -- Use best available output format
 \x auto
