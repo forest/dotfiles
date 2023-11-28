@@ -26,8 +26,14 @@ alias gpc='git push origin $(git_current_branch)'
 alias gs='git status -sb'
 alias gstp='git stash pop'
 alias gl="git log --graph --all --pretty='format:%C(auto)%h %C(cyan)%ar %C(auto)%d %C(magenta)%an %C(auto)%s'"
-alias gibd='gib develop'
-alias gibm='gib main'
+# alias gibd='gib develop'
+# alias gibm='gib main'
+
+# git-town
+alias gnf='git hack'
+alias gsy='git sync'
+alias gor='git-town repo'
+alias gpb='git-town prune-branches'
 
 # DANGER! Only run these if you are sure you want to delete unmerged branches.
 # delete all local merged branches

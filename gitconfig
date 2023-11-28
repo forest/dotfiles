@@ -6,7 +6,7 @@
   defaultBranch = main
 
 [core]
-  editor = vim
+  editor = nano
   # pager = delta
 	excludesfile = ~/.gitignore
 
@@ -31,6 +31,17 @@
   rb = rebase
   dft = difftool
 	project-summary = !which onefetch && onefetch
+	append = town append
+	diff-parent = town diff-parent
+	hack = town hack
+	kill = town kill
+	new-pull-request = town new-pull-request
+	prepend = town prepend
+	prune-branches = town prune-branches
+	rename-branch = town rename-branch
+	repo = town repo
+	ship = town ship
+	sync = town sync
 
 [color]
   ui = auto
@@ -148,3 +159,5 @@
   line-numbers-right-style = cyan
   line-numbers-minus-style = 124
   line-numbers-plus-style = 28
+[git-town]
+	ship-delete-remote-branch = false
