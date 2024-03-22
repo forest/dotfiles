@@ -1,6 +1,7 @@
 nodejs 16.2.0
-erlang 26.0.2
-elixir 1.15.5-otp-26
-direnv 2.31.0
+erlang 26.2.1
+elixir 1.15.7-otp-26
 tflint 0.38.1
 terraform 1.4.6
+python 3.12.2
+ruby 3.0.2

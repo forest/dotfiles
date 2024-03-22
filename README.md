@@ -11,7 +11,7 @@ management is done with [rcm](https://github.com/thoughtbot/rcm) and packages ar
 ## Whats in it?
 
 - Defaults for vim, tmux, git, iex, psql, and zsh shell.
-- Version management for elixir, erlang, ruby, node, direnv, etc (via. asdf)
+- Version management for elixir, erlang, ruby, node, etc (via. mise)
 - Lots of aliases for common commands.
 - Installation software via [homebrew](https://brew.sh/). See Brewfile.
 - [Starship](https://starship.rs/) terminal prompt configuration.

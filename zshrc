@@ -31,7 +31,7 @@ eval "$(starship init zsh)"
 # Uncomment one of the following lines to change the auto-update behavior
 # zstyle ':omz:update' mode disabled  # disable automatic updates
 # zstyle ':omz:update' mode auto      # update automatically without asking
-# zstyle ':omz:update' mode reminder  # just remind me to update when it's time
+zstyle ':omz:update' mode reminder  # just remind me to update when it's time
 
 # Uncomment the following line to change how often to auto-update (in days).
 # zstyle ':omz:update' frequency 13
@@ -76,7 +76,7 @@ ZSH_CUSTOM=$HOME/.config/ohmyzsh/custom
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(aliases brew asdf colored-man-pages command-not-found common-aliases direnv docker fzf z fz git gitfast history-substring-search kubectl mix-fast npm pip)
+plugins=(aliases brew mise colored-man-pages command-not-found common-aliases docker eza fzf z fz git gitfast history-substring-search kubectl mix-fast npm pip)
 
 # brew completions
 FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
@@ -125,6 +125,9 @@ export SSH_AUTH_SOCK=~/Library/Group\ Containers/2BUA8C4S2C.com.1password/t/agen
 export ERL_AFLAGS="-kernel shell_history enabled"
 export KERL_CONFIGURE_OPTIONS="--without-jinterface --without-hipe"
 export KERL_BUILD_DOCS="no"
+
+# docs.pkgx.sh/shellcode
+source <(pkgx --shellcode)
 
 # k8s
 source <(kubectl completion zsh)

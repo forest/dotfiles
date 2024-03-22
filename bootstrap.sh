@@ -41,42 +41,9 @@ brew bundle --file=$HOME/dotfiles/Brewfile
 fancy_echo "Linking dotfiles..."
 env RCRC=$HOME/dotfiles/rcrc rcup
 
-if ! asdf plugin-list | grep elixir > /dev/null
-then
-  fancy_echo "Installing elixir asdf plugin..."
-  asdf plugin-add elixir https://github.com/asdf-vm/asdf-elixir.git
-fi
-
-if ! asdf plugin-list | grep erlang > /dev/null
-then
-    fancy_echo "Installing erlang asdf plugin..."
-    asdf plugin-add erlang https://github.com/asdf-vm/asdf-erlang.git
-fi
-
-# if ! asdf plugin-list | grep ruby > /dev/null
-# then
-#   fancy_echo "Installing ruby asdf plugin..."
-#   asdf plugin-add ruby https://github.com/asdf-vm/asdf-ruby.git
-# fi
-
-if ! asdf plugin-list | grep nodejs > /dev/null
-then
-  fancy_echo "Installing nodejs asdf plugin..."
-  asdf plugin-add nodejs https://github.com/asdf-vm/asdf-nodejs.git
-  bash -c '${ASDF_DATA_DIR:=$HOME/.asdf}/plugins/nodejs/bin/import-release-team-keyring'
-fi
-
 # install ohmyzsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-if ! command -v rustup > /dev/null
-then
-  fancy_echo "Installing rustup..."
-  curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-
-  fancy_echo "Installing rust apps..."
-  cargo install tealdeer
-fi
 
 # if [[ ! $(psql -U postgres -c '\du' | grep 'postgres') ]]
 # then

@@ -1,0 +1,8 @@
+[tools]
+rust = "latest"
+"cargo:eza" = "latest"
+"cargo:tealdeer" = "latest"
+"cargo:dotenvy" = "latest"
+
+[settings]
+experimental = true

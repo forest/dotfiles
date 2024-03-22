@@ -7,9 +7,9 @@ alias mt='mix test'
 alias mtf='mix test --only focus:true'
 alias mtw='mix test.watch '
 alias mtws='mix test.watch --stale'
-alias mps='iex -S mix phx.server '
-alias mpso='iex -S mix phx.server --open '
-alias mdg='mix deps.get'
+alias mps='mix phx.server'
+alias mpsd='iex --dbg pry -S mix phx.server'
+alias mdg='mix deps.get && mix deps.unlock --unused'
 alias mc='mix compile'
 alias mqc='mix qc'
 alias mcov='mix coveralls.html && open ./cover/excoveralls.html'
@@ -31,9 +31,9 @@ alias gl="git log --graph --all --pretty='format:%C(auto)%h %C(cyan)%ar %C(auto)
 
 # git-town
 alias gnf='git hack'
+alias gaf='git append'
 alias gsy='git sync'
 alias gor='git-town repo'
-alias gpb='git-town prune-branches'
 
 # DANGER! Only run these if you are sure you want to delete unmerged branches.
 # delete all local merged branches
@@ -62,4 +62,5 @@ alias pgsp='pg_ctl -D $(brew --prefix)/var/postgres stop -s -m fast'
 
 # list (ls)
 alias la='eza --long --header --git --no-user'
-alias lt='eza --long --header --git --no-user --tree --git-ignore'
+alias lt='eza --header --no-filesize --no-git --no-user --no-time --no-permissions --tree --git-ignore'
+alias lta='eza --long --header --git --no-user --tree --git-ignore'

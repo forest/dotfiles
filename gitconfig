@@ -129,7 +129,7 @@
 
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path =
+	path = 
 
 [mergetool "sourcetree"]
 	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
@@ -160,4 +160,4 @@
   line-numbers-minus-style = 124
   line-numbers-plus-style = 28
 [git-town]
-	ship-delete-remote-branch = false
+	ship-delete-tracking-branch = false
