@@ -1,0 +1,35 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run the `open default settings` command
+// from the command palette or from `Zed` application menu.
+{
+  "features": {
+    "copilot": false
+  },
+  "base_keymap": "VSCode",
+  "telemetry": {
+    "metrics": false
+  },
+  "buffer_font_size": 15,
+  "buffer_font_family": "InconsolataGo Nerd Font Mono",
+  "ui_font_family": "Victor Mono",
+  "ui_font_size": 15,
+  "git": {
+    "git_gutter": "tracked_files"
+  },
+  "terminal": {
+    "alternate_scroll": "off",
+    "blinking": "terminal_controlled",
+    "copy_on_select": true,
+    "env": {},
+    "font_family": "InconsolataGo Nerd Font Mono",
+    "font_size": 15,
+    "option_as_meta": false,
+    "shell": {},
+    "working_directory": "current_project_directory"
+  }
+}

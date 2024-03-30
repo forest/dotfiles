@@ -25,7 +25,7 @@ alias gpc='git push origin $(git_current_branch)'
 alias gs='git status -sb'
 alias gstp='git stash pop'
 alias gl="git log --graph --all --pretty='format:%C(auto)%h %C(cyan)%ar %C(auto)%d %C(magenta)%an %C(auto)%s'"
-alias lg= 'lazygit'
+alias lg='lazygit'
 
 # git-town
 alias gnf='git hack'
@@ -59,7 +59,7 @@ alias pgst='pg_ctl -D $(brew --prefix)/var/postgres start'
 alias pgsp='pg_ctl -D $(brew --prefix)/var/postgres stop -s -m fast'
 
 # list (ls)
-alias la='eza --long --header --git --no-user'
+alias la='eza -all --long --header --git --no-user'
 alias lt='eza --header --no-filesize --no-git --no-user --no-time --no-permissions --tree --git-ignore'
 alias lta='eza --long --header --git --no-user --tree --git-ignore'
 
