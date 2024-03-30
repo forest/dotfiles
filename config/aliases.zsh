@@ -20,14 +20,12 @@ alias livebookup='mix escript.install hex livebook'
 
 # git
 # aliases on top of https://github.com/davidde/git#aliases-cheatsheet
-# alias gcm="git remote show origin | awk '/HEAD branch:/ {print \$3}' | xargs git checkout"
 alias gdc='git diff --cached'
 alias gpc='git push origin $(git_current_branch)'
 alias gs='git status -sb'
 alias gstp='git stash pop'
 alias gl="git log --graph --all --pretty='format:%C(auto)%h %C(cyan)%ar %C(auto)%d %C(magenta)%an %C(auto)%s'"
-# alias gibd='gib develop'
-# alias gibm='gib main'
+alias lg= 'lazygit'
 
 # git-town
 alias gnf='git hack'
@@ -45,11 +43,11 @@ alias gdla='git branch | egrep -v "(^\*|main|master|develop)" | xargs git branch
 # alias p="cd $PROJECTS"
 
 # alias
-alias de='code $HOME/dotfiles' # dotfiles edit
+alias de='zed $HOME/dotfiles' # dotfiles edit
 
 # random
 alias myip='curl ifconfig.me'
-alias hosts='sudo code /private/etc/hosts'
+alias hosts='sudo zed /private/etc/hosts'
 alias tarx='tar xzvf '
 
 # make
@@ -64,3 +62,6 @@ alias pgsp='pg_ctl -D $(brew --prefix)/var/postgres stop -s -m fast'
 alias la='eza --long --header --git --no-user'
 alias lt='eza --header --no-filesize --no-git --no-user --no-time --no-permissions --tree --git-ignore'
 alias lta='eza --long --header --git --no-user --tree --git-ignore'
+
+# kustomize
+alias kb='kustomize build --load-restrictor LoadRestrictionsNone'
