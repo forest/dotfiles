@@ -43,11 +43,11 @@ alias gdla='git branch | egrep -v "(^\*|main|master|develop)" | xargs git branch
 # alias p="cd $PROJECTS"
 
 # alias
-alias de='zed $HOME/dotfiles' # dotfiles edit
+alias de='code $HOME/dotfiles' # dotfiles edit
 
 # random
 alias myip='curl ifconfig.me'
-alias hosts='sudo zed /private/etc/hosts'
+alias hosts='sudo code /private/etc/hosts'
 alias tarx='tar xzvf '
 
 # make
@@ -62,6 +62,3 @@ alias pgsp='pg_ctl -D $(brew --prefix)/var/postgres stop -s -m fast'
 alias la='eza -all --long --header --git --no-user'
 alias lt='eza --header --no-filesize --no-git --no-user --no-time --no-permissions --tree --git-ignore'
 alias lta='eza --long --header --git --no-user --tree --git-ignore'
-
-# kustomize
-alias kb='kustomize build --load-restrictor LoadRestrictionsNone'

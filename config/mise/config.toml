@@ -7,4 +7,4 @@ rust = "latest"
 [settings]
 experimental = true
 
-env_file = '.env' # load env vars from a dotenv file, see `MISE_ENV_FILE`
+env_file = '.env.local' # load env vars from a dotenv file, see `MISE_ENV_FILE`

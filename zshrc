@@ -134,7 +134,7 @@ source <(kubectl completion zsh)
 # function kubectl() { echo "+ kubectl $@"; command kubectl $@; }
 
 # Add completions
-fpath=($HOME/dotfiles/zsh.d/ $fpath)
+fpath=($HOME/dotfiles/config/zsh.d/ $fpath)
 
 # 1Password CLI completions
 eval "$(op completion zsh)"; compdef _op op
