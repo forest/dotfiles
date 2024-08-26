@@ -78,3 +78,6 @@ npm-debug.log
 ######################
 .elixir_ls/
 .mix_tasks
+.vscode
+.lexical
+.elixir-tools

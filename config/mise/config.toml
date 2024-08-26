@@ -3,6 +3,8 @@ rust = "latest"
 "cargo:eza" = "latest"
 "cargo:tealdeer" = "latest"
 "cargo:dotenvy" = "latest"
+"cargo:typos-cli" = "latest"
+"cargo:ghctl" = "latest"
 
 [settings]
 experimental = true
