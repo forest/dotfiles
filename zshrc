@@ -95,10 +95,6 @@ bindkey "^[[1;5D" backward-word
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
-# ODBC
-export ODBCSYSINI=~/Library/ODBC
-export ODBCINI=~/Library/ODBC/odbc.ini
-
 # You may need to manually set your language environment
 export LANG=en_US.UTF-8
 
@@ -106,7 +102,7 @@ export LANG=en_US.UTF-8
 if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='vim'
 else
-  export EDITOR='code'
+  export EDITOR='zed'
 fi
 
 # 1Password SSH Agent

@@ -1,10 +1,14 @@
 [tools]
-rust = "latest"
+"cargo:dotenvy" = "latest"
 "cargo:eza" = "latest"
 "cargo:tealdeer" = "latest"
-"cargo:dotenvy" = "latest"
 "cargo:typos-cli" = "latest"
-"cargo:ghctl" = "latest"
+elixir = "1.17.2-otp-27"
+erlang = "27.0.1"
+nodejs = "22.7.0"
+python = "3.12.2"
+ruby = "3.0.2"
+rust = "latest"
 
 [settings]
 experimental = true
