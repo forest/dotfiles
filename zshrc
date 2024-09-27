@@ -143,3 +143,6 @@ alias reload='exec $SHELL'
 
 # Source local customizations.
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
+
+# bun completions
+[ -s "/Users/forest/.bun/_bun" ] && source "/Users/forest/.bun/_bun"

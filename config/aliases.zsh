@@ -1,5 +1,4 @@
 # Elixir
-alias i='iex'
 alias im='iex -S mix'
 alias m='mix'
 alias mf='mix format'
@@ -10,9 +9,11 @@ alias mtw='mix test.interactive '
 alias mtws='mix test.interactive --stale'
 alias mps='mix phx.server'
 alias mpsd='iex --dbg pry -S mix phx.server'
+alias mpsl='iex --name app@127.0.0.1 --cookie mycookie -S mix phx.server'
 alias mdg='mix deps.get && mix deps.unlock --unused'
 alias mc='mix compile'
 alias mqc='mix qc'
+alias mci='mix ci'
 alias mcov='mix coveralls.html && open ./cover/excoveralls.html'
 
 # livebook

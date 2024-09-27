@@ -161,3 +161,5 @@
   line-numbers-plus-style = 28
 [git-town]
 	ship-delete-tracking-branch = false
+[gitbutler]
+	aiModelProvider = anthropic
