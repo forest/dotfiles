@@ -9,7 +9,7 @@
 			<key>Ack</key>
 			<dict>
 				<key>date</key>
-				<date>2022-07-14T04:08:43Z</date>
+				<date>2024-09-27T23:04:13Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -27,62 +27,10 @@
 					<string>Ack</string>
 				</dict>
 			</dict>
-			<key>Bash_Shortcuts</key>
-			<dict>
-				<key>date</key>
-				<date>2022-07-14T04:08:41Z</date>
-				<key>entry</key>
-				<dict>
-					<key>aliases</key>
-					<array>
-						<string>terminal shell bash</string>
-					</array>
-					<key>name</key>
-					<string>Bash Shortcuts</string>
-					<key>platform</key>
-					<string>cheatsheet</string>
-					<key>uniqueIdentifier</key>
-					<string>Bash_Shortcuts</string>
-				</dict>
-			</dict>
-			<key>CSS_Device_Media_Queries</key>
-			<dict>
-				<key>date</key>
-				<date>2022-07-14T04:08:43Z</date>
-				<key>entry</key>
-				<dict>
-					<key>aliases</key>
-					<array/>
-					<key>name</key>
-					<string>CSS Device Media Queries</string>
-					<key>platform</key>
-					<string>cheatsheet</string>
-					<key>uniqueIdentifier</key>
-					<string>CSS_Device_Media_Queries</string>
-				</dict>
-			</dict>
-			<key>Chrome_Dev_Tools</key>
-			<dict>
-				<key>date</key>
-				<date>2022-07-14T04:08:42Z</date>
-				<key>entry</key>
-				<dict>
-					<key>aliases</key>
-					<array>
-						<string>Chrome Dev Tools</string>
-					</array>
-					<key>name</key>
-					<string>Chrome Developer Tools</string>
-					<key>platform</key>
-					<string>cheatsheet</string>
-					<key>uniqueIdentifier</key>
-					<string>Chrome_Dev_Tools</string>
-				</dict>
-			</dict>
 			<key>Docker</key>
 			<dict>
 				<key>date</key>
-				<date>2022-07-14T04:08:42Z</date>
+				<date>2024-09-27T23:04:27Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -98,7 +46,7 @@
 			<key>Dockerfile</key>
 			<dict>
 				<key>date</key>
-				<date>2022-07-14T04:08:42Z</date>
+				<date>2024-09-27T23:04:29Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -114,7 +62,7 @@
 			<key>Elixir_Guards</key>
 			<dict>
 				<key>date</key>
-				<date>2022-10-06T18:34:55Z</date>
+				<date>2024-09-27T23:04:32Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -127,26 +75,10 @@
 					<string>Elixir_Guards</string>
 				</dict>
 			</dict>
-			<key>Font_Awesome</key>
-			<dict>
-				<key>date</key>
-				<date>2022-07-14T04:08:43Z</date>
-				<key>entry</key>
-				<dict>
-					<key>aliases</key>
-					<array/>
-					<key>name</key>
-					<string>Font Awesome</string>
-					<key>platform</key>
-					<string>cheatsheet</string>
-					<key>uniqueIdentifier</key>
-					<string>Font_Awesome</string>
-				</dict>
-			</dict>
 			<key>Git</key>
 			<dict>
 				<key>date</key>
-				<date>2022-07-14T04:08:42Z</date>
+				<date>2024-09-27T23:04:40Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -162,134 +94,12 @@
 					<string>cheatsheet</string>
 					<key>uniqueIdentifier</key>
 					<string>Git</string>
-				</dict>
-			</dict>
-			<key>Git_Flow</key>
-			<dict>
-				<key>date</key>
-				<date>2022-07-14T04:08:43Z</date>
-				<key>entry</key>
-				<dict>
-					<key>aliases</key>
-					<array>
-						<string>terminal</string>
-						<string>shell</string>
-						<string>bash</string>
-						<string>zsh</string>
-					</array>
-					<key>name</key>
-					<string>Git Flow</string>
-					<key>platform</key>
-					<string>cheatsheet</string>
-					<key>uniqueIdentifier</key>
-					<string>Git_Flow</string>
-				</dict>
-			</dict>
-			<key>HTML_Entities</key>
-			<dict>
-				<key>date</key>
-				<date>2022-07-14T04:08:43Z</date>
-				<key>entry</key>
-				<dict>
-					<key>aliases</key>
-					<array/>
-					<key>name</key>
-					<string>HTML Entities</string>
-					<key>platform</key>
-					<string>cheatsheet</string>
-					<key>uniqueIdentifier</key>
-					<string>HTML_Entities</string>
-				</dict>
-			</dict>
-			<key>HTML_Head_Elements</key>
-			<dict>
-				<key>date</key>
-				<date>2022-07-14T04:08:43Z</date>
-				<key>entry</key>
-				<dict>
-					<key>aliases</key>
-					<array/>
-					<key>name</key>
-					<string>HTML Head Elements</string>
-					<key>platform</key>
-					<string>cheatsheet</string>
-					<key>uniqueIdentifier</key>
-					<string>HTML_Head_Elements</string>
-				</dict>
-			</dict>
-			<key>HTTP_Header_Fields</key>
-			<dict>
-				<key>date</key>
-				<date>2022-07-14T04:08:42Z</date>
-				<key>entry</key>
-				<dict>
-					<key>aliases</key>
-					<array/>
-					<key>name</key>
-					<string>HTTP Header Fields</string>
-					<key>platform</key>
-					<string>cheatsheet</string>
-					<key>uniqueIdentifier</key>
-					<string>HTTP_Header_Fields</string>
-				</dict>
-			</dict>
-			<key>HTTP_Status_Codes</key>
-			<dict>
-				<key>date</key>
-				<date>2022-07-14T04:08:42Z</date>
-				<key>entry</key>
-				<dict>
-					<key>aliases</key>
-					<array/>
-					<key>name</key>
-					<string>HTTP Status Codes</string>
-					<key>platform</key>
-					<string>cheatsheet</string>
-					<key>uniqueIdentifier</key>
-					<string>HTTP_Status_Codes</string>
-				</dict>
-			</dict>
-			<key>HTTP_Status_Codes_Rails</key>
-			<dict>
-				<key>date</key>
-				<date>2022-07-14T04:08:42Z</date>
-				<key>entry</key>
-				<dict>
-					<key>aliases</key>
-					<array>
-						<string>HTTP Status Codes Ruby on Rails</string>
-						<string>HTTP Status Codes for Ruby on Rails</string>
-						<string>HTTP Status Codes Rails</string>
-						<string>HTTP Status Codes for RoR</string>
-					</array>
-					<key>name</key>
-					<string>HTTP Status Codes for Rails</string>
-					<key>platform</key>
-					<string>cheatsheet</string>
-					<key>uniqueIdentifier</key>
-					<string>HTTP_Status_Codes_Rails</string>
-				</dict>
-			</dict>
-			<key>Keybase.io</key>
-			<dict>
-				<key>date</key>
-				<date>2022-07-14T04:08:42Z</date>
-				<key>entry</key>
-				<dict>
-					<key>aliases</key>
-					<array/>
-					<key>name</key>
-					<string>Keybase.io</string>
-					<key>platform</key>
-					<string>cheatsheet</string>
-					<key>uniqueIdentifier</key>
-					<string>Keybase.io</string>
 				</dict>
 			</dict>
 			<key>Kubernetes</key>
 			<dict>
 				<key>date</key>
-				<date>2022-07-14T04:08:43Z</date>
+				<date>2024-09-27T23:04:51Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -300,47 +110,12 @@
 					<string>cheatsheet</string>
 					<key>uniqueIdentifier</key>
 					<string>Kubernetes</string>
-				</dict>
-			</dict>
-			<key>MIME_Types</key>
-			<dict>
-				<key>date</key>
-				<date>2022-07-14T04:08:43Z</date>
-				<key>entry</key>
-				<dict>
-					<key>aliases</key>
-					<array/>
-					<key>name</key>
-					<string>MIME Types</string>
-					<key>platform</key>
-					<string>cheatsheet</string>
-					<key>uniqueIdentifier</key>
-					<string>MIME_Types</string>
-				</dict>
-			</dict>
-			<key>Mac_Startup_Keys</key>
-			<dict>
-				<key>date</key>
-				<date>2022-07-14T04:08:43Z</date>
-				<key>entry</key>
-				<dict>
-					<key>aliases</key>
-					<array>
-						<string>mac os x startup keys</string>
-						<string>macosx startup keys</string>
-					</array>
-					<key>name</key>
-					<string>Mac Startup Keys</string>
-					<key>platform</key>
-					<string>cheatsheet</string>
-					<key>uniqueIdentifier</key>
-					<string>Mac_Startup_Keys</string>
 				</dict>
 			</dict>
 			<key>Oh-My-Zsh_Git</key>
 			<dict>
 				<key>date</key>
-				<date>2022-10-10T20:22:36Z</date>
+				<date>2024-09-27T23:05:09Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -360,42 +135,33 @@
 					<string>Oh-My-Zsh_Git</string>
 				</dict>
 			</dict>
-			<key>Prezto</key>
+			<key>Oh-My-Zsh_Kubectl</key>
 			<dict>
 				<key>date</key>
-				<date>2022-07-14T04:08:43Z</date>
+				<date>2024-09-27T23:05:11Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
-					<array/>
+					<array>
+						<string>ohmyzsh</string>
+						<string>oh my zsh</string>
+						<string>terminal</string>
+						<string>shell</string>
+						<string>bash</string>
+						<string>zsh</string>
+					</array>
 					<key>name</key>
-					<string>Prezto</string>
+					<string>Oh-My-Zsh Kubectl</string>
 					<key>platform</key>
 					<string>cheatsheet</string>
 					<key>uniqueIdentifier</key>
-					<string>Prezto</string>
-				</dict>
-			</dict>
-			<key>Prezto_Git</key>
-			<dict>
-				<key>date</key>
-				<date>2022-07-14T04:08:43Z</date>
-				<key>entry</key>
-				<dict>
-					<key>aliases</key>
-					<array/>
-					<key>name</key>
-					<string>Prezto Git</string>
-					<key>platform</key>
-					<string>cheatsheet</string>
-					<key>uniqueIdentifier</key>
-					<string>Prezto_Git</string>
+					<string>Oh-My-Zsh_Kubectl</string>
 				</dict>
 			</dict>
 			<key>Regular_Expressions</key>
 			<dict>
 				<key>date</key>
-				<date>2022-07-14T04:08:44Z</date>
+				<date>2024-09-27T23:05:20Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -411,139 +177,41 @@
 					<string>Regular_Expressions</string>
 				</dict>
 			</dict>
-			<key>Visual_Studio_Code</key>
+			<key>Swift</key>
 			<dict>
 				<key>date</key>
-				<date>2022-07-14T04:08:43Z</date>
-				<key>entry</key>
-				<dict>
-					<key>aliases</key>
-					<array/>
-					<key>name</key>
-					<string>Visual Studio Code</string>
-					<key>platform</key>
-					<string>cheatsheet</string>
-					<key>uniqueIdentifier</key>
-					<string>Visual_Studio_Code</string>
-				</dict>
-			</dict>
-			<key>YAML</key>
-			<dict>
-				<key>date</key>
-				<date>2022-07-14T04:08:42Z</date>
-				<key>entry</key>
-				<dict>
-					<key>aliases</key>
-					<array/>
-					<key>name</key>
-					<string>YAML</string>
-					<key>platform</key>
-					<string>cheatsheet</string>
-					<key>uniqueIdentifier</key>
-					<string>YAML</string>
-				</dict>
-			</dict>
-			<key>Yard</key>
-			<dict>
-				<key>date</key>
-				<date>2022-07-14T04:08:43Z</date>
+				<date>2024-09-27T23:05:32Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
 					<array>
-						<string>ruby</string>
+						<string>apple</string>
+						<string>cocoa touch</string>
+						<string>iphone</string>
+						<string>ipad</string>
+						<string>ios</string>
+						<string>mac os x</string>
+						<string>macosx</string>
+						<string>objc</string>
+						<string>objectivec</string>
+						<string>objective c</string>
+						<string>objective-c</string>
+						<string>xcode</string>
+						<string>swift</string>
 					</array>
 					<key>name</key>
-					<string>Yard</string>
+					<string>Swift</string>
 					<key>platform</key>
 					<string>cheatsheet</string>
 					<key>uniqueIdentifier</key>
-					<string>Yard</string>
-				</dict>
-			</dict>
-			<key>You_Might_Not_Need_jQuery</key>
-			<dict>
-				<key>date</key>
-				<date>2022-07-14T04:08:43Z</date>
-				<key>entry</key>
-				<dict>
-					<key>aliases</key>
-					<array/>
-					<key>name</key>
-					<string>You Might Not Need jQuery</string>
-					<key>platform</key>
-					<string>cheatsheet</string>
-					<key>uniqueIdentifier</key>
-					<string>You_Might_Not_Need_jQuery</string>
-				</dict>
-			</dict>
-			<key>iTerm2</key>
-			<dict>
-				<key>date</key>
-				<date>2023-03-15T21:09:21Z</date>
-				<key>entry</key>
-				<dict>
-					<key>aliases</key>
-					<array>
-						<string>terminal</string>
-						<string>shell</string>
-						<string>bash</string>
-						<string>zsh</string>
-					</array>
-					<key>name</key>
-					<string>iTerm2</string>
-					<key>platform</key>
-					<string>cheatsheet</string>
-					<key>uniqueIdentifier</key>
-					<string>iTerm2</string>
-				</dict>
-			</dict>
-			<key>npm</key>
-			<dict>
-				<key>date</key>
-				<date>2022-07-14T04:08:43Z</date>
-				<key>entry</key>
-				<dict>
-					<key>aliases</key>
-					<array>
-						<string>node package manager</string>
-						<string>nodejs package manager</string>
-						<string>node.js package manager</string>
-					</array>
-					<key>name</key>
-					<string>npm</string>
-					<key>platform</key>
-					<string>cheatsheet</string>
-					<key>uniqueIdentifier</key>
-					<string>npm</string>
-				</dict>
-			</dict>
-			<key>tmux</key>
-			<dict>
-				<key>date</key>
-				<date>2022-07-14T04:08:42Z</date>
-				<key>entry</key>
-				<dict>
-					<key>aliases</key>
-					<array>
-						<string>terminal</string>
-						<string>shell</string>
-						<string>bash</string>
-						<string>zsh</string>
-					</array>
-					<key>name</key>
-					<string>tmux</string>
-					<key>platform</key>
-					<string>cheatsheet</string>
-					<key>uniqueIdentifier</key>
-					<string>tmux</string>
+					<string>Swift</string>
 				</dict>
 			</dict>
 		</dict>
 		<key>uninstalled</key>
 		<dict/>
 	</dict>
-	<key>DHCocoaRepo</key>
+	<key>DHClojureRepo</key>
 	<dict>
 		<key>installed</key>
 		<dict/>
@@ -551,6 +219,13 @@
 		<dict/>
 	</dict>
 	<key>DHDartRepo</key>
+	<dict>
+		<key>installed</key>
+		<dict/>
+		<key>uninstalled</key>
+		<dict/>
+	</dict>
+	<key>DHDocsetGeneratorRepo</key>
 	<dict>
 		<key>installed</key>
 		<dict/>
@@ -582,24 +257,10 @@
 	<dict>
 		<key>installed</key>
 		<dict>
-			<key>absinthe</key>
-			<dict>
-				<key>date</key>
-l				<date>2023-07-24T22:45:37Z</date>
-				<key>entry</key>
-				<dict>
-					<key>name</key>
-					<string>absinthe</string>
-					<key>platform</key>
-					<string>hex</string>
-					<key>uniqueIdentifier</key>
-					<string>absinthe</string>
-				</dict>
-			</dict>
 			<key>ash</key>
 			<dict>
 				<key>date</key>
-				<date>2023-09-06T16:21:54Z</date>
+				<date>2024-10-10T20:43:18Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -610,38 +271,38 @@ l				<date>2023-07-24T22:45:37Z</date>
 					<string>ash</string>
 				</dict>
 			</dict>
-			<key>ash_core</key>
+			<key>ash_authentication</key>
 			<dict>
 				<key>date</key>
-				<date>2022-11-28T02:56:23Z</date>
+				<date>2024-10-08T18:26:32Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
-					<string>ash_core</string>
+					<string>ash_authentication</string>
 					<key>platform</key>
 					<string>hex</string>
 					<key>uniqueIdentifier</key>
-					<string>ash_core</string>
+					<string>ash_authentication</string>
 				</dict>
 			</dict>
-			<key>ash_graphql</key>
+			<key>ash_authentication_phoenix</key>
 			<dict>
 				<key>date</key>
-				<date>2023-08-30T21:12:56Z</date>
+				<date>2024-10-09T20:43:14Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
-					<string>ash_graphql</string>
+					<string>ash_authentication_phoenix</string>
 					<key>platform</key>
 					<string>hex</string>
 					<key>uniqueIdentifier</key>
-					<string>ash_graphql</string>
+					<string>ash_authentication_phoenix</string>
 				</dict>
 			</dict>
 			<key>ash_json_api</key>
 			<dict>
 				<key>date</key>
-				<date>2023-08-01T01:30:00Z</date>
+				<date>2024-10-10T20:43:14Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -655,7 +316,7 @@ l				<date>2023-07-24T22:45:37Z</date>
 			<key>ash_phoenix</key>
 			<dict>
 				<key>date</key>
-				<date>2023-09-06T16:21:51Z</date>
+				<date>2024-10-01T15:06:01Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -664,40 +325,12 @@ l				<date>2023-07-24T22:45:37Z</date>
 					<string>hex</string>
 					<key>uniqueIdentifier</key>
 					<string>ash_phoenix</string>
-				</dict>
-			</dict>
-			<key>ash_policy_access</key>
-			<dict>
-				<key>date</key>
-				<date>2022-11-28T02:56:26Z</date>
-				<key>entry</key>
-				<dict>
-					<key>name</key>
-					<string>ash_policy_access</string>
-					<key>platform</key>
-					<string>hex</string>
-					<key>uniqueIdentifier</key>
-					<string>ash_policy_access</string>
-				</dict>
-			</dict>
-			<key>ash_policy_authorizer</key>
-			<dict>
-				<key>date</key>
-				<date>2022-11-28T02:56:27Z</date>
-				<key>entry</key>
-				<dict>
-					<key>name</key>
-					<string>ash_policy_authorizer</string>
-					<key>platform</key>
-					<string>hex</string>
-					<key>uniqueIdentifier</key>
-					<string>ash_policy_authorizer</string>
 				</dict>
 			</dict>
 			<key>ash_postgres</key>
 			<dict>
 				<key>date</key>
-				<date>2023-09-06T16:21:51Z</date>
+				<date>2024-10-10T20:43:15Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -706,110 +339,12 @@ l				<date>2023-07-24T22:45:37Z</date>
 					<string>hex</string>
 					<key>uniqueIdentifier</key>
 					<string>ash_postgres</string>
-				</dict>
-			</dict>
-			<key>ayesql</key>
-			<dict>
-				<key>date</key>
-				<date>2022-09-23T15:16:04Z</date>
-				<key>entry</key>
-				<dict>
-					<key>name</key>
-					<string>ayesql</string>
-					<key>platform</key>
-					<string>hex</string>
-					<key>uniqueIdentifier</key>
-					<string>ayesql</string>
-				</dict>
-			</dict>
-			<key>benchee</key>
-			<dict>
-				<key>date</key>
-				<date>2022-07-14T04:09:21Z</date>
-				<key>entry</key>
-				<dict>
-					<key>name</key>
-					<string>benchee</string>
-					<key>platform</key>
-					<string>hex</string>
-					<key>uniqueIdentifier</key>
-					<string>benchee</string>
-				</dict>
-			</dict>
-			<key>broadway</key>
-			<dict>
-				<key>date</key>
-				<date>2023-04-22T18:07:05Z</date>
-				<key>entry</key>
-				<dict>
-					<key>name</key>
-					<string>broadway</string>
-					<key>platform</key>
-					<string>hex</string>
-					<key>uniqueIdentifier</key>
-					<string>broadway</string>
-				</dict>
-			</dict>
-			<key>broadway_cloud_pub_sub</key>
-			<dict>
-				<key>date</key>
-				<date>2022-10-26T15:31:41Z</date>
-				<key>entry</key>
-				<dict>
-					<key>name</key>
-					<string>broadway_cloud_pub_sub</string>
-					<key>platform</key>
-					<string>hex</string>
-					<key>uniqueIdentifier</key>
-					<string>broadway_cloud_pub_sub</string>
-				</dict>
-			</dict>
-			<key>cachex</key>
-			<dict>
-				<key>date</key>
-				<date>2023-06-10T01:00:47Z</date>
-				<key>entry</key>
-				<dict>
-					<key>name</key>
-					<string>cachex</string>
-					<key>platform</key>
-					<string>hex</string>
-					<key>uniqueIdentifier</key>
-					<string>cachex</string>
-				</dict>
-			</dict>
-			<key>credo</key>
-			<dict>
-				<key>date</key>
-				<date>2023-03-20T21:22:57Z</date>
-				<key>entry</key>
-				<dict>
-					<key>name</key>
-					<string>credo</string>
-					<key>platform</key>
-					<string>hex</string>
-					<key>uniqueIdentifier</key>
-					<string>credo</string>
-				</dict>
-			</dict>
-			<key>deep_merge</key>
-			<dict>
-				<key>date</key>
-				<date>2022-07-14T04:09:03Z</date>
-				<key>entry</key>
-				<dict>
-					<key>name</key>
-					<string>deep_merge</string>
-					<key>platform</key>
-					<string>hex</string>
-					<key>uniqueIdentifier</key>
-					<string>deep_merge</string>
 				</dict>
 			</dict>
 			<key>ecto</key>
 			<dict>
 				<key>date</key>
-				<date>2023-07-07T21:06:07Z</date>
+				<date>2024-10-07T18:26:32Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -818,12 +353,26 @@ l				<date>2023-07-24T22:45:37Z</date>
 					<string>hex</string>
 					<key>uniqueIdentifier</key>
 					<string>ecto</string>
+				</dict>
+			</dict>
+			<key>ecto_ch</key>
+			<dict>
+				<key>date</key>
+				<date>2024-10-06T22:54:35Z</date>
+				<key>entry</key>
+				<dict>
+					<key>name</key>
+					<string>ecto_ch</string>
+					<key>platform</key>
+					<string>hex</string>
+					<key>uniqueIdentifier</key>
+					<string>ecto_ch</string>
 				</dict>
 			</dict>
 			<key>ecto_sql</key>
 			<dict>
 				<key>date</key>
-				<date>2023-08-22T18:22:43Z</date>
+				<date>2024-10-07T18:26:32Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -832,124 +381,12 @@ l				<date>2023-07-24T22:45:37Z</date>
 					<string>hex</string>
 					<key>uniqueIdentifier</key>
 					<string>ecto_sql</string>
-				</dict>
-			</dict>
-			<key>ex_aws</key>
-			<dict>
-				<key>date</key>
-				<date>2023-08-19T15:02:30Z</date>
-				<key>entry</key>
-				<dict>
-					<key>name</key>
-					<string>ex_aws</string>
-					<key>platform</key>
-					<string>hex</string>
-					<key>uniqueIdentifier</key>
-					<string>ex_aws</string>
-				</dict>
-			</dict>
-			<key>ex_aws_s3</key>
-			<dict>
-				<key>date</key>
-				<date>2023-03-19T18:57:12Z</date>
-				<key>entry</key>
-				<dict>
-					<key>name</key>
-					<string>ex_aws_s3</string>
-					<key>platform</key>
-					<string>hex</string>
-					<key>uniqueIdentifier</key>
-					<string>ex_aws_s3</string>
-				</dict>
-			</dict>
-			<key>ex_aws_ses</key>
-			<dict>
-				<key>date</key>
-				<date>2022-07-22T16:46:36Z</date>
-				<key>entry</key>
-				<dict>
-					<key>name</key>
-					<string>ex_aws_ses</string>
-					<key>platform</key>
-					<string>hex</string>
-					<key>uniqueIdentifier</key>
-					<string>ex_aws_ses</string>
-				</dict>
-			</dict>
-			<key>ex_aws_sts</key>
-			<dict>
-				<key>date</key>
-				<date>2023-03-19T18:57:19Z</date>
-				<key>entry</key>
-				<dict>
-					<key>name</key>
-					<string>ex_aws_sts</string>
-					<key>platform</key>
-					<string>hex</string>
-					<key>uniqueIdentifier</key>
-					<string>ex_aws_sts</string>
-				</dict>
-			</dict>
-			<key>ex_machina</key>
-			<dict>
-				<key>date</key>
-				<date>2022-07-14T04:09:24Z</date>
-				<key>entry</key>
-				<dict>
-					<key>name</key>
-					<string>ex_machina</string>
-					<key>platform</key>
-					<string>hex</string>
-					<key>uniqueIdentifier</key>
-					<string>ex_machina</string>
-				</dict>
-			</dict>
-			<key>ex_twilio</key>
-			<dict>
-				<key>date</key>
-				<date>2022-07-14T04:09:15Z</date>
-				<key>entry</key>
-				<dict>
-					<key>name</key>
-					<string>ex_twilio</string>
-					<key>platform</key>
-					<string>hex</string>
-					<key>uniqueIdentifier</key>
-					<string>ex_twilio</string>
-				</dict>
-			</dict>
-			<key>external_service</key>
-			<dict>
-				<key>date</key>
-				<date>2023-05-13T16:39:17Z</date>
-				<key>entry</key>
-				<dict>
-					<key>name</key>
-					<string>external_service</string>
-					<key>platform</key>
-					<string>hex</string>
-					<key>uniqueIdentifier</key>
-					<string>external_service</string>
-				</dict>
-			</dict>
-			<key>faker</key>
-			<dict>
-				<key>date</key>
-				<date>2022-07-14T04:08:57Z</date>
-				<key>entry</key>
-				<dict>
-					<key>name</key>
-					<string>faker</string>
-					<key>platform</key>
-					<string>hex</string>
-					<key>uniqueIdentifier</key>
-					<string>faker</string>
 				</dict>
 			</dict>
 			<key>finch</key>
 			<dict>
 				<key>date</key>
-				<date>2023-04-13T16:19:15Z</date>
+				<date>2024-09-27T23:03:37Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -958,264 +395,12 @@ l				<date>2023-07-24T22:45:37Z</date>
 					<string>hex</string>
 					<key>uniqueIdentifier</key>
 					<string>finch</string>
-				</dict>
-			</dict>
-			<key>flop</key>
-			<dict>
-				<key>date</key>
-				<date>2023-07-18T16:49:48Z</date>
-				<key>entry</key>
-				<dict>
-					<key>name</key>
-					<string>flop</string>
-					<key>platform</key>
-					<string>hex</string>
-					<key>uniqueIdentifier</key>
-					<string>flop</string>
-				</dict>
-			</dict>
-			<key>flop_phoenix</key>
-			<dict>
-				<key>date</key>
-				<date>2023-08-05T20:46:56Z</date>
-				<key>entry</key>
-				<dict>
-					<key>name</key>
-					<string>flop_phoenix</string>
-					<key>platform</key>
-					<string>hex</string>
-					<key>uniqueIdentifier</key>
-					<string>flop_phoenix</string>
-				</dict>
-			</dict>
-			<key>flow</key>
-			<dict>
-				<key>date</key>
-				<date>2023-03-21T21:22:49Z</date>
-				<key>entry</key>
-				<dict>
-					<key>name</key>
-					<string>flow</string>
-					<key>platform</key>
-					<string>hex</string>
-					<key>uniqueIdentifier</key>
-					<string>flow</string>
-				</dict>
-			</dict>
-			<key>gen_stage</key>
-			<dict>
-				<key>date</key>
-				<date>2023-03-20T21:22:45Z</date>
-				<key>entry</key>
-				<dict>
-					<key>name</key>
-					<string>gen_stage</string>
-					<key>platform</key>
-					<string>hex</string>
-					<key>uniqueIdentifier</key>
-					<string>gen_stage</string>
-				</dict>
-			</dict>
-			<key>guardian</key>
-			<dict>
-				<key>date</key>
-				<date>2022-11-25T23:41:47Z</date>
-				<key>entry</key>
-				<dict>
-					<key>name</key>
-					<string>guardian</string>
-					<key>platform</key>
-					<string>hex</string>
-					<key>uniqueIdentifier</key>
-					<string>guardian</string>
-				</dict>
-			</dict>
-			<key>heroicons</key>
-			<dict>
-				<key>date</key>
-				<date>2023-06-02T22:43:57Z</date>
-				<key>entry</key>
-				<dict>
-					<key>name</key>
-					<string>heroicons</string>
-					<key>platform</key>
-					<string>hex</string>
-					<key>uniqueIdentifier</key>
-					<string>heroicons</string>
-				</dict>
-			</dict>
-			<key>jason</key>
-			<dict>
-				<key>date</key>
-				<date>2023-07-07T21:06:05Z</date>
-				<key>entry</key>
-				<dict>
-					<key>name</key>
-					<string>jason</string>
-					<key>platform</key>
-					<string>hex</string>
-					<key>uniqueIdentifier</key>
-					<string>jason</string>
-				</dict>
-			</dict>
-			<key>mimic</key>
-			<dict>
-				<key>date</key>
-				<date>2022-08-10T16:35:20Z</date>
-				<key>entry</key>
-				<dict>
-					<key>name</key>
-					<string>mimic</string>
-					<key>platform</key>
-					<string>hex</string>
-					<key>uniqueIdentifier</key>
-					<string>mimic</string>
-				</dict>
-			</dict>
-			<key>mint</key>
-			<dict>
-				<key>date</key>
-				<date>2023-03-03T18:35:15Z</date>
-				<key>entry</key>
-				<dict>
-					<key>name</key>
-					<string>mint</string>
-					<key>platform</key>
-					<string>hex</string>
-					<key>uniqueIdentifier</key>
-					<string>mint</string>
-				</dict>
-			</dict>
-			<key>mix_test_watch</key>
-			<dict>
-				<key>date</key>
-				<date>2023-09-03T22:57:24Z</date>
-				<key>entry</key>
-				<dict>
-					<key>name</key>
-					<string>mix_test_watch</string>
-					<key>platform</key>
-					<string>hex</string>
-					<key>uniqueIdentifier</key>
-					<string>mix_test_watch</string>
-				</dict>
-			</dict>
-			<key>money</key>
-			<dict>
-				<key>date</key>
-				<date>2023-08-24T18:22:33Z</date>
-				<key>entry</key>
-				<dict>
-					<key>name</key>
-					<string>money</string>
-					<key>platform</key>
-					<string>hex</string>
-					<key>uniqueIdentifier</key>
-					<string>money</string>
-				</dict>
-			</dict>
-			<key>nanoid</key>
-			<dict>
-				<key>date</key>
-				<date>2023-07-12T16:49:43Z</date>
-				<key>entry</key>
-				<dict>
-					<key>name</key>
-					<string>nanoid</string>
-					<key>platform</key>
-					<string>hex</string>
-					<key>uniqueIdentifier</key>
-					<string>nanoid</string>
-				</dict>
-			</dict>
-			<key>new_relic_agent</key>
-			<dict>
-				<key>date</key>
-				<date>2022-09-08T20:40:18Z</date>
-				<key>entry</key>
-				<dict>
-					<key>name</key>
-					<string>new_relic_agent</string>
-					<key>platform</key>
-					<string>hex</string>
-					<key>uniqueIdentifier</key>
-					<string>new_relic_agent</string>
-				</dict>
-			</dict>
-			<key>nimble_csv</key>
-			<dict>
-				<key>date</key>
-				<date>2022-08-16T04:27:08Z</date>
-				<key>entry</key>
-				<dict>
-					<key>name</key>
-					<string>nimble_csv</string>
-					<key>platform</key>
-					<string>hex</string>
-					<key>uniqueIdentifier</key>
-					<string>nimble_csv</string>
-				</dict>
-			</dict>
-			<key>nimble_ets</key>
-			<dict>
-				<key>date</key>
-				<date>2022-08-16T04:27:11Z</date>
-				<key>entry</key>
-				<dict>
-					<key>name</key>
-					<string>nimble_ets</string>
-					<key>platform</key>
-					<string>hex</string>
-					<key>uniqueIdentifier</key>
-					<string>nimble_ets</string>
-				</dict>
-			</dict>
-			<key>nimble_options</key>
-			<dict>
-				<key>date</key>
-				<date>2023-04-21T16:39:33Z</date>
-				<key>entry</key>
-				<dict>
-					<key>name</key>
-					<string>nimble_options</string>
-					<key>platform</key>
-					<string>hex</string>
-					<key>uniqueIdentifier</key>
-					<string>nimble_options</string>
-				</dict>
-			</dict>
-			<key>norm</key>
-			<dict>
-				<key>date</key>
-				<date>2022-07-14T04:08:59Z</date>
-				<key>entry</key>
-				<dict>
-					<key>name</key>
-					<string>norm</string>
-					<key>platform</key>
-					<string>hex</string>
-					<key>uniqueIdentifier</key>
-					<string>norm</string>
-				</dict>
-			</dict>
-			<key>numerix</key>
-			<dict>
-				<key>date</key>
-				<date>2022-07-14T04:09:00Z</date>
-				<key>entry</key>
-				<dict>
-					<key>name</key>
-					<string>numerix</string>
-					<key>platform</key>
-					<string>hex</string>
-					<key>uniqueIdentifier</key>
-					<string>numerix</string>
 				</dict>
 			</dict>
 			<key>oban</key>
 			<dict>
 				<key>date</key>
-				<date>2023-08-07T21:05:36Z</date>
+				<date>2024-09-27T23:01:23Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -1226,66 +411,24 @@ l				<date>2023-07-24T22:45:37Z</date>
 					<string>oban</string>
 				</dict>
 			</dict>
-			<key>off_broadway_kafka</key>
+			<key>opentelemetry_oban</key>
 			<dict>
 				<key>date</key>
-				<date>2022-07-14T04:09:27Z</date>
+				<date>2024-10-09T20:43:13Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
-					<string>off_broadway_kafka</string>
+					<string>opentelemetry_oban</string>
 					<key>platform</key>
 					<string>hex</string>
 					<key>uniqueIdentifier</key>
-					<string>off_broadway_kafka</string>
-				</dict>
-			</dict>
-			<key>open_api_spex</key>
-			<dict>
-				<key>date</key>
-				<date>2023-08-23T18:22:31Z</date>
-				<key>entry</key>
-				<dict>
-					<key>name</key>
-					<string>open_api_spex</string>
-					<key>platform</key>
-					<string>hex</string>
-					<key>uniqueIdentifier</key>
-					<string>open_api_spex</string>
-				</dict>
-			</dict>
-			<key>opentelemetry</key>
-			<dict>
-				<key>date</key>
-				<date>2023-08-19T15:02:31Z</date>
-				<key>entry</key>
-				<dict>
-					<key>name</key>
-					<string>opentelemetry</string>
-					<key>platform</key>
-					<string>hex</string>
-					<key>uniqueIdentifier</key>
-					<string>opentelemetry</string>
-				</dict>
-			</dict>
-			<key>opentelemetry_api</key>
-			<dict>
-				<key>date</key>
-				<date>2023-08-19T15:02:31Z</date>
-				<key>entry</key>
-				<dict>
-					<key>name</key>
-					<string>opentelemetry_api</string>
-					<key>platform</key>
-					<string>hex</string>
-					<key>uniqueIdentifier</key>
-					<string>opentelemetry_api</string>
+					<string>opentelemetry_oban</string>
 				</dict>
 			</dict>
 			<key>phoenix</key>
 			<dict>
 				<key>date</key>
-				<date>2023-07-11T16:49:47Z</date>
+				<date>2024-09-27T23:02:33Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -1296,24 +439,24 @@ l				<date>2023-07-24T22:45:37Z</date>
 					<string>phoenix</string>
 				</dict>
 			</dict>
-			<key>phoenix_html</key>
+			<key>phoenix_ecto</key>
 			<dict>
 				<key>date</key>
-				<date>2023-08-10T21:05:32Z</date>
+				<date>2024-09-27T23:02:40Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
-					<string>phoenix_html</string>
+					<string>phoenix_ecto</string>
 					<key>platform</key>
 					<string>hex</string>
 					<key>uniqueIdentifier</key>
-					<string>phoenix_html</string>
+					<string>phoenix_ecto</string>
 				</dict>
 			</dict>
 			<key>phoenix_live_view</key>
 			<dict>
 				<key>date</key>
-				<date>2023-07-19T16:49:46Z</date>
+				<date>2024-09-27T23:02:52Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -1324,242 +467,18 @@ l				<date>2023-07-24T22:45:37Z</date>
 					<string>phoenix_live_view</string>
 				</dict>
 			</dict>
-			<key>phoenix_pubsub</key>
+			<key>req</key>
 			<dict>
 				<key>date</key>
-				<date>2023-06-15T16:11:10Z</date>
+				<date>2024-09-27T23:03:31Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
-					<string>phoenix_pubsub</string>
+					<string>req</string>
 					<key>platform</key>
 					<string>hex</string>
 					<key>uniqueIdentifier</key>
-					<string>phoenix_pubsub</string>
-				</dict>
-			</dict>
-			<key>phoenix_swagger</key>
-			<dict>
-				<key>date</key>
-				<date>2022-07-14T04:09:09Z</date>
-				<key>entry</key>
-				<dict>
-					<key>name</key>
-					<string>phoenix_swagger</string>
-					<key>platform</key>
-					<string>hex</string>
-					<key>uniqueIdentifier</key>
-					<string>phoenix_swagger</string>
-				</dict>
-			</dict>
-			<key>polymorphic_embed</key>
-			<dict>
-				<key>date</key>
-				<date>2022-09-30T12:23:44Z</date>
-				<key>entry</key>
-				<dict>
-					<key>name</key>
-					<string>polymorphic_embed</string>
-					<key>platform</key>
-					<string>hex</string>
-					<key>uniqueIdentifier</key>
-					<string>polymorphic_embed</string>
-				</dict>
-			</dict>
-			<key>prom_ex</key>
-			<dict>
-				<key>date</key>
-				<date>2023-04-01T17:58:37Z</date>
-				<key>entry</key>
-				<dict>
-					<key>name</key>
-					<string>prom_ex</string>
-					<key>platform</key>
-					<string>hex</string>
-					<key>uniqueIdentifier</key>
-					<string>prom_ex</string>
-				</dict>
-			</dict>
-			<key>recon</key>
-			<dict>
-				<key>date</key>
-				<date>2023-09-06T16:21:44Z</date>
-				<key>entry</key>
-				<dict>
-					<key>name</key>
-					<string>recon</string>
-					<key>platform</key>
-					<string>hex</string>
-					<key>uniqueIdentifier</key>
-					<string>recon</string>
-				</dict>
-			</dict>
-			<key>retry</key>
-			<dict>
-				<key>date</key>
-				<date>2023-04-12T16:19:21Z</date>
-				<key>entry</key>
-				<dict>
-					<key>name</key>
-					<string>retry</string>
-					<key>platform</key>
-					<string>hex</string>
-					<key>uniqueIdentifier</key>
-					<string>retry</string>
-				</dict>
-			</dict>
-			<key>statistex</key>
-			<dict>
-				<key>date</key>
-				<date>2022-07-14T04:08:46Z</date>
-				<key>entry</key>
-				<dict>
-					<key>name</key>
-					<string>statistex</string>
-					<key>platform</key>
-					<string>hex</string>
-					<key>uniqueIdentifier</key>
-					<string>statistex</string>
-				</dict>
-			</dict>
-			<key>statistics</key>
-			<dict>
-				<key>date</key>
-				<date>2022-07-14T04:08:50Z</date>
-				<key>entry</key>
-				<dict>
-					<key>name</key>
-					<string>statistics</string>
-					<key>platform</key>
-					<string>hex</string>
-					<key>uniqueIdentifier</key>
-					<string>statistics</string>
-				</dict>
-			</dict>
-			<key>stream_data</key>
-			<dict>
-				<key>date</key>
-				<date>2023-07-10T16:07:30Z</date>
-				<key>entry</key>
-				<dict>
-					<key>name</key>
-					<string>stream_data</string>
-					<key>platform</key>
-					<string>hex</string>
-					<key>uniqueIdentifier</key>
-					<string>stream_data</string>
-				</dict>
-			</dict>
-			<key>surface</key>
-			<dict>
-				<key>date</key>
-				<date>2023-06-02T22:43:51Z</date>
-				<key>entry</key>
-				<dict>
-					<key>name</key>
-					<string>surface</string>
-					<key>platform</key>
-					<string>hex</string>
-					<key>uniqueIdentifier</key>
-					<string>surface</string>
-				</dict>
-			</dict>
-			<key>surface_bootstrap</key>
-			<dict>
-				<key>date</key>
-				<date>2022-07-14T04:09:17Z</date>
-				<key>entry</key>
-				<dict>
-					<key>name</key>
-					<string>surface_bootstrap</string>
-					<key>platform</key>
-					<string>hex</string>
-					<key>uniqueIdentifier</key>
-					<string>surface_bootstrap</string>
-				</dict>
-			</dict>
-			<key>surface_catalogue</key>
-			<dict>
-				<key>date</key>
-				<date>2023-06-23T03:30:27Z</date>
-				<key>entry</key>
-				<dict>
-					<key>name</key>
-					<string>surface_catalogue</string>
-					<key>platform</key>
-					<string>hex</string>
-					<key>uniqueIdentifier</key>
-					<string>surface_catalogue</string>
-				</dict>
-			</dict>
-			<key>surface_font_awesome</key>
-			<dict>
-				<key>date</key>
-				<date>2023-08-30T21:12:48Z</date>
-				<key>entry</key>
-				<dict>
-					<key>name</key>
-					<string>surface_font_awesome</string>
-					<key>platform</key>
-					<string>hex</string>
-					<key>uniqueIdentifier</key>
-					<string>surface_font_awesome</string>
-				</dict>
-			</dict>
-			<key>surface_markdown</key>
-			<dict>
-				<key>date</key>
-				<date>2023-06-02T22:43:54Z</date>
-				<key>entry</key>
-				<dict>
-					<key>name</key>
-					<string>surface_markdown</string>
-					<key>platform</key>
-					<string>hex</string>
-					<key>uniqueIdentifier</key>
-					<string>surface_markdown</string>
-				</dict>
-			</dict>
-			<key>telemetry</key>
-			<dict>
-				<key>date</key>
-				<date>2023-01-13T17:28:22Z</date>
-				<key>entry</key>
-				<dict>
-					<key>name</key>
-					<string>telemetry</string>
-					<key>platform</key>
-					<string>hex</string>
-					<key>uniqueIdentifier</key>
-					<string>telemetry</string>
-				</dict>
-			</dict>
-			<key>triplex</key>
-			<dict>
-				<key>date</key>
-				<date>2022-07-14T04:08:46Z</date>
-				<key>entry</key>
-				<dict>
-					<key>name</key>
-					<string>triplex</string>
-					<key>platform</key>
-					<string>hex</string>
-					<key>uniqueIdentifier</key>
-					<string>triplex</string>
-				</dict>
-			</dict>
-			<key>vapor</key>
-			<dict>
-				<key>date</key>
-				<date>2022-07-14T04:08:49Z</date>
-				<key>entry</key>
-				<dict>
-					<key>name</key>
-					<string>vapor</string>
-					<key>platform</key>
-					<string>hex</string>
-					<key>uniqueIdentifier</key>
-					<string>vapor</string>
+					<string>req</string>
 				</dict>
 			</dict>
 		</dict>
@@ -1580,7 +499,21 @@ l				<date>2023-07-24T22:45:37Z</date>
 		<key>uninstalled</key>
 		<dict/>
 	</dict>
+	<key>DHPythonRepo</key>
+	<dict>
+		<key>installed</key>
+		<dict/>
+		<key>uninstalled</key>
+		<dict/>
+	</dict>
 	<key>DHRubyRepo</key>
+	<dict>
+		<key>installed</key>
+		<dict/>
+		<key>uninstalled</key>
+		<dict/>
+	</dict>
+	<key>DHRustRepo</key>
 	<dict>
 		<key>installed</key>
 		<dict/>
@@ -1601,258 +534,44 @@ l				<date>2023-07-24T22:45:37Z</date>
 		<key>uninstalled</key>
 		<dict/>
 	</dict>
-	<key>DHUserRepo</key>
+	<key>DHSwiftRepo</key>
 	<dict>
 		<key>installed</key>
-		<dict>
-			<key>Terraform</key>
-			<dict>
-				<key>date</key>
-				<date>2023-08-28T21:12:50Z</date>
-				<key>entry</key>
-				<dict>
-					<key>aliases</key>
-					<array>
-						<string>terraform</string>
-						<string>tf</string>
-						<string>terra</string>
-					</array>
-					<key>authorLinkHref</key>
-					<string>https://github.com/Kapeli/Dash-User-Contributions/tree/master/docsets/Terraform#readme</string>
-					<key>authorLinkText</key>
-					<string>Roberth Kulbin</string>
-					<key>name</key>
-					<string>Terraform</string>
-					<key>platform</key>
-					<string>usercontribTerraform</string>
-					<key>uniqueIdentifier</key>
-					<string>Terraform</string>
-				</dict>
-			</dict>
-			<key>fish</key>
-			<dict>
-				<key>date</key>
-				<date>2022-07-14T04:08:45Z</date>
-				<key>entry</key>
-				<dict>
-					<key>aliases</key>
-					<array>
-						<string>fishshell</string>
-					</array>
-					<key>authorLinkHref</key>
-					<string>https://github.com/Kapeli/Dash-User-Contributions/tree/master/docsets/fish#readme</string>
-					<key>authorLinkText</key>
-					<string>Andrei Borisov</string>
-					<key>name</key>
-					<string>fish</string>
-					<key>platform</key>
-					<string>usercontribfish</string>
-					<key>uniqueIdentifier</key>
-					<string>fish</string>
-				</dict>
-			</dict>
-		</dict>
+		<dict/>
 		<key>uninstalled</key>
 		<dict/>
 	</dict>
-	<key>bookmarks</key>
-	<array/>
+	<key>DHUserRepo</key>
+	<dict>
+		<key>installed</key>
+		<dict/>
+		<key>uninstalled</key>
+		<dict/>
+	</dict>
+	<key>actuallyDarkWebView</key>
+	<true/>
 	<key>docsets</key>
 	<dict>
 		<key>keywords</key>
-		<dict>
-			<key>~/Library/Application Support/Dash/Hex DocSets/phoenix/phoenix.docset</key>
-			<string>hex:</string>
-		</dict>
+		<dict/>
 	</dict>
 	<key>feeds</key>
 	<dict>
 		<key>installed</key>
 		<dict>
-			<key>http://kapeli.com/feeds/Angular.xml</key>
-			<dict>
-				<key>date</key>
-				<date>2022-07-14T04:10:30Z</date>
-			</dict>
-			<key>http://kapeli.com/feeds/Ansible.xml</key>
-			<dict>
-				<key>date</key>
-				<date>2022-07-14T04:11:30Z</date>
-			</dict>
-			<key>http://kapeli.com/feeds/Bootstrap_5.xml</key>
-			<dict>
-				<key>date</key>
-				<date>2022-07-14T04:08:50Z</date>
-			</dict>
-			<key>http://kapeli.com/feeds/CSS.xml</key>
-			<dict>
-				<key>date</key>
-				<date>2022-07-14T04:11:41Z</date>
-			</dict>
-			<key>http://kapeli.com/feeds/D3JS.xml</key>
-			<dict>
-				<key>date</key>
-				<date>2022-07-14T04:12:06Z</date>
-			</dict>
-			<key>http://kapeli.com/feeds/Docker.xml</key>
-			<dict>
-				<key>date</key>
-				<date>2022-07-14T04:13:41Z</date>
-			</dict>
-			<key>http://kapeli.com/feeds/ElasticSearch.xml</key>
-			<dict>
-				<key>date</key>
-				<date>2022-07-14T04:13:28Z</date>
-			</dict>
 			<key>http://kapeli.com/feeds/Elixir.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2022-07-14T04:13:00Z</date>
+				<date>2024-09-27T23:01:00Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/Erlang.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2022-07-14T04:15:06Z</date>
-			</dict>
-			<key>http://kapeli.com/feeds/Font_Awesome.xml</key>
-			<dict>
-				<key>date</key>
-				<date>2022-07-14T04:12:45Z</date>
-			</dict>
-			<key>http://kapeli.com/feeds/Go.xml</key>
-			<dict>
-				<key>date</key>
-				<date>2022-07-14T04:12:26Z</date>
-			</dict>
-			<key>http://kapeli.com/feeds/HTML.xml</key>
-			<dict>
-				<key>date</key>
-				<date>2022-07-14T04:14:51Z</date>
-			</dict>
-			<key>http://kapeli.com/feeds/Jasmine.xml</key>
-			<dict>
-				<key>date</key>
-				<date>2022-07-14T04:13:35Z</date>
-			</dict>
-			<key>http://kapeli.com/feeds/JavaScript.xml</key>
-			<dict>
-				<key>date</key>
-				<date>2022-07-30T00:01:48Z</date>
-			</dict>
-			<key>http://kapeli.com/feeds/Man_Pages.xml</key>
-			<dict>
-				<key>date</key>
-				<date>2022-07-14T04:13:01Z</date>
-			</dict>
-			<key>http://kapeli.com/feeds/Markdown.xml</key>
-			<dict>
-				<key>date</key>
-				<date>2022-07-14T04:12:49Z</date>
-			</dict>
-			<key>http://kapeli.com/feeds/MomentJS.xml</key>
-			<dict>
-				<key>date</key>
-				<date>2022-07-14T04:15:11Z</date>
-			</dict>
-			<key>http://kapeli.com/feeds/MongoDB.xml</key>
-			<dict>
-				<key>date</key>
-				<date>2022-07-30T00:01:38Z</date>
-			</dict>
-			<key>http://kapeli.com/feeds/MySQL.xml</key>
-			<dict>
-				<key>date</key>
-				<date>2022-07-30T00:01:41Z</date>
-			</dict>
-			<key>http://kapeli.com/feeds/Nginx.xml</key>
-			<dict>
-				<key>date</key>
-				<date>2022-07-14T04:13:36Z</date>
-			</dict>
-			<key>http://kapeli.com/feeds/NodeJS.xml</key>
-			<dict>
-				<key>date</key>
-				<date>2022-07-14T04:13:25Z</date>
-			</dict>
-			<key>http://kapeli.com/feeds/NumPy.xml</key>
-			<dict>
-				<key>date</key>
-				<date>2022-07-30T00:01:21Z</date>
-			</dict>
-			<key>http://kapeli.com/feeds/Pandas.xml</key>
-			<dict>
-				<key>date</key>
-				<date>2022-07-30T00:01:41Z</date>
-			</dict>
-			<key>http://kapeli.com/feeds/Python_3.xml</key>
-			<dict>
-				<key>date</key>
-				<date>2022-07-30T00:01:44Z</date>
-			</dict>
-			<key>http://kapeli.com/feeds/R.xml</key>
-			<dict>
-				<key>date</key>
-				<date>2022-07-14T04:15:32Z</date>
-			</dict>
-			<key>http://kapeli.com/feeds/React.xml</key>
-			<dict>
-				<key>date</key>
-				<date>2022-07-14T04:13:33Z</date>
-			</dict>
-			<key>http://kapeli.com/feeds/Redis.xml</key>
-			<dict>
-				<key>date</key>
-				<date>2022-07-30T00:01:39Z</date>
-			</dict>
-			<key>http://kapeli.com/feeds/Ruby_2.xml</key>
-			<dict>
-				<key>date</key>
-				<date>2022-07-30T00:01:52Z</date>
-			</dict>
-			<key>http://kapeli.com/feeds/Ruby_on_Rails_6.xml</key>
-			<dict>
-				<key>date</key>
-				<date>2022-07-30T00:01:52Z</date>
-			</dict>
-			<key>http://kapeli.com/feeds/Sass.xml</key>
-			<dict>
-				<key>date</key>
-				<date>2022-07-30T00:01:42Z</date>
-			</dict>
-			<key>http://kapeli.com/feeds/Spring_Framework.xml</key>
-			<dict>
-				<key>date</key>
-				<date>2022-07-14T04:14:06Z</date>
-			</dict>
-			<key>http://kapeli.com/feeds/TypeScript.xml</key>
-			<dict>
-				<key>date</key>
-				<date>2022-07-30T00:01:46Z</date>
-			</dict>
-			<key>http://kapeli.com/feeds/VueJS.xml</key>
-			<dict>
-				<key>date</key>
-				<date>2022-07-30T00:01:50Z</date>
+				<date>2024-09-27T23:01:08Z</date>
 			</dict>
 		</dict>
 		<key>uninstalled</key>
-		<dict>
-			<key>http://kapeli.com/feeds/Bootstrap_4.xml</key>
-			<dict>
-				<key>date</key>
-				<date>2022-07-14T04:13:34Z</date>
-			</dict>
-			<key>http://kapeli.com/feeds/Ruby_on_Rails_5.xml</key>
-			<dict>
-				<key>date</key>
-				<date>2020-02-15T16:40:34Z</date>
-			</dict>
-			<key>http://kapeli.com/feeds/Rust.xml</key>
-			<dict>
-				<key>date</key>
-				<date>2022-07-30T00:01:14Z</date>
-			</dict>
-		</dict>
+		<dict/>
 	</dict>
 	<key>isPinned</key>
 	<true/>
@@ -1881,22 +600,8 @@ l				<date>2023-07-24T22:45:37Z</date>
 			<true/>
 		</dict>
 	</array>
-	<key>searchKey</key>
-	<dict>
-		<key>keyCode</key>
-		<integer>2</integer>
-		<key>modifiers</key>
-		<integer>2816</integer>
-	</dict>
-	<key>searchUsingSelectedTextKey</key>
-	<dict>
-		<key>keyCode</key>
-		<integer>-1</integer>
-		<key>modifiers</key>
-		<integer>8395520</integer>
-	</dict>
 	<key>shouldRestoreTabs</key>
-	<true/>
+	<false/>
 	<key>shouldShowStatusIcon</key>
 	<true/>
 	<key>shouldStartAtLogin</key>
@@ -1918,7 +623,7 @@ l				<date>2023-07-24T22:45:37Z</date>
 		<key>uninstalled</key>
 		<dict/>
 	</dict>
-	<key>versionedDHCocoaRepo</key>
+	<key>versionedDHClojureRepo</key>
 	<dict>
 		<key>installed</key>
 		<dict/>
@@ -1926,6 +631,13 @@ l				<date>2023-07-24T22:45:37Z</date>
 		<dict/>
 	</dict>
 	<key>versionedDHDartRepo</key>
+	<dict>
+		<key>installed</key>
+		<dict/>
+		<key>uninstalled</key>
+		<dict/>
+	</dict>
+	<key>versionedDHDocsetGeneratorRepo</key>
 	<dict>
 		<key>installed</key>
 		<dict/>
@@ -1974,7 +686,21 @@ l				<date>2023-07-24T22:45:37Z</date>
 		<key>uninstalled</key>
 		<dict/>
 	</dict>
+	<key>versionedDHPythonRepo</key>
+	<dict>
+		<key>installed</key>
+		<dict/>
+		<key>uninstalled</key>
+		<dict/>
+	</dict>
 	<key>versionedDHRubyRepo</key>
+	<dict>
+		<key>installed</key>
+		<dict/>
+		<key>uninstalled</key>
+		<dict/>
+	</dict>
+	<key>versionedDHRustRepo</key>
 	<dict>
 		<key>installed</key>
 		<dict/>
@@ -1989,6 +715,13 @@ l				<date>2023-07-24T22:45:37Z</date>
 		<dict/>
 	</dict>
 	<key>versionedDHStackOverflowRepo</key>
+	<dict>
+		<key>installed</key>
+		<dict/>
+		<key>uninstalled</key>
+		<dict/>
+	</dict>
+	<key>versionedDHSwiftRepo</key>
 	<dict>
 		<key>installed</key>
 		<dict/>
@@ -2017,7 +750,7 @@ l				<date>2023-07-24T22:45:37Z</date>
 			<key>isDefault</key>
 			<true/>
 			<key>isEnabled</key>
-			<false/>
+			<true/>
 			<key>name</key>
 			<string>Google</string>
 			<key>url</key>
@@ -2029,7 +762,7 @@ l				<date>2023-07-24T22:45:37Z</date>
 			<key>isDefault</key>
 			<true/>
 			<key>isEnabled</key>
-			<true/>
+			<false/>
 			<key>name</key>
 			<string>DuckDuckGo</string>
 			<key>url</key>
@@ -2048,7 +781,5 @@ l				<date>2023-07-24T22:45:37Z</date>
 			<string>https://stackoverflow.com/search?q={query}</string>
 		</dict>
 	</array>
-	<key>windowStyle</key>
-	<string>Standard</string>
 </dict>
 </plist>

@@ -60,6 +60,10 @@ alias m='make'
 alias pgst='pg_ctl -D $(brew --prefix)/var/postgresql start'
 alias pgsp='pg_ctl -D $(brew --prefix)/var/postgresql stop -s -m fast'
 
+# mysql
+alias msst='brew services start mysql'
+alias mssp='brew services stop mysql'
+
 # list (ls)
 alias la='eza -all --long --header --git --no-user'
 alias lt='eza --header --no-filesize --no-git --no-user --no-time --no-permissions --tree --git-ignore'

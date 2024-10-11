@@ -36,7 +36,6 @@
     "font_family": "InconsolataGo Nerd Font Mono",
     "font_size": 15,
     "option_as_meta": false,
-    "shell": {},
     "working_directory": "current_project_directory"
   }
 }
