@@ -123,7 +123,7 @@ export KERL_CONFIGURE_OPTIONS="--without-jinterface --without-hipe"
 export KERL_BUILD_DOCS="no"
 
 # docs.pkgx.sh/shellcode
-source <(pkgx --shellcode)
+# source <(pkgx --shellcode)
 
 # k8s
 source <(kubectl completion zsh)
