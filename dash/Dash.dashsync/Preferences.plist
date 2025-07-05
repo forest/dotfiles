@@ -228,7 +228,65 @@
 	<key>DHDocsetGeneratorRepo</key>
 	<dict>
 		<key>installed</key>
-		<dict/>
+		<dict>
+			<key>daisyUI</key>
+			<dict>
+				<key>date</key>
+				<date>2025-07-05T21:18:38Z</date>
+				<key>entry</key>
+				<dict>
+					<key>docsetGeneratorSettings</key>
+					<dict>
+						<key>allowFilters</key>
+						<string>https://daisyui.com/components/*</string>
+						<key>basicIndexEnabled</key>
+						<true/>
+						<key>cssToInject</key>
+						<string>footer {
+    display: none !important;
+}</string>
+						<key>denyFilters</key>
+						<string></string>
+						<key>docsetKeyword</key>
+						<string>css</string>
+						<key>docsetName</key>
+						<string>daisyUI</string>
+						<key>extraInfoPlist</key>
+						<string></string>
+						<key>isFromLocalFolder</key>
+						<false/>
+						<key>isFromWebsite</key>
+						<true/>
+						<key>javaScriptIndexEnabled</key>
+						<false/>
+						<key>javaScriptUsedToIndex</key>
+						<string>const pageTitle = $("title").text();
+dashDoc.addEntry({name: pageTitle, type: "Guide"});
+
+$("h1").each(function() {
+    const entryName = $(this).text();
+    var entryHash = $(this).attr('id');
+    if(!entryHash)
+    {
+        entryHash = entryName.replace(/\W/g, '');
+        $(this).attr('id', entryHash);
+    }
+    dashDoc.addEntry({name: entryName, type: "Section", hash: entryHash});
+});</string>
+						<key>localFolderPath</key>
+						<string></string>
+						<key>websiteURL</key>
+						<string>https://daisyui.com/components</string>
+					</dict>
+					<key>name</key>
+					<string>daisyUI</string>
+					<key>platform</key>
+					<string>Other</string>
+					<key>uniqueIdentifier</key>
+					<string>daisyUI</string>
+				</dict>
+			</dict>
+		</dict>
 		<key>uninstalled</key>
 		<dict/>
 	</dict>
@@ -260,7 +318,7 @@
 			<key>ash</key>
 			<dict>
 				<key>date</key>
-				<date>2024-10-10T20:43:18Z</date>
+				<date>2025-07-05T21:06:00Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -271,10 +329,52 @@
 					<string>ash</string>
 				</dict>
 			</dict>
+			<key>ash_admin</key>
+			<dict>
+				<key>date</key>
+				<date>2025-07-05T21:09:42Z</date>
+				<key>entry</key>
+				<dict>
+					<key>name</key>
+					<string>ash_admin</string>
+					<key>platform</key>
+					<string>hex</string>
+					<key>uniqueIdentifier</key>
+					<string>ash_admin</string>
+				</dict>
+			</dict>
+			<key>ash_ai</key>
+			<dict>
+				<key>date</key>
+				<date>2025-07-05T21:09:21Z</date>
+				<key>entry</key>
+				<dict>
+					<key>name</key>
+					<string>ash_ai</string>
+					<key>platform</key>
+					<string>hex</string>
+					<key>uniqueIdentifier</key>
+					<string>ash_ai</string>
+				</dict>
+			</dict>
+			<key>ash_archival</key>
+			<dict>
+				<key>date</key>
+				<date>2025-07-05T21:09:49Z</date>
+				<key>entry</key>
+				<dict>
+					<key>name</key>
+					<string>ash_archival</string>
+					<key>platform</key>
+					<string>hex</string>
+					<key>uniqueIdentifier</key>
+					<string>ash_archival</string>
+				</dict>
+			</dict>
 			<key>ash_authentication</key>
 			<dict>
 				<key>date</key>
-				<date>2024-10-08T18:26:32Z</date>
+				<date>2025-07-05T21:05:56Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -288,7 +388,7 @@
 			<key>ash_authentication_phoenix</key>
 			<dict>
 				<key>date</key>
-				<date>2024-10-09T20:43:14Z</date>
+				<date>2025-07-05T21:05:54Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -297,12 +397,26 @@
 					<string>hex</string>
 					<key>uniqueIdentifier</key>
 					<string>ash_authentication_phoenix</string>
+				</dict>
+			</dict>
+			<key>ash_core</key>
+			<dict>
+				<key>date</key>
+				<date>2025-07-05T21:10:01Z</date>
+				<key>entry</key>
+				<dict>
+					<key>name</key>
+					<string>ash_core</string>
+					<key>platform</key>
+					<string>hex</string>
+					<key>uniqueIdentifier</key>
+					<string>ash_core</string>
 				</dict>
 			</dict>
 			<key>ash_json_api</key>
 			<dict>
 				<key>date</key>
-				<date>2024-10-10T20:43:14Z</date>
+				<date>2025-07-05T21:05:57Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -311,12 +425,82 @@
 					<string>hex</string>
 					<key>uniqueIdentifier</key>
 					<string>ash_json_api</string>
+				</dict>
+			</dict>
+			<key>ash_money</key>
+			<dict>
+				<key>date</key>
+				<date>2025-07-05T21:10:11Z</date>
+				<key>entry</key>
+				<dict>
+					<key>name</key>
+					<string>ash_money</string>
+					<key>platform</key>
+					<string>hex</string>
+					<key>uniqueIdentifier</key>
+					<string>ash_money</string>
+				</dict>
+			</dict>
+			<key>ash_oban</key>
+			<dict>
+				<key>date</key>
+				<date>2025-07-05T21:09:34Z</date>
+				<key>entry</key>
+				<dict>
+					<key>name</key>
+					<string>ash_oban</string>
+					<key>platform</key>
+					<string>hex</string>
+					<key>uniqueIdentifier</key>
+					<string>ash_oban</string>
+				</dict>
+			</dict>
+			<key>ash_ops</key>
+			<dict>
+				<key>date</key>
+				<date>2025-07-05T21:11:47Z</date>
+				<key>entry</key>
+				<dict>
+					<key>name</key>
+					<string>ash_ops</string>
+					<key>platform</key>
+					<string>hex</string>
+					<key>uniqueIdentifier</key>
+					<string>ash_ops</string>
+				</dict>
+			</dict>
+			<key>ash_pagify</key>
+			<dict>
+				<key>date</key>
+				<date>2025-07-05T21:10:17Z</date>
+				<key>entry</key>
+				<dict>
+					<key>name</key>
+					<string>ash_pagify</string>
+					<key>platform</key>
+					<string>hex</string>
+					<key>uniqueIdentifier</key>
+					<string>ash_pagify</string>
+				</dict>
+			</dict>
+			<key>ash_paper_trail</key>
+			<dict>
+				<key>date</key>
+				<date>2025-07-05T21:10:19Z</date>
+				<key>entry</key>
+				<dict>
+					<key>name</key>
+					<string>ash_paper_trail</string>
+					<key>platform</key>
+					<string>hex</string>
+					<key>uniqueIdentifier</key>
+					<string>ash_paper_trail</string>
 				</dict>
 			</dict>
 			<key>ash_phoenix</key>
 			<dict>
 				<key>date</key>
-				<date>2024-10-01T15:06:01Z</date>
+				<date>2025-07-05T21:06:06Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -325,12 +509,26 @@
 					<string>hex</string>
 					<key>uniqueIdentifier</key>
 					<string>ash_phoenix</string>
+				</dict>
+			</dict>
+			<key>ash_policy_authorizer</key>
+			<dict>
+				<key>date</key>
+				<date>2025-07-05T21:10:23Z</date>
+				<key>entry</key>
+				<dict>
+					<key>name</key>
+					<string>ash_policy_authorizer</string>
+					<key>platform</key>
+					<string>hex</string>
+					<key>uniqueIdentifier</key>
+					<string>ash_policy_authorizer</string>
 				</dict>
 			</dict>
 			<key>ash_postgres</key>
 			<dict>
 				<key>date</key>
-				<date>2024-10-10T20:43:15Z</date>
+				<date>2025-07-05T21:05:59Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -341,10 +539,80 @@
 					<string>ash_postgres</string>
 				</dict>
 			</dict>
+			<key>ash_query_builder</key>
+			<dict>
+				<key>date</key>
+				<date>2025-07-05T21:10:31Z</date>
+				<key>entry</key>
+				<dict>
+					<key>name</key>
+					<string>ash_query_builder</string>
+					<key>platform</key>
+					<string>hex</string>
+					<key>uniqueIdentifier</key>
+					<string>ash_query_builder</string>
+				</dict>
+			</dict>
+			<key>ash_state_machine</key>
+			<dict>
+				<key>date</key>
+				<date>2025-07-05T21:10:41Z</date>
+				<key>entry</key>
+				<dict>
+					<key>name</key>
+					<string>ash_state_machine</string>
+					<key>platform</key>
+					<string>hex</string>
+					<key>uniqueIdentifier</key>
+					<string>ash_state_machine</string>
+				</dict>
+			</dict>
+			<key>ash_uuid_v7</key>
+			<dict>
+				<key>date</key>
+				<date>2025-07-05T21:10:47Z</date>
+				<key>entry</key>
+				<dict>
+					<key>name</key>
+					<string>ash_uuid_v7</string>
+					<key>platform</key>
+					<string>hex</string>
+					<key>uniqueIdentifier</key>
+					<string>ash_uuid_v7</string>
+				</dict>
+			</dict>
+			<key>cinder</key>
+			<dict>
+				<key>date</key>
+				<date>2025-07-05T21:11:01Z</date>
+				<key>entry</key>
+				<dict>
+					<key>name</key>
+					<string>cinder</string>
+					<key>platform</key>
+					<string>hex</string>
+					<key>uniqueIdentifier</key>
+					<string>cinder</string>
+				</dict>
+			</dict>
+			<key>daisy_ui_components</key>
+			<dict>
+				<key>date</key>
+				<date>2025-07-05T21:12:28Z</date>
+				<key>entry</key>
+				<dict>
+					<key>name</key>
+					<string>daisy_ui_components</string>
+					<key>platform</key>
+					<string>hex</string>
+					<key>uniqueIdentifier</key>
+					<string>daisy_ui_components</string>
+				</dict>
+			</dict>
 			<key>ecto</key>
 			<dict>
 				<key>date</key>
-				<date>2024-10-07T18:26:32Z</date>
+				<date>2025-07-05T21:06:02Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -358,7 +626,7 @@
 			<key>ecto_ch</key>
 			<dict>
 				<key>date</key>
-				<date>2024-10-06T22:54:35Z</date>
+				<date>2025-07-05T21:05:59Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -372,7 +640,7 @@
 			<key>ecto_sql</key>
 			<dict>
 				<key>date</key>
-				<date>2024-10-07T18:26:32Z</date>
+				<date>2025-07-05T21:06:04Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -386,7 +654,7 @@
 			<key>finch</key>
 			<dict>
 				<key>date</key>
-				<date>2024-09-27T23:03:37Z</date>
+				<date>2025-07-05T21:05:57Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -397,10 +665,164 @@
 					<string>finch</string>
 				</dict>
 			</dict>
+			<key>flame</key>
+			<dict>
+				<key>date</key>
+				<date>2024-12-07T15:56:53Z</date>
+				<key>entry</key>
+				<dict>
+					<key>name</key>
+					<string>flame</string>
+					<key>platform</key>
+					<string>hex</string>
+					<key>uniqueIdentifier</key>
+					<string>flame</string>
+				</dict>
+			</dict>
+			<key>flame_k8s_backend</key>
+			<dict>
+				<key>date</key>
+				<date>2024-12-06T03:46:51Z</date>
+				<key>entry</key>
+				<dict>
+					<key>name</key>
+					<string>flame_k8s_backend</string>
+					<key>platform</key>
+					<string>hex</string>
+					<key>uniqueIdentifier</key>
+					<string>flame_k8s_backend</string>
+				</dict>
+			</dict>
+			<key>flamel</key>
+			<dict>
+				<key>date</key>
+				<date>2024-11-17T16:30:25Z</date>
+				<key>entry</key>
+				<dict>
+					<key>name</key>
+					<string>flamel</string>
+					<key>platform</key>
+					<string>hex</string>
+					<key>uniqueIdentifier</key>
+					<string>flamel</string>
+				</dict>
+			</dict>
+			<key>flop</key>
+			<dict>
+				<key>date</key>
+				<date>2025-07-05T21:06:05Z</date>
+				<key>entry</key>
+				<dict>
+					<key>name</key>
+					<string>flop</string>
+					<key>platform</key>
+					<string>hex</string>
+					<key>uniqueIdentifier</key>
+					<string>flop</string>
+				</dict>
+			</dict>
+			<key>flop_phoenix</key>
+			<dict>
+				<key>date</key>
+				<date>2025-07-05T21:06:00Z</date>
+				<key>entry</key>
+				<dict>
+					<key>name</key>
+					<string>flop_phoenix</string>
+					<key>platform</key>
+					<string>hex</string>
+					<key>uniqueIdentifier</key>
+					<string>flop_phoenix</string>
+				</dict>
+			</dict>
+			<key>live_view_native</key>
+			<dict>
+				<key>date</key>
+				<date>2025-03-23T18:09:45Z</date>
+				<key>entry</key>
+				<dict>
+					<key>name</key>
+					<string>live_view_native</string>
+					<key>platform</key>
+					<string>hex</string>
+					<key>uniqueIdentifier</key>
+					<string>live_view_native</string>
+				</dict>
+			</dict>
+			<key>live_view_native_guide_testing</key>
+			<dict>
+				<key>date</key>
+				<date>2024-12-08T23:04:09Z</date>
+				<key>entry</key>
+				<dict>
+					<key>name</key>
+					<string>live_view_native_guide_testing</string>
+					<key>platform</key>
+					<string>hex</string>
+					<key>uniqueIdentifier</key>
+					<string>live_view_native_guide_testing</string>
+				</dict>
+			</dict>
+			<key>live_view_native_guides</key>
+			<dict>
+				<key>date</key>
+				<date>2024-12-08T23:04:10Z</date>
+				<key>entry</key>
+				<dict>
+					<key>name</key>
+					<string>live_view_native_guides</string>
+					<key>platform</key>
+					<string>hex</string>
+					<key>uniqueIdentifier</key>
+					<string>live_view_native_guides</string>
+				</dict>
+			</dict>
+			<key>live_view_native_live_form</key>
+			<dict>
+				<key>date</key>
+				<date>2025-03-23T18:09:47Z</date>
+				<key>entry</key>
+				<dict>
+					<key>name</key>
+					<string>live_view_native_live_form</string>
+					<key>platform</key>
+					<string>hex</string>
+					<key>uniqueIdentifier</key>
+					<string>live_view_native_live_form</string>
+				</dict>
+			</dict>
+			<key>live_view_native_swiftui</key>
+			<dict>
+				<key>date</key>
+				<date>2025-03-23T18:09:46Z</date>
+				<key>entry</key>
+				<dict>
+					<key>name</key>
+					<string>live_view_native_swiftui</string>
+					<key>platform</key>
+					<string>hex</string>
+					<key>uniqueIdentifier</key>
+					<string>live_view_native_swiftui</string>
+				</dict>
+			</dict>
+			<key>mishka_chelekom</key>
+			<dict>
+				<key>date</key>
+				<date>2025-07-05T21:06:02Z</date>
+				<key>entry</key>
+				<dict>
+					<key>name</key>
+					<string>mishka_chelekom</string>
+					<key>platform</key>
+					<string>hex</string>
+					<key>uniqueIdentifier</key>
+					<string>mishka_chelekom</string>
+				</dict>
+			</dict>
 			<key>oban</key>
 			<dict>
 				<key>date</key>
-				<date>2024-09-27T23:01:23Z</date>
+				<date>2025-03-25T19:54:08Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -409,6 +831,20 @@
 					<string>hex</string>
 					<key>uniqueIdentifier</key>
 					<string>oban</string>
+				</dict>
+			</dict>
+			<key>opentelemetry_ash</key>
+			<dict>
+				<key>date</key>
+				<date>2025-07-05T21:11:03Z</date>
+				<key>entry</key>
+				<dict>
+					<key>name</key>
+					<string>opentelemetry_ash</string>
+					<key>platform</key>
+					<string>hex</string>
+					<key>uniqueIdentifier</key>
+					<string>opentelemetry_ash</string>
 				</dict>
 			</dict>
 			<key>opentelemetry_oban</key>
@@ -428,7 +864,7 @@
 			<key>phoenix</key>
 			<dict>
 				<key>date</key>
-				<date>2024-09-27T23:02:33Z</date>
+				<date>2025-05-24T04:51:45Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -442,7 +878,7 @@
 			<key>phoenix_ecto</key>
 			<dict>
 				<key>date</key>
-				<date>2024-09-27T23:02:40Z</date>
+				<date>2025-07-05T21:06:01Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -456,7 +892,7 @@
 			<key>phoenix_live_view</key>
 			<dict>
 				<key>date</key>
-				<date>2024-09-27T23:02:52Z</date>
+				<date>2025-07-05T21:06:07Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -467,10 +903,38 @@
 					<string>phoenix_live_view</string>
 				</dict>
 			</dict>
+			<key>plug</key>
+			<dict>
+				<key>date</key>
+				<date>2025-07-05T21:06:05Z</date>
+				<key>entry</key>
+				<dict>
+					<key>name</key>
+					<string>plug</string>
+					<key>platform</key>
+					<string>hex</string>
+					<key>uniqueIdentifier</key>
+					<string>plug</string>
+				</dict>
+			</dict>
+			<key>reactor</key>
+			<dict>
+				<key>date</key>
+				<date>2025-07-05T21:12:13Z</date>
+				<key>entry</key>
+				<dict>
+					<key>name</key>
+					<string>reactor</string>
+					<key>platform</key>
+					<string>hex</string>
+					<key>uniqueIdentifier</key>
+					<string>reactor</string>
+				</dict>
+			</dict>
 			<key>req</key>
 			<dict>
 				<key>date</key>
-				<date>2024-09-27T23:03:31Z</date>
+				<date>2025-07-05T21:05:56Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -483,7 +947,22 @@
 			</dict>
 		</dict>
 		<key>uninstalled</key>
-		<dict/>
+		<dict>
+			<key>live_view_native_swift_ui</key>
+			<dict>
+				<key>date</key>
+				<date>2024-12-08T23:04:24Z</date>
+				<key>entry</key>
+				<dict>
+					<key>name</key>
+					<string>live_view_native_swift_ui</string>
+					<key>platform</key>
+					<string>hex</string>
+					<key>uniqueIdentifier</key>
+					<string>live_view_native_swift_ui</string>
+				</dict>
+			</dict>
+		</dict>
 	</dict>
 	<key>DHJavaRepo</key>
 	<dict>
@@ -544,7 +1023,32 @@
 	<key>DHUserRepo</key>
 	<dict>
 		<key>installed</key>
-		<dict/>
+		<dict>
+			<key>Tailwind_CSS</key>
+			<dict>
+				<key>date</key>
+				<date>2025-07-05T21:15:20Z</date>
+				<key>entry</key>
+				<dict>
+					<key>aliases</key>
+					<array>
+						<string>tailwind</string>
+						<string>TailwindCSS</string>
+						<string>tailwind CSS</string>
+					</array>
+					<key>authorLinkHref</key>
+					<string>https://github.com/Kapeli/Dash-User-Contributions/tree/master/docsets/Tailwind_CSS#readme</string>
+					<key>authorLinkText</key>
+					<string>Ben Booth, Guill Lo, Akinori Musha</string>
+					<key>name</key>
+					<string>Tailwind CSS</string>
+					<key>platform</key>
+					<string>usercontribTailwind_CSS</string>
+					<key>uniqueIdentifier</key>
+					<string>Tailwind_CSS</string>
+				</dict>
+			</dict>
+		</dict>
 		<key>uninstalled</key>
 		<dict/>
 	</dict>
@@ -750,7 +1254,7 @@
 			<key>isDefault</key>
 			<true/>
 			<key>isEnabled</key>
-			<true/>
+			<false/>
 			<key>name</key>
 			<string>Google</string>
 			<key>url</key>
@@ -762,7 +1266,7 @@
 			<key>isDefault</key>
 			<true/>
 			<key>isEnabled</key>
-			<false/>
+			<true/>
 			<key>name</key>
 			<string>DuckDuckGo</string>
 			<key>url</key>

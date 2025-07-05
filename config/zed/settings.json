@@ -7,14 +7,42 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
-  "assistant": {
+  "context_servers": {
+    "mcp-server-context7": {
+      "source": "extension",
+      "settings": {
+        "default_minimum_tokens": "10000"
+      }
+    },
+    "Tidewave": {
+      "source": "custom",
+      "command": {
+        "path": "/Users/forest/.local/bin/mcp-proxy",
+        "args": ["http://localhost:4000/tidewave/mcp"],
+        "env": null
+      },
+      "settings": {}
+    }
+  },
+  "edit_predictions": {
+    "mode": "subtle",
+    "copilot": {
+      "proxy": null,
+      "proxy_no_verify": null
+    },
+    "enabled_in_text_threads": false
+  },
+  "agent": {
+    "default_profile": "write",
+    "always_allow_tool_actions": true,
     "default_model": {
       "provider": "zed.dev",
-      "model": "claude-3-5-sonnet-20240620"
+      "model": "claude-sonnet-4"
     },
     "version": "2"
   },
   "features": {
+    "edit_prediction_provider": "zed",
     "copilot": false
   },
   "base_keymap": "VSCode",
@@ -37,5 +65,16 @@
     "font_size": 15,
     "option_as_meta": false,
     "working_directory": "current_project_directory"
+  },
+  "format_on_save": "on",
+  "languages": {
+    "Elixir": {
+      "format_on_save": {
+        "external": {
+          "command": "mix",
+          "arguments": ["format", "--stdin-filename", "{buffer_path}", "-"]
+        }
+      }
+    }
   }
 }
