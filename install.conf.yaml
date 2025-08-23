@@ -1,0 +1,52 @@
+- defaults:
+    link:
+      relink: true
+    brewfile:
+      stdout: true
+      stderr: true
+      include: ["tap", "brew", "cask", "mas"]
+      sudo: brewuser
+
+- clean: ["~"]
+
+- shell:
+    - [git submodule update --init --recursive]
+
+- link:
+    ~/.claude/agents: claude/agents
+    ~/.claude/CLAUDE.md: agents/AGENTS.md
+    ~/.claude/commands: claude/commands
+    ~/.claude/settings.json: claude/settings.json
+    ~/.config/aliases.zsh: zsh/aliases.zsh
+    ~/.config/direnv: direnv
+    ~/.config/lazygit/config.yml:
+      create: true
+      path: git/lazygit.yml
+    ~/.config/mise: mise
+    ~/.config/ohmyzsh: ohmyzsh
+    ~/.config/opencode/AGENTS.md:
+      create: true
+      path: agents/AGENTS.md
+    ~/.config/opencode/opencode.json: opencode/opencode.json
+    ~/.config/opencode/prompts: claude/commands
+    ~/.config/starship.toml: starship.toml
+    ~/.config/zed: zed
+    ~/.ctags: ctags
+    ~/.gemrc: gemrc
+    ~/.gitconfig: git/gitconfig
+    ~/.gitignore: git/gitignore
+    ~/.iex.exs: iex.exs
+    ~/.livebookdesktop.sh: livebookdesktop.sh
+    ~/.psqlrc: psqlrc
+    ~/.ssh/config: ssh/config
+    ~/.tmux.conf: tmux.conf
+    ~/.warp: warp
+    ~/.zprofile: zsh/.zprofile
+    ~/.zshenv: zsh/.zshenv
+    ~/.zshrc: zsh/.zshrc
+    ~/.hammerspoon:
+      if: "[ `uname` = Darwin ]"
+      path: hammerspoon
+
+- shell:
+    - ["cd ~/dotfiles && brew bundle"]

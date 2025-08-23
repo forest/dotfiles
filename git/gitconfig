@@ -1,0 +1,45 @@
+[column]
+  ui = auto
+[branch]
+  sort = -committerdate
+[tag]
+  sort = version:refname
+[diff]
+  algorithm = histogram
+  colorMoved = plain
+  mnemonicPrefix = true
+  renames = true
+[core]
+	editor = nvim
+	excludesFile = ~/.gitignore
+[user]
+	name = Forest Carlisle
+	email = 7829+forest@users.noreply.github.com
+	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIK3d/97XZ3IU+EQtXAxfNqOiblwwK+Lv4MYuq1sKFzRu
+[github]
+	user = forest
+[push]
+  default = simple
+  autoSetupRemote = true
+  followTags = true
+[fetch]
+  prune = true
+  pruneTags = true
+  all = true
+[help]
+  autocorrect = prompt
+[commit]
+  verbose = true
+[rerere]
+  enabled = true
+  autoupdate = true
+[pull]
+	rebase = true
+[rebase]
+  autoSquash = true
+  autoStash = true
+  autoSquash = true
+[merge]
+  confictstyle = zdiff3
+[init]
+	defaultBranch = main

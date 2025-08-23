@@ -76,7 +76,7 @@ ZSH_CUSTOM=$HOME/.config/ohmyzsh/custom
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(aliases brew mise colored-man-pages command-not-found common-aliases docker eza fzf z fz git gitfast history-substring-search kubectl mix-fast npm pip)
+plugins=(aliases brew mise colored-man-pages command-not-found common-aliases docker eza fzf z git gitfast history-substring-search kubectl mix-fast npm pip)
 
 # brew completions
 FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"

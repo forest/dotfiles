@@ -1,41 +1,61 @@
-cask_args appdir: '/Applications'
+cask_args appdir: "/Applications"
 
-tap 'homebrew/bundle'
-tap 'homebrew/services'
-tap 'thoughtbot/formulae'
-tap '1password/tap'
-tap 'jesseduffield/lazygit'
-tap 'pkgxdev/made'
+# deps: general
+# brew "java"
+brew "cmake"
 
-brew 'ack'
-brew 'coreutils'
-# brew 'ctags'
-brew 'git-delta'
-brew 'git-town'
-brew 'difftastic'
-brew 'lazygit'
-brew 'mise'
-brew 'fzf'
-brew 'git'
-brew 'go'
-# brew 'graphviz'
-# brew 'helm'
-brew 'jq'
-brew 'kubectl'
-brew 'yh'
-# brew 'python3'
-brew 'onefetch'
-brew 'rcm'
-brew 'rg'
-brew 'ripgrep'
-brew 'selecta'
-brew 'starship'
-brew 'wget'
+# ai
+tap "sst/tap"
+cask "claude-code"
+brew "sst/tap/opencode"
 
-cask 'font-victor-mono'
-cask 'ngrok'
-cask 'warp'
-cask '1password-cli'
-# cask 'pkgx'
-# cask 'google-cloud-sdk'
-# cask 'oracle-jdk'
+# Utilities
+# brew "kubectl"
+brew "coreutils"
+brew "fd"
+brew "fzf"
+brew "gh"
+brew "git"
+brew "git-delta"
+brew "git-town"
+brew "go"
+brew "imagemagick"
+brew "jq"
+brew "lua"
+brew "ripgrep"
+brew "selecta"
+brew "starship"
+brew "wget"
+brew "yh"
+
+# tap "homebrew/bundle"
+# tap "homebrew/services"
+cask "font-victor-mono"
+cask "ngrok"
+cask "warp"
+
+tap "1password/tap"
+cask "1password-cli"
+
+# Fly.io
+brew "flyctl"
+
+# Database
+# brew "postgis"
+brew "postgresql@17"
+
+# Environment
+brew "direnv"
+brew "mise"
+
+# Zed
+cask "zed"
+
+# Terminal
+brew "eza"
+brew "zsh"
+brew "starship"
+brew "lazygit" # TUI git terminal
+# brew "superfile" # TUI file manager
+# brew "yazi" # TUI file manager
+# brew "rainfrog" # TUI database manager

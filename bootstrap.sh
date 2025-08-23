@@ -7,9 +7,6 @@
 
 set -e
 
-dir=~/dotfiles
-olddir=~/dotfiles_old
-
 fancy_echo() {
   local fmt="$1"; shift
 
@@ -29,21 +26,15 @@ if ! command -v git >/dev/null; then
   brew install git
 fi
 
-if [ ! -d "$HOME/bin" ]; then
-  fancy_echo "Creating bin directory..."
-  mkdir ~/bin
-fi
-
-fancy_echo "Updating Homebrew..."
-brew update
-brew bundle --file=$HOME/dotfiles/Brewfile
-
-fancy_echo "Linking dotfiles..."
-env RCRC=$HOME/dotfiles/rcrc rcup
+# fancy_echo "Updating Homebrew..."
+# brew update
+# brew bundle --file=$HOME/dotfiles/Brewfile
 
 # install ohmyzsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
+fancy_echo "Linking dotfiles..."
+./install
 
 # if [[ ! $(psql -U postgres -c '\du' | grep 'postgres') ]]
 # then

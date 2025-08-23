@@ -74,10 +74,18 @@ Session.vim
 ######################
 npm-debug.log
 
-# VS Code / Elixir #
+# VS Code / Zed / Elixir #
 ######################
-.elixir_ls/
+.elixir_ls
 .mix_tasks
 .vscode
 .lexical
 .elixir-tools
+assets/vendor
+.zed
+.envrc
+
+# AI Tools #
+######################
+./CLAUDE.local.md
+.claude
