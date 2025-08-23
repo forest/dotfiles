@@ -1,3 +1,15 @@
+[alias]
+	append = town append
+	diff-parent = town diff-parent
+	hack = town hack
+	new-pull-request = town new-pull-request
+	prepend = town prepend
+	prune-branches = town prune-branches
+	repo = town repo
+	ship = town ship
+	sync = town sync
+	delete = town delete
+	rename = town rename
 [column]
   ui = auto
 [branch]
