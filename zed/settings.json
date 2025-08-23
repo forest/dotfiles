@@ -8,20 +8,21 @@
 // from the command palette or from `Zed` application menu.
 {
   "context_servers": {
+    "tidewave": {
+      "source": "custom",
+      "enabled": true,
+      "command": "mcp-proxy",
+      "args": [
+        "http://localhost:4000/tidewave/mcp"
+      ],
+      "env": {}
+    },
     "mcp-server-context7": {
+      "enabled": false,
       "source": "extension",
       "settings": {
         "default_minimum_tokens": "10000"
       }
-    },
-    "Tidewave": {
-      "source": "custom",
-      "command": {
-        "path": "/Users/forest/.local/bin/mcp-proxy",
-        "args": ["http://localhost:4000/tidewave/mcp"],
-        "env": null
-      },
-      "settings": {}
     }
   },
   "edit_predictions": {
@@ -39,7 +40,6 @@
       "provider": "zed.dev",
       "model": "claude-sonnet-4"
     },
-    "version": "2"
   },
   "features": {
     "edit_prediction_provider": "zed",

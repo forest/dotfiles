@@ -6,7 +6,7 @@ I :heart: dotfiles.
 
 Dotfiles are what power your system. These are mine. They're mostly for OS X since that's what I use. My default shell
 these days is zsh. I use [oh-my-zsh](https://ohmyz.sh/) for managing lots of common stuff. All of the dotfile
-management is done with [rcm](https://github.com/thoughtbot/rcm) and packages are managed with homebrew.
+management is done with [dotbot](https://github.com/anishathalye/dotbot) and packages are managed with homebrew.
 
 ## Whats in it?
 
@@ -25,7 +25,7 @@ management is done with [rcm](https://github.com/thoughtbot/rcm) and packages ar
 Running `./bootstrap.sh` will install all dependencies and create symlinks to all of the dotfiles. I try to make sure
 its up to date but every now and then there is a missing dependency. If you want to set up your mac with the same
 defaults that I do you can also run `./set-defaults.sh`. If you need to add new dotfiles or symlinks in the future then
-you can simply run `rcup` in the dotfiles dir.
+you can simply edit the `install.conf.yaml` file and run `./install` in the dotfiles dir.
 
 ## Most Frequently Used Commands
 
