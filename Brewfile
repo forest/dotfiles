@@ -4,6 +4,15 @@ cask_args appdir: "/Applications"
 # brew "java"
 brew "cmake"
 
+# deps: postgres
+brew "readline"
+brew "zlib"
+brew "curl"
+brew "ossp-uuid"
+brew "icu4c"
+brew "pkg-config"
+brew "pgvector"
+
 # ai
 tap "sst/tap"
 cask "claude-code"
@@ -28,8 +37,6 @@ brew "starship"
 brew "wget"
 brew "yh"
 
-# tap "homebrew/bundle"
-# tap "homebrew/services"
 cask "font-victor-mono"
 cask "ngrok"
 cask "warp"
