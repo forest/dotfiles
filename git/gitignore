@@ -80,6 +80,7 @@ npm-debug.log
 .mix_tasks
 .vscode
 .lexical
+.expert
 .elixir-tools
 assets/vendor
 .zed

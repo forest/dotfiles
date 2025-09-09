@@ -45,11 +45,11 @@ alias gdla='git branch | egrep -v "(^\*|main|master|develop)" | xargs git branch
 # alias p="cd $PROJECTS"
 
 # alias
-alias de='code $HOME/dotfiles' # dotfiles edit
+alias de='zed $HOME/dotfiles' # dotfiles edit
 
 # random
 alias myip='curl ifconfig.me'
-alias hosts='sudo code /private/etc/hosts'
+alias hosts='sudo zed /private/etc/hosts'
 alias tarx='tar xzvf '
 
 # make
