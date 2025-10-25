@@ -121,6 +121,7 @@ export SSH_AUTH_SOCK=~/Library/Group\ Containers/2BUA8C4S2C.com.1password/t/agen
 export ERL_AFLAGS="-kernel shell_history enabled"
 export KERL_CONFIGURE_OPTIONS="--without-jinterface --without-hipe"
 export KERL_BUILD_DOCS="no"
+export MIX_OS_DEPS_COMPILE_PARTITION_COUNT=$(( $(sysctl -n hw.physicalcpu) / 2 ))
 
 # docs.pkgx.sh/shellcode
 # source <(pkgx --shellcode)
