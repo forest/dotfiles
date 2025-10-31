@@ -55,7 +55,7 @@ end
 
 ### Step 2.1: Create Fix Plan Document
 
-**CREATE FILE**: `<project_root>/notes/fixes/<number>-<issue-description>.md` (inside the project directory)
+**CREATE FILE**: `dev/active/[issue-description]-plan.md` (inside the project directory)
 
 **REQUIRED STRUCTURE**:
 

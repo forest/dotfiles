@@ -9,7 +9,7 @@ We're approaching context limits. Please update the development documentation to
 
 ### 1. Update Active Task Documentation
 
-For each task in `notes/dev/active/` (relative to project root):
+For each task in `dev/active/` (relative to project root):
 
 - Update `[task-name]-context.md` with:
   - Current implementation state

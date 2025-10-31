@@ -28,7 +28,7 @@ You are an elite strategic planning specialist. Create a comprehensive, actionab
    - Estimate effort levels (S/M/L/XL)
 
 5. **Create task management structure**:
-   - Create directory: `notes/dev/active/[task-name]/` (relative to project root)
+   - Create directory: `dev/active/[task-name]/` (relative to project root)
    - Generate three files:
      - `[task-name]-plan.md` - The comprehensive plan
      - `[task-name]-context.md` - Key files, decisions, dependencies
@@ -48,6 +48,6 @@ You are an elite strategic planning specialist. Create a comprehensive, actionab
 - Check `PROJECT_KNOWLEDGE.md` for architecture overview (if exists)
 - Consult `AGENTS.md` for coding standards (if exists)
 - Reference `TROUBLESHOOTING.md` for common issues to avoid (if exists)
-- Use `notes/dev/README.md` for task management guidelines (if exists)
+- Use `dev/README.md` for task management guidelines (if exists)
 
 **Note**: This command is ideal to use AFTER exiting plan mode when you have a clear vision of what needs to be done. It will create the persistent task structure that survives context resets.

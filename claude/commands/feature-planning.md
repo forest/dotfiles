@@ -1,3 +1,10 @@
+---
+description: Create a comprehensive strategic plan with structured task breakdown
+argument-hint: Describe what you need planned (e.g., "refactor authentication system", "implement microservices")
+---
+
+You are an elite strategic technical planning specialist. Create a comprehensive, actionable plan for: $ARGUMENTS
+
 # FEATURE IMPLEMENTATION WORKFLOW
 
 **THIS IS A MANDATORY WORKFLOW - NO STEPS CAN BE SKIPPED**
@@ -25,9 +32,17 @@
 5. Document assumptions that need validation
 6. Consider whether or not this feature is truly necessary as specified. Consider alternatives, or if the feature may do more harm than good, and pushback if necessary.
 
-### Step 1.3: Create Feature Plan Document
+### Step 1.3: Create Feature Plan Documentation
 
-**CREATE FILE**: `<project_root>/notes/features/<number>-<name>.md` (inside the project directory)
+    - Executive Summary
+    - Current State Analysis
+    - Proposed Future State
+    - Implementation Phases (broken into sections)
+    - Detailed Tasks (actionable items with clear acceptance criteria)
+    - Risk Assessment and Mitigation Strategies
+    - Success Metrics
+    - Required Resources and Dependencies
+    - Timeline Estimates
 
 **MANDATORY STRUCTURE**:
 
@@ -71,7 +86,15 @@
 | ------ | ------------ | ------------- |
 | Risk 1 | High/Med/Low | How to handle |
 
-## Implementation Checklist
+## Task Breakdown Structure
+
+- Each major section represents a phase or component
+- Number and prioritize tasks within sections
+- Include clear acceptance criteria for each task
+- Specify dependencies between tasks
+- Estimate effort levels (S/M/L/XL)
+
+## Implementation Plan
 
 - [ ] Task 1 (specific file/module to create/modify)
 - [ ] Task 2
@@ -83,43 +106,28 @@
 1. [Any clarifications needed]
 ```
 
-## PHASE 2: APPROVAL CHECKPOINT (MANDATORY)
+## PHASE 2: IMPLEMENTATION PLAN
 
-**YOU MUST STOP HERE**:
+Include the below implementation plan in the `## Implementation Plan` section:
 
-1. Present the plan document
-2. Explicitly ask: "Please review this plan. Should I proceed with implementation?"
-3. WAIT for explicit approval
-4. Do NOT proceed without approval
-
-## PHASE 3: IMPLEMENTATION
-
-### Step 3.1: Set Up Tracking
-
-**REQUIRED**:
-
-1. Use TodoWrite to create tasks from implementation checklist
-2. Update `<project_root>/notes/features/<number>-<name>.md` with a `## Log` section
-3. Log EVERY significant decision or discovery
-
-### Step 3.2: Write at least one failing test
+### Step 2.2: Write at least one failing test
 
 1. Create a test in the most idiomatic place, or create a new test.
 2. Write a failing test that demonstrates the desired behavior.
 3. Run the test and ensure it fails.
 
-### Step 3.3: Implementation Rules
+### Step 2.3: Implementation Rules
 
 **MANDATORY SEQUENCE FOR EACH TASK**:
 
-1. Check for relevant generator using `list_generators`
+1. Check for relevant generator using `mix help` to list available generators
 2. Research docs again for specific implementation details
 3. Implement using Ash patterns ONLY
 4. Compile and check for errors
 5. Run tests if applicable
 6. Update log with results
 
-### Step 3.4: Progress Reporting
+### Step 2.4: Progress Reporting
 
 **AFTER EACH SUBTASK**:
 
@@ -128,27 +136,27 @@
 3. Update todo status
 4. Ask if you should continue
 
-## PHASE 4: FINALIZATION
+## PHASE 3: FINALIZATION
 
-### Step 4.1: Verification
+### Step 3.1: Verification
 
 **REQUIRED CHECKS**:
 
 1. All requirements met (check against original list)
-2. All tests passing
+2. All tests passing: run `mix precommit`
 3. No compilation warnings
 4. Code follows Ash patterns
 
-### Step 4.2: Documentation Update
+### Step 3.2: Documentation Update
 
-**UPDATE** `<project_root>/notes/features/<number>-<name>.md`:
+**UPDATE** `dev/active/[task-name]/[task-name]-plan.md`:
 
 1. Add `## Final Implementation` section
 2. Document what was built
 3. Note any deviations from plan
 4. List any follow-up tasks needed
 
-## PHASE 5: COMPLETION CHECKPOINT
+## PHASE 4: COMPLETION CHECKPOINT
 
 **FINAL REQUIREMENTS**:
 
@@ -162,3 +170,12 @@
 - **ASH PATTERNS ONLY** - no direct Ecto
 - **STOP AT CHECKPOINTS** - wait for approval
 - **LOG EVERYTHING** - maintain feature notes file
+
+## PHASE 5: APPROVAL CHECKPOINT (MANDATORY)
+
+**YOU MUST STOP HERE**:
+
+1. Present the plan document
+2. Explicitly ask: "Please review this plan. Should I proceed with implementation?"
+3. WAIT for explicit approval
+4. Do NOT proceed without approval
