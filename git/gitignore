@@ -82,7 +82,6 @@ npm-debug.log
 .lexical
 .expert
 .elixir-tools
-assets/vendor
 .zed
 .envrc
 
