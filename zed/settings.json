@@ -7,13 +7,12 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "enable_language_server": true,
   "context_servers": {
     "tidewave": {
-      "source": "custom",
+      "source": "extension",
       "enabled": true,
-      "command": "mcp-proxy",
-      "args": ["http://localhost:4000/tidewave/mcp"],
-      "env": {}
+      "settings": {}
     },
     "mcp-server-context7": {
       "enabled": false,
@@ -68,13 +67,14 @@
   "format_on_save": "on",
   "languages": {
     "Elixir": {
-      "language_servers": ["expert", "!elixir_ls"],
-      "format_on_save": {
+      "formatter": {
         "external": {
           "command": "mix",
           "arguments": ["format", "--stdin-filename", "{buffer_path}", "-"]
         }
-      }
+      },
+      "language_servers": ["expert", "!elixir_ls"],
+      "format_on_save": "on"
     }
   }
 }
