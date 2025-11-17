@@ -3,7 +3,6 @@
 "cargo:eza" = "latest"
 "cargo:tealdeer" = "latest"
 "cargo:typos-cli" = "latest"
-"cargo:just" = "latest"
 elixir = "1.19.3-otp-28"
 erlang = "28.1.1"
 nodejs = "24.3.0"
