@@ -16,6 +16,7 @@
     ~/.claude/agents: claude/agents
     ~/.claude/CLAUDE.md: agents/AGENTS.md
     ~/.claude/commands: claude/commands
+    ~/.claude/skills: claude/skills
     ~/.claude/settings.json: claude/settings.json
     ~/.config/aliases.zsh: zsh/aliases.zsh
     ~/.config/direnv: direnv

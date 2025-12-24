@@ -1,7 +1,7 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 export GOPATH=$HOME/go
-export PATH="./bin:$HOME/.bin:$HOME/bin:./node_modules/.bin:$HOME/.cargo/bin:$GOPATH:$GOPATH/bin:$PATH"
+export PATH="./bin:$HOME/.bin:$HOME/bin:$HOME/.local/bin:./node_modules/.bin:$HOME/.cargo/bin:$GOPATH:$GOPATH/bin:$PATH"
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -123,8 +123,16 @@ export KERL_CONFIGURE_OPTIONS="--without-jinterface --without-hipe"
 export KERL_BUILD_DOCS="no"
 export MIX_OS_DEPS_COMPILE_PARTITION_COUNT=$(( $(sysctl -n hw.physicalcpu) / 2 ))
 
-# docs.pkgx.sh/shellcode
-# source <(pkgx --shellcode)
+# PHP
+export PATH="/opt/homebrew/opt/php@8.3/bin:$PATH"
+export PATH="/opt/homebrew/opt/php@8.3/sbin:$PATH"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+# Claude config directory
+export CLAUDE_DIR="$HOME/.claude"
 
 # k8s
 source <(kubectl completion zsh)
