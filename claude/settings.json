@@ -72,7 +72,12 @@
     "precommit@elixir": true,
     "sobelow@elixir": true,
     "document-skills@anthropic-agent-skills": true,
-    "example-skills@anthropic-agent-skills": true
+    "example-skills@anthropic-agent-skills": true,
+    "beads@beads-marketplace": true,
+    "elixir-lsp@claude-code-elixir": true,
+    "elixir@claude-code-elixir": true,
+    "mix-compile@claude-code-elixir": true,
+    "mix-format@claude-code-elixir": true
   },
   "alwaysThinkingEnabled": true,
   "preferredNotifChannel": "terminal_bell",
