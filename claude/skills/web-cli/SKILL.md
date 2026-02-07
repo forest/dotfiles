@@ -1,119 +1,114 @@
 ---
 name: web-cli
 description: |
-  Portable web scraper CLI for LLMs with JavaScript rendering, form submission, and session persistence.
+  Web browser CLI tool for testing and verifying web pages during development.
 
-  USE WHEN user needs to scrape a URL, fill forms, take screenshots, or interact with web pages
-  requiring JavaScript execution. Supports Phoenix LiveView applications natively.
+  USE WHEN:
+  - You need to verify functionality of a web page or app you're building
+  - You need to test a web endpoint, check build status, or validate UI output
+  - You need to interact with a running web application (login, fill forms, navigate)
+  - The user asks to scrape, fetch, screenshot, or interact with any URL
+  - You are building features and need to confirm they work in the browser
+
+  This is the GO-TO TOOL for verifying web functionality. Prefer `web` over WebFetch
+  for any page that uses JavaScript, LiveView, or requires session state.
 ---
 
-# Web CLI Skill
+# Web Browser Tool
 
-## When to Activate This Skill
+You have the ability to browse the web with a full browser via the system shell.
 
-### Direct Web Scraping
-- "scrape this URL with JavaScript"
-- "fetch this page and render it"
-- "get the page after JavaScript loads"
-- "convert this page to markdown"
+**Always** use the built-in bash CLI tool `web` to interact with and test web apps as you build features.
+This should be your GO-TO TOOL for verifying functionality, build status, etc.
 
-### Form Submission
-- "fill out this form"
-- "submit login credentials to this page"
-- "enter values into form fields"
-- "automate form submission"
+## Basic Usage
 
-### Screenshot Capture
-- "take a screenshot of this page"
-- "capture this webpage as an image"
-- "screenshot after JavaScript loads"
-
-### Session/Authentication
-- "use my logged-in session"
-- "maintain session across requests"
-- "use a specific browser profile"
-
-### LiveView/SPA Support
-- "scrape this Phoenix LiveView app"
-- "interact with this dynamic page"
-- "wait for JavaScript to load"
-
-## Tool: `web`
-
-```
+```bash
 web <url> [options]
 ```
 
-### Core Options
+By default the page is converted to markdown and displayed to stdout:
+
+```bash
+web example.com
+web localhost:4000/dashboard
+```
+
+You can redirect output to a file:
+
+```bash
+web example.com --raw > output.html
+web example.com --raw > output.json
+```
+
+**Never** pass `--raw` or `--truncate-after` unless the user asks, or if it makes sense (e.g., fetching JSON from an API).
+
+## Options
 
 | Option | Description |
 |--------|-------------|
-| `--raw` | Output raw HTML instead of markdown |
+| `--raw` | Output raw HTML/JSON instead of markdown |
 | `--truncate-after <n>` | Truncate after n characters (default: 100000) |
 | `--screenshot <path>` | Save screenshot to filepath |
 | `--profile <name>` | Use named session profile (default: "default") |
 | `--js <code>` | Execute JavaScript after page loads |
-
-### Form Submission Options
-
-| Option | Description |
-|--------|-------------|
-| `--form <id>` | Target form by ID |
+| `--form <id>` | Target form by ID for submission |
 | `--input <name>` | Field name to fill (repeatable) |
 | `--value <value>` | Value for preceding `--input` |
 | `--after-submit <url>` | URL to load after form submission |
 
-## Key Features
+## Session Persistence
 
-### JavaScript Rendering
-Unlike simple HTTP fetches, `web` renders JavaScript. Essential for:
-- Single Page Applications (SPAs)
-- Phoenix LiveView pages
-- React/Vue/Angular apps
-- Pages with dynamic content loading
+Each invocation of `web` uses a **shared session** — cookie sessions and other state are preserved across separate invocations. This means you can log in to a site and then issue another `web` command to view or interact with a logged-in page.
 
-### Phoenix LiveView Support
-Automatically handles:
-- `.phx-connected` state waiting
-- Form submissions with loading states
-- State management between interactions
+Use the optional `--profile` argument to browse under unique profiles, which is useful for testing multiple logins or sessions:
 
-### Session Persistence
-The `--profile` option maintains cookies and session state across requests:
 ```bash
-# Login once
-web localhost:4000/login --form login_form \
-  --input email --value user@example.com \
-  --input password --value secret \
-  --profile myapp
-
-# Subsequent requests use same session
-web localhost:4000/dashboard --profile myapp
+web http://localhost:4000 --profile "user1"
+web http://localhost:4000 --profile "user2"
 ```
 
-## Usage Examples
+## Common Patterns
 
-### Basic Page Fetch
+### Verify a Page Works
 ```bash
-web https://example.com
+web localhost:4000/users
 ```
 
-### Screenshot with Truncated Output
+### Authenticated Session
 ```bash
-web https://example.com --screenshot page.png --truncate-after 5000
-```
-
-### Form Login
-```bash
+# 1. Login and establish session
 web localhost:4000/login \
   --form login_form \
-  --input email --value test@example.com \
-  --input password --value secret
+  --input email --value user@example.com \
+  --input password --value secret \
+  --profile app_session
+
+# 2. Access protected pages with same session
+web localhost:4000/dashboard --profile app_session
 ```
 
-### Execute JavaScript
+### Screenshot for Visual Verification
 ```bash
-web https://example.com --js "document.querySelector('button').click()"
+web localhost:4000/dashboard --screenshot /tmp/dashboard.png
+```
+
+### Fetch JSON from an API
+```bash
+web localhost:4000/api/health --raw
+```
+
+### Execute JavaScript After Load
+```bash
+web localhost:4000 --js "document.querySelector('button').click()"
+```
+
+### LiveView Form Submission
+```bash
+web localhost:4000/users/new \
+  --form user_form \
+  --input "user[name]" --value "John Doe" \
+  --input "user[email]" --value "john@example.com"
 ```
 
 ### Navigate After Form Submit
@@ -125,55 +120,20 @@ web localhost:4000/login \
   --after-submit localhost:4000/admin/dashboard
 ```
 
+## Key Capabilities
+
+- **JavaScript rendering**: Unlike simple HTTP fetches, `web` renders JavaScript — essential for SPAs, Phoenix LiveView, React/Vue/Angular apps
+- **Phoenix LiveView support**: Automatically handles `.phx-connected` state waiting, form submissions with loading states
+- **Session persistence**: Cookies and state preserved across invocations via shared or named profiles
+
 ## When to Use `web` vs Other Tools
 
 | Scenario | Tool |
 |----------|------|
-| Simple static page | WebFetch |
+| Simple static page (no JS) | WebFetch |
 | JavaScript-rendered content | `web` |
 | Form submission needed | `web` |
 | Screenshot required | `web` |
 | Session persistence needed | `web` |
-| Bot detection bypass needed | brightdata skill |
 | Phoenix LiveView app | `web` |
-
-## Integration with Other Skills
-
-- **brightdata**: If `web` fails due to bot detection, escalate to brightdata skill
-- **WebFetch**: Use for simple static pages (faster, no JS overhead)
-
-## Common Patterns
-
-### Authenticated Scraping Session
-```bash
-# 1. Login and establish session
-web localhost:4000/login \
-  --form login_form \
-  --input email --value user@example.com \
-  --input password --value secret \
-  --profile app_session
-
-# 2. Access protected pages
-web localhost:4000/protected/data --profile app_session
-```
-
-### Capture State After Interaction
-```bash
-# Click a button and capture result
-web https://app.example.com \
-  --js "document.querySelector('#load-more').click(); await new Promise(r => setTimeout(r, 2000));" \
-  --screenshot after-click.png
-```
-
-### LiveView Form Submission
-```bash
-# Phoenix LiveView forms work seamlessly
-web localhost:4000/users/new \
-  --form user_form \
-  --input "user[name]" --value "John Doe" \
-  --input "user[email]" --value "john@example.com"
-```
-
----
-
-**Last Updated:** 2025-01-02
+| Verifying feature during dev | `web` |

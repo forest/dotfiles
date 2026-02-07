@@ -13,11 +13,13 @@
   "enable_language_server": true,
   "context_servers": {
     "tidewave": {
+      "source": "extension",
       "enabled": true,
       "settings": {}
     },
     "mcp-server-context7": {
       "enabled": false,
+      "source": "extension",
       "settings": {
         "default_minimum_tokens": "10000"
       }
