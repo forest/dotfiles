@@ -1,9 +1,12 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "env": {
+    "CLAUDE_CODE_MAX_OUTPUT_TOKENS": "64000",
+    "CLAUDE_CODE_EFFORT_LEVEL": "high"
+  },
   "includeCoAuthoredBy": false,
   "permissions": {
     "allow": [
-      "Bash",
       "Read",
       "Write",
       "Edit",
@@ -17,7 +20,16 @@
       "TodoWrite",
       "ExitPlanMode",
       "Task",
-      "mcp__*"
+      "Bash(mix deps.get:*)",
+      "Bash(mix ecto.migrate:*)",
+      "Bash(mix test:*)",
+      "Bash(mix precommit:*)",
+      "Bash(mix format:*)",
+      "Bash(mix credo:*)",
+      "Bash(mix sobelow:*)",
+      "Bash(mix assets.build:*)",
+      "Bash(mix ash.*:*)",
+      "Bash(curl:*)"
     ],
     "deny": [
       "Bash(diskutil partitionDisk)",
@@ -54,7 +66,7 @@
       "Bash(> /dev/sda)"
     ]
   },
-  "model": "sonnet",
+  "model": "opus",
   "enableAllProjectMcpServers": true,
   "enabledPlugins": {
     "meta@elixir": true,
@@ -71,7 +83,8 @@
     "elixir-lsp@claude-code-elixir": true,
     "elixir@claude-code-elixir": true,
     "elixir@elixir": true,
-    "superpowers@superpowers-marketplace": true
+    "superpowers@superpowers-marketplace": true,
+    "elixir-phoenix-guide@elixir-phoenix-guide": true
   },
   "alwaysThinkingEnabled": true,
   "preferredNotifChannel": "terminal_bell",
