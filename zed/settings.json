@@ -8,52 +8,47 @@
 // from the command palette or from `Zed` application menu.
 {
   "git_panel": {
-    "tree_view": true
+    "tree_view": true,
   },
   "enable_language_server": true,
   "context_servers": {
     "tidewave": {
       "enabled": true,
-      "settings": {}
+      "settings": {},
     },
     "mcp-server-context7": {
       "enabled": false,
       "settings": {
-        "default_minimum_tokens": "10000"
-      }
-    }
+        "default_minimum_tokens": "10000",
+      },
+    },
   },
   "edit_predictions": {
     "mode": "subtle",
     "copilot": {
       "proxy": null,
-      "proxy_no_verify": null
+      "proxy_no_verify": null,
     },
-    "enabled_in_text_threads": false
+    "enabled_in_text_threads": false,
   },
   "agent": {
     "use_modifier_to_send": true,
     "default_profile": "write",
-    "always_allow_tool_actions": true,
     "default_model": {
       "provider": "zed.dev",
-      "model": "claude-sonnet-4"
-    }
-  },
-  "features": {
-    "edit_prediction_provider": "zed",
-    "copilot": false
+      "model": "claude-sonnet-4",
+    },
   },
   "base_keymap": "VSCode",
   "telemetry": {
-    "metrics": false
+    "metrics": false,
   },
   "buffer_font_size": 15,
   "buffer_font_family": "InconsolataGo Nerd Font Mono",
   "ui_font_family": "Victor Mono",
   "ui_font_size": 15,
   "git": {
-    "git_gutter": "tracked_files"
+    "git_gutter": "tracked_files",
   },
   "terminal": {
     "alternate_scroll": "off",
@@ -63,7 +58,7 @@
     "font_family": "InconsolataGo Nerd Font Mono",
     "font_size": 15,
     "option_as_meta": false,
-    "working_directory": "current_project_directory"
+    "working_directory": "current_project_directory",
   },
   "format_on_save": "on",
   "languages": {
@@ -71,11 +66,19 @@
       "formatter": {
         "external": {
           "command": "mix",
-          "arguments": ["format", "--stdin-filename", "{buffer_path}", "-"]
-        }
+          "arguments": ["format", "--stdin-filename", "{buffer_path}", "-"],
+        },
       },
-      "language_servers": ["expert", "!elixir_ls"],
-      "format_on_save": "on"
-    }
-  }
+      "format_on_save": "on",
+    },
+  },
+  "lsp": {
+    "expert": {
+      "settings": {
+        "workspaceSymbols": {
+          "minQueryLength": 0,
+        },
+      },
+    },
+  },
 }
