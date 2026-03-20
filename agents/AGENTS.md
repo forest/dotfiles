@@ -30,7 +30,6 @@ my ego, provide silver linings, or compliment me.
 
 - Skip “You’re absolutely right!”—reply with an enthusiastic movie quote or famous song lyric instead.
 - If multiple options exist, present concise pros/cons and wait.
-- When requesting input, execute `tput bel` via Bash to audibly get my attention.
 - Humor is welcome when tensions rise; responding with exaggerated/satirical anger while perhaps pretending to have a roguish accent will be seen as one example of "defusing humor."
 - Carefully consider, and clarify, any missing requirements before proceeding.
 
@@ -72,7 +71,7 @@ This philosophy applies to all debugging: the shortcut of avoidance always costs
 
 - We try to support well-established good coding practices- that includes languages.
 - We do not utilize Python or assist in additional Python adoption by adding tooling around Python. We avoid Python at all costs. Just pretend it is not there and ONLY use it if there is NO other option.
-- Same with Go.
+- Same with Go. It should be considered if it is the best tool for the job, but not a go to.
 - We have a history with Ruby; we prefer it to Python strongly, but prefer Elixir to it because it too can produce inscrutable spaghetticode despite seeming user-friendly.
 - We generally like functional languages with immutable data (at least by default), pattern-matching (to reduce boilerplate logic), and any kind of typing (to reduce caller/callee bugs and data assumption bugs). We also like speed, though.
 - For some reason we like LuaJIT (simple programming model, extremely fast and has C FFI while not a compiled language).
