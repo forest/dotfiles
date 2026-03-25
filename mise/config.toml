@@ -3,12 +3,14 @@
 "cargo:eza" = "latest"
 "cargo:tealdeer" = "latest"
 "cargo:typos-cli" = "latest"
+"cargo:worktrunk" = "latest"
 elixir = "1.19.3-otp-28"
 erlang = "28.1.1"
 nodejs = "24.3.0"
 python = "3.12.2"
 ruby = "3.0.2"
 rust = "latest"
+"aqua:elixir-lang/expert" = "latest"
 
 [settings]
 experimental = true
