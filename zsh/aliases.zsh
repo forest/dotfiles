@@ -57,9 +57,8 @@ alias m='make'
 
 # postgresql
 # Upgrading: https://mattbrictson.com/blog/postgres-17-homebrew
-# > initdb --locale=C -E UTF-8 $(brew --prefix)/var/postgresql@17 -U postgres -W
-alias pgst='pg_ctl -D $(brew --prefix)/var/postgresql@17 start'
-alias pgsp='pg_ctl -D $(brew --prefix)/var/postgresql@17 stop -s -m fast'
+alias pgst='brew services start postgresql@17'
+alias pgsp='brew services stop postgresql@17'
 
 # mysql
 alias msst='brew services start mysql'

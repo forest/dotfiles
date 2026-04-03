@@ -31,6 +31,7 @@
     ~/.config/opencode/opencode.json: opencode/opencode.json
     ~/.config/opencode/prompts: claude/commands
     ~/.config/starship.toml: starship.toml
+    ~/.config/worktrunk: worktrunk
     ~/.config/zed: zed
     ~/.ctags: ctags
     ~/.gemrc: gemrc

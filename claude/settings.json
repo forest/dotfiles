@@ -73,7 +73,8 @@
     "elixir-lsp@claude-code-elixir": true,
     "elixir@claude-code-elixir": true,
     "elixir-phoenix-guide@elixir-phoenix-guide": true,
-    "superpowers@claude-plugins-official": true
+    "superpowers@claude-plugins-official": true,
+    "worktrunk@worktrunk": true
   },
   "extraKnownMarketplaces": {
     "forest-claude-tools": {
@@ -82,12 +83,18 @@
         "url": "git@github.com:forest/agent-skills.git"
       },
       "autoUpdate": true
+    },
+    "worktrunk": {
+      "source": {
+        "source": "github",
+        "repo": "max-sixty/worktrunk"
+      }
     }
   },
   "alwaysThinkingEnabled": true,
+  "effortLevel": "medium",
   "preferredNotifChannel": "terminal_bell",
   "feedbackSurveyState": {
     "lastShownTime": 1754076959040
-  },
-  "effortLevel": "medium"
+  }
 }
