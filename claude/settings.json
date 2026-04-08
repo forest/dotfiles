@@ -74,7 +74,8 @@
     "elixir@claude-code-elixir": true,
     "elixir-phoenix-guide@elixir-phoenix-guide": true,
     "superpowers@claude-plugins-official": true,
-    "worktrunk@worktrunk": true
+    "worktrunk@worktrunk": true,
+    "morph-compact@morph": true
   },
   "extraKnownMarketplaces": {
     "forest-claude-tools": {
@@ -88,6 +89,12 @@
       "source": {
         "source": "github",
         "repo": "max-sixty/worktrunk"
+      }
+    },
+    "morph": {
+      "source": {
+        "source": "github",
+        "repo": "morphllm/morph-claude-code-plugin"
       }
     }
   },

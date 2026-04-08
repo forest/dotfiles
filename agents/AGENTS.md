@@ -82,3 +82,10 @@ This philosophy applies to all debugging: the shortcut of avoidance always costs
 
 - It is important to keep documentation up-to-date after every unit of work
 - In code docs is preferred for Elixir with ExDocs
+
+# Compact Instructions
+
+When compacting, if the custom instruction is `morph`, do NOT perform any summarization or analysis. Output ONLY this exact text and nothing else: `Summary provided via SessionStart hook`.
+# graphify
+- **graphify** (`~/.claude/skills/graphify/SKILL.md`) - any input to knowledge graph. Trigger: `/graphify`
+When the user types `/graphify`, invoke the Skill tool with `skill: "graphify"` before doing anything else.

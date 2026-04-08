@@ -23,6 +23,7 @@
     ~/.config/lazygit/config.yml:
       create: true
       path: git/lazygit.yml
+    ~/.mempalace: mempalace
     ~/.config/mise: mise
     ~/.config/ohmyzsh: ohmyzsh
     ~/.config/opencode/AGENTS.md:

@@ -35,6 +35,21 @@ alias gaf='git append'
 alias gsy='git sync'
 alias gor='git-town repo'
 
+# worktrunk
+alias wnf='wt switch --create'
+alias waf='wt switch --create --base=@'
+wsy() {
+    git fetch
+    local branch=$(git branch --show-current)
+    local default=$(wt config state default-branch)
+    if git show-ref --verify --quiet "refs/remotes/origin/$branch"; then
+        git rebase "origin/$default" && git push
+    else
+        echo "Remote deleted — cleaning up $branch"
+        wt remove @ && wt switch ^
+    fi
+}
+
 # DANGER! Only run these if you are sure you want to delete unmerged branches.
 # delete all local merged branches
 alias gdlm='git branch --merged | egrep -v "(^\*|main|master|develop)" | xargs git branch -D'

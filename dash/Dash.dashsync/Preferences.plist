@@ -388,7 +388,7 @@ $("h1").each(function() {
 			<key>ash_authentication_phoenix</key>
 			<dict>
 				<key>date</key>
-				<date>2026-02-02T23:10:15Z</date>
+				<date>2026-04-07T15:04:07Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -598,7 +598,7 @@ $("h1").each(function() {
 			<key>daisy_ui_components</key>
 			<dict>
 				<key>date</key>
-				<date>2025-11-02T16:04:07Z</date>
+				<date>2026-04-08T15:04:11Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -976,7 +976,7 @@ $("h1").each(function() {
 			<key>reactor</key>
 			<dict>
 				<key>date</key>
-				<date>2026-02-01T19:56:12Z</date>
+				<date>2026-04-07T15:04:26Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
