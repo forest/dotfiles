@@ -62,9 +62,9 @@ git config --global init.defaultBranch   main
 if ! command -v cargo &>/dev/null; then
 	log "Installing Rust toolchain..."
 	curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
-	# shellcheck source=/dev/null
-	source "$HOME/.cargo/env"
 fi
+# Ensure cargo bin is on PATH regardless of how/where cargo was installed
+export PATH="${CARGO_HOME:-$HOME/.cargo}/bin:$PATH"
 
 # ──────────────────────────────────────────────
 # Worktrunk
@@ -104,6 +104,8 @@ log "Adding zsh aliases..."
 
 ALIASES_BLOCK='
 # ── sprite-up aliases ────────────────────────
+
+export PATH="${CARGO_HOME:-$HOME/.cargo}/bin:$PATH"
 
 # Elixir / Mix
 alias im="iex -S mix"
