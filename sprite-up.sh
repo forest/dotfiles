@@ -71,7 +71,7 @@ export PATH="${CARGO_HOME:-$HOME/.cargo}/bin:$PATH"
 # ──────────────────────────────────────────────
 log "Installing worktrunk..."
 cargo install worktrunk
-wt config shell install
+wt config shell install --yes
 
 # ──────────────────────────────────────────────
 # Tidewave MCP
@@ -148,4 +148,5 @@ else
 	log "Aliases appended to $ZSHRC."
 fi
 
-log "Done! Open a new shell or: source $ZSHRC"
+source $ZSHRC
+log "Done!"
