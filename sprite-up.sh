@@ -13,6 +13,7 @@ log() { printf '\n\033[1;32m==> %s\033[0m\n' "$*"; }
 log "Installing PostgreSQL..."
 sudo apt install -y postgresql postgresql-contrib
 sudo -u postgres pg_ctlcluster "$(ls /etc/postgresql)" main start
+sudo -u postgres psql -c "ALTER USER postgres WITH PASSWORD 'postgres';"
 
 # ──────────────────────────────────────────────
 # Git
