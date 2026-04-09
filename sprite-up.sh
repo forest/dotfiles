@@ -99,12 +99,12 @@ claude plugin install session-handoff@forest-claude-tools
 claude plugin install tidewave-tools-usage@forest-claude-tools
 
 # ──────────────────────────────────────────────
-# Zsh aliases
+# Zsh additions
 # ──────────────────────────────────────────────
-log "Adding zsh aliases..."
+log "Adding zsh additions..."
 
-ALIASES_BLOCK='
-# ── sprite-up aliases ────────────────────────
+ADDITIONS_BLOCK='
+# ── sprite-up additions ────────────────────────
 
 export PATH="${CARGO_HOME:-$HOME/.cargo}/bin:$PATH"
 
@@ -142,12 +142,17 @@ wsy() {
 
 ZSHRC="${ZDOTDIR:-$HOME}/.zshrc"
 
-if grep -q 'sprite-up aliases' "$ZSHRC" 2>/dev/null; then
-	log "Aliases already present in $ZSHRC — skipping."
+if grep -q 'sprite-up additions' "$ZSHRC" 2>/dev/null; then
+	log "Additions already present in $ZSHRC — skipping."
 else
-	printf '%s\n' "$ALIASES_BLOCK" >> "$ZSHRC"
-	log "Aliases appended to $ZSHRC."
+	printf '%s\n' "$ADDITIONS_BLOCK" >> "$ZSHRC"
+	log "Additions appended to $ZSHRC."
 fi
 
-source $ZSHRC
-log "Done!"
+# ──────────────────────────────────────────────
+# GitHub auth
+# ──────────────────────────────────────────────
+log "Authenticating with GitHub (follow the prompts)..."
+gh auth login --web -h github.com
+
+log "Done! Open a new shell or: source $ZSHRC"
