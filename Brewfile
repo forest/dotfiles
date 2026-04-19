@@ -14,9 +14,11 @@ brew "pkg-config"
 brew "pgvector"
 
 # ai
-tap "sst/tap"
-cask "claude-code"
-brew "sst/tap/opencode"
+#tap "sst/tap"
+#cask "claude-code"
+#brew "sst/tap/opencode"
+tap "neilberkman/tap"
+brew "ccrider"
 
 # Utilities
 # brew "kubectl"

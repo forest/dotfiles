@@ -1,0 +1,5 @@
+[projects."github.com/forest/ponte"]
+approved-commands = [
+    "wt step copy-ignored",
+    "mix deps.get",
+]

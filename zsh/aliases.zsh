@@ -44,9 +44,11 @@ wsy() {
     local default=$(wt config state default-branch)
     if git show-ref --verify --quiet "refs/remotes/origin/$branch"; then
         git rebase "origin/$default" && git push
-    else
+    elif [ -n "$(git config "branch.$branch.remote")" ]; then
         echo "Remote deleted — cleaning up $branch"
         wt remove @ && wt switch ^
+    else
+        git rebase "origin/$default" && git push --set-upstream origin "$branch"
     fi
 }
 
