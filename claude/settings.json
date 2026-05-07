@@ -118,7 +118,6 @@
       "source": {
         "source": "github",
         "repo": "morphllm/morph-claude-code-plugin"
-      }
       },
       "autoUpdate": true
     },
