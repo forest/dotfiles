@@ -75,13 +75,36 @@
     "elixir-phoenix-guide@elixir-phoenix-guide": true,
     "superpowers@claude-plugins-official": true,
     "worktrunk@worktrunk": true,
-    "morph-compact@morph": true
+    "morph-compact@morph": true,
+    "agent-mermaid-diagram-specialist@agent-toolkit": false,
+    "command-sync-skills-readme@agent-toolkit": false,
+    "crafting-effective-readmes@agent-toolkit": false,
+    "humanizer@agent-toolkit": false,
+    "professional-communication@agent-toolkit": false,
+    "writing-clearly-and-concisely@agent-toolkit": true,
+    "session-handoff@forest-claude-tools": false,
+    "gepetto@agent-toolkit": false,
+    "duckdb-skills@duckdb-skills": false,
+    "mem0@mem0-plugins": true,
+    "notion@claude-plugins-official": true,
+    "skill-creator@claude-plugins-official": true,
+    "commit-work@agent-toolkit": false,
+    "plugin-forge@agent-toolkit": true,
+    "skill-judge@agent-toolkit": true,
+    "portfolio-growth-planner@portfolio-growth-planner": true
   },
   "extraKnownMarketplaces": {
     "forest-claude-tools": {
       "source": {
         "source": "git",
         "url": "git@github.com:forest/agent-skills.git"
+      },
+      "autoUpdate": true
+    },
+    "agent-toolkit": {
+      "source": {
+        "source": "github",
+        "repo": "softaworks/agent-toolkit"
       },
       "autoUpdate": true
     },
@@ -96,11 +119,35 @@
         "source": "github",
         "repo": "morphllm/morph-claude-code-plugin"
       }
+      },
+      "autoUpdate": true
+    },
+    "duckdb-skills": {
+      "source": {
+        "source": "github",
+        "repo": "duckdb/duckdb-skills"
+      },
+      "autoUpdate": true
+    },
+    "mem0-plugins": {
+      "source": {
+        "source": "github",
+        "repo": "mem0ai/mem0"
+      },
+      "autoUpdate": true
+    },
+    "portfolio-growth-planner": {
+      "source": {
+        "source": "directory",
+        "path": "/Users/forest/code/portfolio-growth-planner"
+      },
+      "autoUpdate": true
     }
   },
   "alwaysThinkingEnabled": true,
   "effortLevel": "medium",
   "preferredNotifChannel": "terminal_bell",
+  "autoCompactEnabled": false,
   "feedbackSurveyState": {
     "lastShownTime": 1754076959040
   }

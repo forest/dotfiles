@@ -1,8 +1,0 @@
-name = "New tab: ponte"
-
-[[panes]]
-id = "main"
-type = "terminal"
-directory = "/Users/forest/code/ponte"
-
-[params]
