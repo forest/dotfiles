@@ -90,7 +90,8 @@
     "commit-work@agent-toolkit": false,
     "plugin-forge@agent-toolkit": true,
     "skill-judge@agent-toolkit": true,
-    "portfolio-growth-planner@portfolio-growth-planner": true
+    "portfolio-growth-planner@portfolio-growth-planner": true,
+    "presentation-creator@portfolio-growth-planner": true,
     "elixir-phoenix@oliver-kriska": true,
     "ouroboros@ouroboros": false,
     "qmd@qmd": true
