@@ -15,7 +15,11 @@
 - link:
     ~/.claude/agents: claude/agents
     ~/.claude/CLAUDE.md: agents/AGENTS.md
-    ~/.claude/commands: claude/commands
+    ~/.claude/research.md: agents/research.md
+    ~/.claude/debugging.md: agents/debugging.md
+    ~/.claude/design.md: agents/design.md
+    ~/.claude/rules.md: agents/rules.md
+    ~/.claude/testing.md: agents/testing.md
     ~/.claude/skills: claude/skills
     ~/.claude/settings.json: claude/settings.json
     ~/.config/aliases.zsh: zsh/aliases.zsh
@@ -23,7 +27,6 @@
     ~/.config/lazygit/config.yml:
       create: true
       path: git/lazygit.yml
-    ~/.mempalace: mempalace
     ~/.config/mise: mise
     ~/.config/ohmyzsh: ohmyzsh
     ~/.config/opencode/AGENTS.md:

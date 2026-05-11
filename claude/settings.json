@@ -67,6 +67,19 @@
     ]
   },
   "enableAllProjectMcpServers": true,
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "rtk hook claude"
+          }
+        ]
+      }
+    ]
+  },
   "enabledPlugins": {
     "explanatory-output-style@claude-plugins-official": true,
     "elixir-lsp@claude-code-elixir": true,
@@ -94,7 +107,8 @@
     "presentation-creator@portfolio-growth-planner": true,
     "elixir-phoenix@oliver-kriska": true,
     "ouroboros@ouroboros": false,
-    "qmd@qmd": true
+    "qmd@qmd": true,
+    "agent-md-refactor@agent-toolkit": true
   },
   "extraKnownMarketplaces": {
     "forest-claude-tools": {
