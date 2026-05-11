@@ -144,7 +144,6 @@
         "path": "/Users/forest/code/portfolio-growth-planner"
       },
       "autoUpdate": true
-      }
     },
     "oliver-kriska": {
       "source": {
@@ -176,9 +175,7 @@
   "mcpServers": {
     "qmd": {
       "command": "qmd",
-      "args": [
-        "mcp"
-      ]
+      "args": ["mcp"]
     }
   }
 }
