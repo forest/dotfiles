@@ -15,10 +15,12 @@ brew "pgvector"
 
 # ai
 #tap "sst/tap"
-#cask "claude-code"
 #brew "sst/tap/opencode"
+tap "oliver-kriska/scribe"
+brew "scribe"
 tap "neilberkman/tap"
 brew "ccrider"
+brew "rtk"
 
 # Utilities
 # brew "kubectl"

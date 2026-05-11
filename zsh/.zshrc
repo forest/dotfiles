@@ -134,11 +134,6 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 # Claude config directory
 export CLAUDE_DIR="$HOME/.claude"
 
-# Beads
-# Note: Daemon mode is not recommended with git worktrees.
-# Worktrees share the same database, and the daemon may commit changes to the wrong branch.
-export BEADS_NO_DAEMON=1
-
 # k8s
 source <(kubectl completion zsh)
 # function kubectl() { echo "+ kubectl $@"; command kubectl $@; }

@@ -3,3 +3,11 @@ approved-commands = [
     "wt step copy-ignored",
     "mix deps.get",
 ]
+
+[projects."github.com/smart-pay-21/smart-pay"]
+approved-commands = [
+    "wt step copy-ignored",
+    "mix deps.get",
+    "mix format --check-formatted",
+    "mix precommit",
+]
