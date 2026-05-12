@@ -84,15 +84,11 @@
     "explanatory-output-style@claude-plugins-official": true,
     "elixir-lsp@claude-code-elixir": true,
     "elixir@claude-code-elixir": true,
-    "elixir-phoenix-guide@elixir-phoenix-guide": true,
     "superpowers@claude-plugins-official": false,
     "worktrunk@worktrunk": true,
     "morph-compact@morph": true,
-    "agent-mermaid-diagram-specialist@agent-toolkit": false,
     "command-sync-skills-readme@agent-toolkit": false,
     "crafting-effective-readmes@agent-toolkit": false,
-    "humanizer@agent-toolkit": false,
-    "professional-communication@agent-toolkit": false,
     "writing-clearly-and-concisely@agent-toolkit": true,
     "session-handoff@forest-claude-tools": false,
     "gepetto@agent-toolkit": false,
@@ -100,13 +96,12 @@
     "mem0@mem0-plugins": true,
     "notion@claude-plugins-official": true,
     "skill-creator@claude-plugins-official": false,
-    "commit-work@agent-toolkit": false,
     "plugin-forge@agent-toolkit": true,
     "skill-judge@agent-toolkit": true,
     "portfolio-growth-planner@portfolio-growth-planner": true,
     "presentation-creator@portfolio-growth-planner": true,
     "elixir-phoenix@oliver-kriska": true,
-    "ouroboros@ouroboros": false
+    "qmd@qmd": true
   },
   "extraKnownMarketplaces": {
     "forest-claude-tools": {
@@ -164,32 +159,24 @@
       },
       "autoUpdate": true
     },
-    "ouroboros": {
-      "source": {
-        "source": "github",
-        "repo": "Q00/ouroboros"
-      }
-    },
     "qmd": {
       "source": {
         "source": "github",
         "repo": "tobi/qmd"
-      }
+      },
+      "autoUpdate": true
     }
   },
   "alwaysThinkingEnabled": true,
   "effortLevel": "high",
   "preferredNotifChannel": "terminal_bell",
-  "autoCompactEnabled": false,
   "feedbackSurveyState": {
     "lastShownTime": 1754076959040
   },
   "mcpServers": {
     "qmd": {
       "command": "qmd",
-      "args": [
-        "mcp"
-      ]
+      "args": ["mcp"]
     }
   }
 }
