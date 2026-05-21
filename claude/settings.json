@@ -103,7 +103,7 @@
     "plugin-forge@agent-toolkit": true,
     "skill-judge@agent-toolkit": true,
     "elixir-phoenix@oliver-kriska": true,
-    "qmd@qmd": true
+    "qmd@qmd": true,
     "ouroboros@ouroboros": false,
     "portfolio-growth-planner@portfolio-growth-planner": true,
     "presentation-creator@portfolio-growth-planner": true
