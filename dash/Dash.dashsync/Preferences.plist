@@ -300,7 +300,22 @@ $("h1").each(function() {
 	<key>DHGoRepo</key>
 	<dict>
 		<key>installed</key>
-		<dict/>
+		<dict>
+			<key>github.com/felixgeelhaar/jirasdk</key>
+			<dict>
+				<key>date</key>
+				<date>2026-05-15T23:16:37Z</date>
+				<key>entry</key>
+				<dict>
+					<key>name</key>
+					<string>github.com/felixgeelhaar/jirasdk</string>
+					<key>platform</key>
+					<string>godoc</string>
+					<key>uniqueIdentifier</key>
+					<string>github.com/felixgeelhaar/jirasdk</string>
+				</dict>
+			</dict>
+		</dict>
 		<key>uninstalled</key>
 		<dict/>
 	</dict>
@@ -318,7 +333,7 @@ $("h1").each(function() {
 			<key>ash</key>
 			<dict>
 				<key>date</key>
-				<date>2026-04-07T15:20:16Z</date>
+				<date>2026-05-18T13:58:30Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -332,7 +347,7 @@ $("h1").each(function() {
 			<key>ash_admin</key>
 			<dict>
 				<key>date</key>
-				<date>2026-04-14T01:04:37Z</date>
+				<date>2026-05-14T22:10:58Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -346,7 +361,7 @@ $("h1").each(function() {
 			<key>ash_ai</key>
 			<dict>
 				<key>date</key>
-				<date>2026-04-14T01:04:40Z</date>
+				<date>2026-05-14T22:13:10Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -374,7 +389,7 @@ $("h1").each(function() {
 			<key>ash_authentication</key>
 			<dict>
 				<key>date</key>
-				<date>2026-04-14T01:04:31Z</date>
+				<date>2026-05-14T22:12:39Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -388,7 +403,7 @@ $("h1").each(function() {
 			<key>ash_authentication_phoenix</key>
 			<dict>
 				<key>date</key>
-				<date>2026-04-07T14:48:57Z</date>
+				<date>2026-05-14T22:11:23Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -430,7 +445,7 @@ $("h1").each(function() {
 			<key>ash_json_api</key>
 			<dict>
 				<key>date</key>
-				<date>2026-04-07T14:52:00Z</date>
+				<date>2026-05-14T22:10:36Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -458,7 +473,7 @@ $("h1").each(function() {
 			<key>ash_oban</key>
 			<dict>
 				<key>date</key>
-				<date>2026-04-07T14:49:51Z</date>
+				<date>2026-05-14T22:12:02Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -486,7 +501,7 @@ $("h1").each(function() {
 			<key>ash_pagify</key>
 			<dict>
 				<key>date</key>
-				<date>2026-02-01T19:56:17Z</date>
+				<date>2026-05-14T22:12:23Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -514,7 +529,7 @@ $("h1").each(function() {
 			<key>ash_phoenix</key>
 			<dict>
 				<key>date</key>
-				<date>2026-04-14T01:04:49Z</date>
+				<date>2026-05-14T22:11:52Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -542,7 +557,7 @@ $("h1").each(function() {
 			<key>ash_postgres</key>
 			<dict>
 				<key>date</key>
-				<date>2026-04-14T01:04:18Z</date>
+				<date>2026-05-14T22:12:34Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -570,7 +585,7 @@ $("h1").each(function() {
 			<key>ash_state_machine</key>
 			<dict>
 				<key>date</key>
-				<date>2026-04-14T01:04:42Z</date>
+				<date>2026-05-14T22:10:41Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -598,7 +613,7 @@ $("h1").each(function() {
 			<key>cinder</key>
 			<dict>
 				<key>date</key>
-				<date>2026-03-01T17:50:55Z</date>
+				<date>2026-05-14T22:13:00Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -612,7 +627,7 @@ $("h1").each(function() {
 			<key>daisy_ui_components</key>
 			<dict>
 				<key>date</key>
-				<date>2026-04-07T14:49:41Z</date>
+				<date>2026-05-14T22:12:59Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -626,7 +641,7 @@ $("h1").each(function() {
 			<key>ecto</key>
 			<dict>
 				<key>date</key>
-				<date>2025-11-10T04:15:59Z</date>
+				<date>2026-05-14T22:12:41Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -640,7 +655,7 @@ $("h1").each(function() {
 			<key>ecto_ch</key>
 			<dict>
 				<key>date</key>
-				<date>2026-02-12T06:18:07Z</date>
+				<date>2026-05-14T22:09:36Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -668,7 +683,7 @@ $("h1").each(function() {
 			<key>finch</key>
 			<dict>
 				<key>date</key>
-				<date>2026-02-01T19:56:05Z</date>
+				<date>2026-05-14T22:09:25Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -822,7 +837,7 @@ $("h1").each(function() {
 			<key>mishka_chelekom</key>
 			<dict>
 				<key>date</key>
-				<date>2026-03-10T22:41:16Z</date>
+				<date>2026-05-18T13:56:39Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -836,7 +851,7 @@ $("h1").each(function() {
 			<key>oban</key>
 			<dict>
 				<key>date</key>
-				<date>2026-04-07T14:49:00Z</date>
+				<date>2026-05-14T22:10:03Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -878,7 +893,7 @@ $("h1").each(function() {
 			<key>phoenix</key>
 			<dict>
 				<key>date</key>
-				<date>2026-03-05T15:55:28Z</date>
+				<date>2026-05-14T22:10:00Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -934,7 +949,7 @@ $("h1").each(function() {
 			<key>phoenix_live_view</key>
 			<dict>
 				<key>date</key>
-				<date>2026-04-07T14:49:43Z</date>
+				<date>2026-05-14T22:12:51Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -948,7 +963,7 @@ $("h1").each(function() {
 			<key>phoenix_test</key>
 			<dict>
 				<key>date</key>
-				<date>2026-03-06T16:53:57Z</date>
+				<date>2026-05-14T22:12:10Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -976,7 +991,7 @@ $("h1").each(function() {
 			<key>plug</key>
 			<dict>
 				<key>date</key>
-				<date>2025-12-11T17:36:35Z</date>
+				<date>2026-05-14T22:12:13Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -990,7 +1005,7 @@ $("h1").each(function() {
 			<key>reactor</key>
 			<dict>
 				<key>date</key>
-				<date>2026-04-07T14:52:33Z</date>
+				<date>2026-05-18T13:56:57Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -1184,6 +1199,11 @@ $("h1").each(function() {
 			<dict>
 				<key>date</key>
 				<date>2024-09-27T23:01:08Z</date>
+			</dict>
+			<key>http://kapeli.com/feeds/Go.xml</key>
+			<dict>
+				<key>date</key>
+				<date>2026-05-14T22:12:15Z</date>
 			</dict>
 		</dict>
 		<key>uninstalled</key>

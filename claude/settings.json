@@ -66,6 +66,7 @@
       "Bash(> /dev/sda)"
     ]
   },
+  "model": "opusplan",
   "enableAllProjectMcpServers": true,
   "hooks": {
     "PreToolUse": [
@@ -89,6 +90,8 @@
     "morph-compact@morph": true,
     "command-sync-skills-readme@agent-toolkit": false,
     "crafting-effective-readmes@agent-toolkit": false,
+    "humanizer@agent-toolkit": false,
+    "professional-communication@agent-toolkit": false,
     "writing-clearly-and-concisely@agent-toolkit": true,
     "session-handoff@forest-claude-tools": false,
     "gepetto@agent-toolkit": false,
@@ -96,12 +99,14 @@
     "mem0@mem0-plugins": true,
     "notion@claude-plugins-official": true,
     "skill-creator@claude-plugins-official": false,
+    "commit-work@agent-toolkit": false,
     "plugin-forge@agent-toolkit": true,
     "skill-judge@agent-toolkit": true,
-    "portfolio-growth-planner@portfolio-growth-planner": true,
-    "presentation-creator@portfolio-growth-planner": true,
     "elixir-phoenix@oliver-kriska": true,
     "qmd@qmd": true
+    "ouroboros@ouroboros": false,
+    "portfolio-growth-planner@portfolio-growth-planner": true,
+    "presentation-creator@portfolio-growth-planner": true
   },
   "extraKnownMarketplaces": {
     "forest-claude-tools": {
@@ -145,13 +150,6 @@
       },
       "autoUpdate": true
     },
-    "portfolio-growth-planner": {
-      "source": {
-        "source": "directory",
-        "path": "/Users/forest/code/portfolio-growth-planner"
-      },
-      "autoUpdate": true
-    },
     "oliver-kriska": {
       "source": {
         "source": "directory",
@@ -163,6 +161,12 @@
       "source": {
         "source": "github",
         "repo": "tobi/qmd"
+      }
+    },
+    "portfolio-growth-planner": {
+      "source": {
+        "source": "github",
+        "repo": "caylent/portfolio-growth-planner"
       },
       "autoUpdate": true
     }
@@ -170,6 +174,12 @@
   "alwaysThinkingEnabled": true,
   "effortLevel": "high",
   "preferredNotifChannel": "terminal_bell",
+  "statusLine": {
+    "type": "command",
+    "command": "bash /Users/forest/.claude/statusline-command.sh"
+  },
+  "autoCompactEnabled": false,
+  "skipAutoPermissionPrompt": true,
   "feedbackSurveyState": {
     "lastShownTime": 1754076959040
   },

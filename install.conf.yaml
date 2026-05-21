@@ -22,6 +22,7 @@
     ~/.claude/testing.md: agents/testing.md
     ~/.claude/skills: claude/skills
     ~/.claude/settings.json: claude/settings.json
+    ~/.claude/statusline-command.sh: claude/statusline-command.sh
     ~/.config/aliases.zsh: zsh/aliases.zsh
     ~/.config/direnv: direnv
     ~/.config/lazygit/config.yml:

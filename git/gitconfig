@@ -10,6 +10,8 @@
 	sync = town sync
 	delete = town delete
 	rename = town rename
+	down = town down
+	up = town up
 [column]
   ui = auto
 [branch]
