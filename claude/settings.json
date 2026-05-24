@@ -96,7 +96,6 @@
     "session-handoff@forest-claude-tools": false,
     "gepetto@agent-toolkit": false,
     "duckdb-skills@duckdb-skills": false,
-    "mem0@mem0-plugins": true,
     "notion@claude-plugins-official": true,
     "skill-creator@claude-plugins-official": false,
     "commit-work@agent-toolkit": false,

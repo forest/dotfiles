@@ -15,6 +15,7 @@ alias mc='mix compile'
 alias mqc='mix qc'
 alias mci='mix ci'
 alias mcov='mix coveralls.html && open ./cover/excoveralls.html'
+alias mce='mix credo explain'
 
 # livebook
 alias notebooks='livebook server --home ~/code/notebooks'
