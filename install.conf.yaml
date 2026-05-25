@@ -13,16 +13,22 @@
     - [git submodule update --init --recursive]
 
 - link:
-    ~/.claude/agents: claude/agents
+    ~/.agents/research.md: agents/research.md
+    ~/.agents/debugging.md: agents/debugging.md
+    ~/.agents/design.md: agents/design.md
+    ~/.agents/rules.md: agents/rules.md
+    ~/.agents/testing.md: agents/testing.md
+    ~/.agents/RTK.md: agents/RTK.md
+    ~/.agents/skills: agents/skills
     ~/.claude/CLAUDE.md: agents/AGENTS.md
-    ~/.claude/research.md: agents/research.md
-    ~/.claude/debugging.md: agents/debugging.md
-    ~/.claude/design.md: agents/design.md
-    ~/.claude/rules.md: agents/rules.md
-    ~/.claude/testing.md: agents/testing.md
-    ~/.claude/skills: claude/skills
+    ~/.claude/agents: claude/agents
+    ~/.claude/skills: agents/skills
     ~/.claude/settings.json: claude/settings.json
     ~/.claude/statusline-command.sh: claude/statusline-command.sh
+    ~/.codex/AGENTS.md: agents/AGENTS.md
+    ~/.codex/skills: codex/skills
+    ~/.codex/config.toml: codex/config.toml
+    ~/.codex/hooks.json: codex/hooks.json
     ~/.config/aliases.zsh: zsh/aliases.zsh
     ~/.config/direnv: direnv
     ~/.config/lazygit/config.yml:

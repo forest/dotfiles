@@ -32,13 +32,14 @@ When compacting, if the custom instruction is `morph`, do NOT perform any summar
 
 Read these only when relevant to the task at hand — they're not auto-loaded:
 
-- `~/.claude/research.md` — Research protocol + full jarvis-kb usage guide (read before architectural decisions, when I reference past work, whenever "research" comes up)
-- `~/.claude/debugging.md` — Run-toward-problems philosophy (read before debugging concurrency/threading/intermittent bugs)
-- `~/.claude/testing.md` — TDD, determinism, no timing hacks (read before writing or modifying tests)
-- `~/.claude/design.md` — Hexagonal DI, Big-O thinking, memory management, in-code docs (read before non-trivial design work)
-- `~/.claude/rules.md` — The 12 working rules (read on non-trivial tasks; caution-over-speed bias applies)
+- `~/.agents/research.md` — Research protocol + full jarvis-kb usage guide (read before architectural decisions, when I reference past work, whenever "research" comes up)
+- `~/.agents/debugging.md` — Run-toward-problems philosophy (read before debugging concurrency/threading/intermittent bugs)
+- `~/.agents/testing.md` — TDD, determinism, no timing hacks (read before writing or modifying tests)
+- `~/.agents/design.md` — Hexagonal DI, Big-O thinking, memory management, in-code docs (read before non-trivial design work)
+- `~/.agents/rules.md` — The 12 working rules (read on non-trivial tasks; caution-over-speed bias applies)
 
 <!-- scribe:begin — managed by `scribe init`, do not edit by hand -->
+
 ## jarvis-kb Knowledge Base
 
 Forest maintains a personal knowledge base at `/Users/forest/code/jarvis-kb` indexed by qmd. It contains wiki articles, project insights, decisions, patterns, and solutions extracted from projects. The KB is LLM-managed — a `scribe` Go binary runs on cron to auto-extract from git repos, mine Claude Code sessions via ccrider, capture self-sent iMessage URLs, and absorb queued URLs. You don't need to run any of that yourself; it's already scheduled.
@@ -85,10 +86,11 @@ tags: [tag1, tag2]
 3. **Session ephemera** (conversation context only) — task lists, scratch plans, intermediate findings with no value beyond the current session.
 
 **Decision rubric when unsure:**
+
 - Will this matter in a different project? → bucket 1 (drop file)
-- Will this matter in *this* project next month? → bucket 2 (`.claude/research/`)
+- Will this matter in _this_ project next month? → bucket 2 (`.claude/research/`)
 - Will this matter in 10 minutes? → bucket 3 (keep in context)
 - Will this never matter again? → don't write it
 <!-- scribe:end -->
 
-@RTK.md
+@/Users/forest/.agents/RTK.md
