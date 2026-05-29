@@ -21,6 +21,7 @@ brew "scribe"
 tap "neilberkman/tap"
 brew "ccrider"
 brew "rtk"
+brew "PeonPing/tap/peon-ping"
 
 # Utilities
 # brew "kubectl"

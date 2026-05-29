@@ -88,3 +88,5 @@ npm-debug.log
 # AI Tools #
 ######################
 ./CLAUDE.local.md
+
+**/.claude/settings.local.json
