@@ -134,6 +134,9 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 # Claude config directory
 export CLAUDE_DIR="$HOME/.claude"
 
+# codex
+source <(codex completion zsh)
+
 # k8s
 source <(kubectl completion zsh)
 # function kubectl() { echo "+ kubectl $@"; command kubectl $@; }
