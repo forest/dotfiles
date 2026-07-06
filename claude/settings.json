@@ -290,8 +290,10 @@
   },
   "alwaysThinkingEnabled": true,
   "effortLevel": "high",
+  "tui": "fullscreen",
   "preferredNotifChannel": "terminal_bell",
   "autoCompactEnabled": false,
+  "agentPushNotifEnabled": true,
   "skipAutoPermissionPrompt": true,
   "feedbackSurveyState": {
     "lastShownTime": 1754076959040
@@ -299,7 +301,10 @@
   "mcpServers": {
     "qmd": {
       "command": "qmd",
-      "args": ["mcp"]
+      "args": [
+        "mcp"
+      ]
     }
-  }
+  },
+  "model": "sonnet[1m]"
 }

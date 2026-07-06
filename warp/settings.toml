@@ -72,6 +72,7 @@ nld_in_terminal_enabled = true
 agent_mode_execute_readonly_commands = true
 
 [notifications]
+toast_duration_secs = 8
 
 [notifications.preferences]
 is_agent_task_completed_enabled = true

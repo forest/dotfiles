@@ -90,3 +90,7 @@ alias phpstop='brew services stop php@8.3'
 alias la='eza -all --long --header --git --no-user'
 alias lt='eza --header --no-filesize --no-git --no-user --no-time --no-permissions --tree --git-ignore'
 alias lta='eza --long --header --git --no-user --tree --git-ignore'
+
+# headroom
+alias claudew='headroom wrap claude'
+alias codexw='headroom wrap codex'
