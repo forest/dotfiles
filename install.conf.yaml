@@ -43,7 +43,6 @@
     ~/.config/starship.toml: starship.toml
     ~/.config/worktrunk: worktrunk
     ~/.config/zed: zed
-    ~/.config/scribe: scribe
     ~/.ctags: ctags
     ~/.gemrc: gemrc
     ~/.gitconfig: git/gitconfig
