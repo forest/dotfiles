@@ -159,4 +159,7 @@ alias reload='exec $SHELL'
 # bun completions
 [ -s "/Users/forest/.bun/_bun" ] && source "/Users/forest/.bun/_bun"
 
+# entire completions
+source <(entire completion zsh)
+
 if command -v wt >/dev/null 2>&1; then eval "$(command wt config shell init zsh)"; fi
