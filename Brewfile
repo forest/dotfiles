@@ -21,6 +21,7 @@ brew "scribe"
 tap "neilberkman/tap"
 brew "ccrider"
 brew "rtk"
+brew "ampcode/tap/ampcode"
 
 # Utilities
 # brew "kubectl"

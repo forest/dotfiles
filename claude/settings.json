@@ -89,8 +89,7 @@
     "elixir-lsp@claude-code-elixir": true,
     "elixir@claude-code-elixir": true,
     "superpowers@claude-plugins-official": false,
-    "worktrunk@worktrunk": true,
-    "morph-compact@morph": true,
+    "worktrunk@worktrunk": false,
     "command-sync-skills-readme@agent-toolkit": false,
     "crafting-effective-readmes@agent-toolkit": false,
     "humanizer@agent-toolkit": false,
@@ -99,14 +98,14 @@
     "session-handoff@forest-claude-tools": false,
     "gepetto@agent-toolkit": false,
     "duckdb-skills@duckdb-skills": false,
-    "notion@claude-plugins-official": true,
+    "notion@claude-plugins-official": false,
     "skill-creator@claude-plugins-official": true,
     "commit-work@agent-toolkit": false,
     "plugin-forge@agent-toolkit": true,
     "skill-judge@agent-toolkit": true,
     "elixir-phoenix@oliver-kriska": true,
     "qmd@qmd": true,
-    "portfolio-growth-planner@portfolio-growth-planner": true,
+    "portfolio-growth-planner@portfolio-growth-planner": false,
     "presentation-creator@portfolio-growth-planner": true
   },
   "extraKnownMarketplaces": {
@@ -185,8 +184,9 @@
   "mcpServers": {
     "qmd": {
       "command": "qmd",
-      "args": ["mcp"]
+      "args": [
+        "mcp"
+      ]
     }
-  },
-  "model": "sonnet[1m]"
+  }
 }

@@ -29,6 +29,7 @@ alias gs='git status -sb'
 alias gstp='git stash pop'
 alias gl="git log --graph --all --pretty='format:%C(auto)%h %C(cyan)%ar %C(auto)%d %C(magenta)%an %C(auto)%s'"
 alias lg='lazygit'
+alias gcon='git checkout next'
 
 # git-town
 alias gnf='git hack'
