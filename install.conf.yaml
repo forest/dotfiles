@@ -13,15 +13,13 @@
     - [git submodule update --init --recursive]
 
 - link:
-    ~/.agents/research.md: agents/research.md
     ~/.agents/debugging.md: agents/debugging.md
     ~/.agents/design.md: agents/design.md
+    ~/.agents/git.md: agents/git.md
     ~/.agents/rules.md: agents/rules.md
     ~/.agents/testing.md: agents/testing.md
-    ~/.agents/RTK.md: agents/RTK.md
     ~/.agents/skills: agents/skills
     ~/.claude/CLAUDE.md: agents/AGENTS.md
-    ~/.claude/agents: claude/agents
     ~/.claude/skills: agents/skills
     ~/.claude/settings.json: claude/settings.json
     ~/.claude/statusline-command.sh: claude/statusline-command.sh

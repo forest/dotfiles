@@ -10,6 +10,9 @@ I'm Forest. Refer to me as "Forest", not "the user". Expert programmer. Elixir-f
 - If multiple options exist, present concise pros/cons and wait.
 - Defusing humor welcome when tensions rise (exaggerated/satirical anger with a roguish accent is a fine example).
 - Clarify missing requirements before proceeding.
+- When presenting findings or decisions that need a call: number each item, lead with its claim in one line, put supporting detail underneath for the ones I stop on.
+- Give each item a recommended action and a one-line reason — make the call rather than just listing options. Say plainly when you have no preference instead of manufacturing one.
+- State that anything unmentioned stands as recommended, then honor it — so I can accept most of the list and spend attention on what's wrong.
 
 ## Coding Defaults
 
@@ -17,6 +20,8 @@ I'm Forest. Refer to me as "Forest", not "the user". Expert programmer. Elixir-f
 - `#!/usr/bin/env <interp>` for scripts; omit extensions on executables.
 - Prefer LuaJIT/Awk/POSIX shell over Python for one-offs.
 - Keep edits tidy; remove stray artifacts before checkins — use `dirtree` to monitor the workspace.
+- US English spellings (behavior, normalize, defense) in prose, comments, commits, and docs. Quoted material and identifiers (field names, API params, dependency names) keep their original spelling.
+- Don't hard-wrap authored Markdown — one line per paragraph, let the renderer soft-wrap. Match an existing hard-wrapped file's convention; leave code blocks, tables, and YAML frontmatter alone.
 
 ## Language Posture
 
@@ -32,13 +37,14 @@ When compacting, if the custom instruction is `morph`, do NOT perform any summar
 
 Read these only when relevant to the task at hand — they're not auto-loaded:
 
-- `~/.agents/research.md` — Research protocol + full jarvis-kb usage guide (read before architectural decisions, when I reference past work, whenever "research" comes up)
 - `~/.agents/debugging.md` — Run-toward-problems philosophy (read before debugging concurrency/threading/intermittent bugs)
 - `~/.agents/testing.md` — TDD, determinism, no timing hacks (read before writing or modifying tests)
 - `~/.agents/design.md` — Hexagonal DI, Big-O thinking, memory management, in-code docs (read before non-trivial design work)
 - `~/.agents/rules.md` — The 12 working rules (read on non-trivial tasks; caution-over-speed bias applies)
+- `~/.agents/git.md` — Commit/PR attribution rules and PR summary writing style (read before creating commits or PRs)
 
 <!-- scribe:begin — managed by `scribe init`, do not edit by hand -->
+
 ## jarvis-kb Knowledge Base
 
 Forest maintains a personal knowledge base at `/Users/forest/code/jarvis-kb` indexed by qmd. It contains wiki articles, project insights, decisions, patterns, and solutions extracted from projects. The KB is LLM-managed — a `scribe` Go binary runs on cron to auto-extract from git repos, mine coding-agent sessions indexed by ccrider, discover Codex CLI projects, capture self-sent iMessage URLs, and absorb queued URLs. You don't need to run any of that yourself; it's already scheduled.
@@ -78,18 +84,16 @@ The `.claude/jarvis-kb/` directory is the **shared drop-file location both Codex
 3. **Session ephemera** (conversation context only) — task lists, scratch plans, intermediate findings with no value beyond the current session.
 
 **Decision rubric when unsure:**
+
 - Will this matter in a different project? → bucket 1 (drop file)
-- Will this matter in *this* project next month? → bucket 2 (`.claude/research/`)
+- Will this matter in _this_ project next month? → bucket 2 (`.claude/research/`)
 - Will this matter in 10 minutes? → bucket 3 (keep in context)
 - Will this never matter again? → don't write it
+
 <!-- scribe:end -->
 
-@/Users/forest/.agents/RTK.md
-
-@RTK.md
-
-
 <!-- headroom:rtk-instructions -->
+
 # RTK (Rust Token Killer) - Token-Optimized Commands
 
 When running shell commands, **always prefix with `rtk`**. This reduces context
@@ -97,6 +101,7 @@ usage by 60-90% with zero behavior change. If rtk has no filter for a command,
 it passes through unchanged — so it is always safe to use.
 
 ## Key Commands
+
 ```bash
 # Git (59-80% savings)
 rtk git status          rtk git diff            rtk git log
@@ -127,7 +132,11 @@ rtk pip list            rtk pnpm install        rtk npm run <script>
 ```
 
 ## Rules
+
 - In command chains, prefix each segment: `rtk git add . && rtk git commit -m "msg"`
 - For debugging, use raw command without rtk prefix
 - `rtk proxy <cmd>` runs command without filtering but tracks usage
+
 <!-- /headroom:rtk-instructions -->
+
+@RTK.md
