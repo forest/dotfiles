@@ -34,7 +34,7 @@ alias gcon='git checkout next'
 # git-town
 alias gnf='git hack'
 alias gaf='git append'
-alias gsy='git sync'
+alias gsy='git sync && git push origin'
 alias gor='git-town repo'
 
 # worktrunk

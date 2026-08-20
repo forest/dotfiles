@@ -66,6 +66,7 @@
       "Bash(> /dev/sda)"
     ]
   },
+  "model": "opus",
   "enableAllProjectMcpServers": true,
   "hooks": {
     "PreToolUse": [
