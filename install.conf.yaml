@@ -25,7 +25,7 @@
     ~/.claude/statusline-command.sh: claude/statusline-command.sh
     ~/.codex/AGENTS.md: agents/AGENTS.md
     ~/.codex/skills: codex/skills
-    ~/.codex/config.toml: codex/config.toml
+    # ~/.codex/config.toml: codex/config.toml
     ~/.codex/hooks.json: codex/hooks.json
     ~/.config/aliases.zsh: zsh/aliases.zsh
     ~/.config/direnv: direnv
