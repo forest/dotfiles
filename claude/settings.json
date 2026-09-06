@@ -66,7 +66,6 @@
       "Bash(> /dev/sda)"
     ]
   },
-  "model": "opus",
   "enableAllProjectMcpServers": true,
   "hooks": {
     "PreToolUse": [
@@ -96,7 +95,6 @@
     "humanizer@agent-toolkit": false,
     "professional-communication@agent-toolkit": false,
     "writing-clearly-and-concisely@agent-toolkit": true,
-    "session-handoff@forest-claude-tools": false,
     "gepetto@agent-toolkit": false,
     "duckdb-skills@duckdb-skills": false,
     "notion@claude-plugins-official": false,
@@ -104,10 +102,10 @@
     "commit-work@agent-toolkit": false,
     "plugin-forge@agent-toolkit": true,
     "skill-judge@agent-toolkit": true,
-    "elixir-phoenix@oliver-kriska": true,
     "qmd@qmd": true,
     "portfolio-growth-planner@portfolio-growth-planner": false,
-    "presentation-creator@portfolio-growth-planner": true
+    "presentation-creator@portfolio-growth-planner": true,
+    "req-api-client@forest-claude-tools": true
   },
   "extraKnownMarketplaces": {
     "forest-claude-tools": {
@@ -151,13 +149,6 @@
       },
       "autoUpdate": true
     },
-    "oliver-kriska": {
-      "source": {
-        "source": "directory",
-        "path": "/Users/forest/code/claude-elixir-phoenix"
-      },
-      "autoUpdate": true
-    },
     "qmd": {
       "source": {
         "source": "github",
@@ -170,6 +161,12 @@
         "repo": "caylent/portfolio-growth-planner"
       },
       "autoUpdate": true
+    },
+    "oliver-kriska": {
+      "source": {
+        "source": "github",
+        "repo": "oliver-kriska/claude-elixir-phoenix"
+      }
     }
   },
   "alwaysThinkingEnabled": true,

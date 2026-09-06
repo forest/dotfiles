@@ -12,6 +12,7 @@
 	rename = town rename
 	down = town down
 	up = town up
+	compress = town compress
 [column]
   ui = auto
 [branch]
@@ -45,7 +46,7 @@
 [commit]
   verbose = true
 [rerere]
-  enabled = true
+	enabled = true
   autoupdate = true
 [pull]
 	rebase = true
