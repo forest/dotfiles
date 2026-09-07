@@ -25,7 +25,7 @@
   mnemonicPrefix = true
   renames = true
 [core]
-	editor = nvim
+	editor = zed
 	excludesFile = ~/.gitignore
 [user]
 	name = Forest Carlisle
