@@ -45,6 +45,7 @@
   autocorrect = prompt
 [commit]
   verbose = true
+	gpgsign = true
 [rerere]
 	enabled = true
   autoupdate = true
@@ -57,3 +58,7 @@
   confictstyle = zdiff3
 [init]
 	defaultBranch = main
+[gpg]
+	format = ssh
+[gpg "ssh"]
+	program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign

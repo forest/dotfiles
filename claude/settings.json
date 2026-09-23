@@ -64,8 +64,10 @@
       "Bash(mkfs.ext4 /dev/sda)",
       "Bash( /dev/sda)",
       "Bash(> /dev/sda)"
-    ]
+    ],
+    "defaultMode": "auto"
   },
+  "model": "haiku",
   "enableAllProjectMcpServers": true,
   "hooks": {
     "PreToolUse": [
@@ -98,14 +100,13 @@
     "gepetto@agent-toolkit": false,
     "duckdb-skills@duckdb-skills": false,
     "notion@claude-plugins-official": false,
-    "skill-creator@claude-plugins-official": true,
+    "skill-creator@claude-plugins-official": false,
     "commit-work@agent-toolkit": false,
-    "plugin-forge@agent-toolkit": true,
-    "skill-judge@agent-toolkit": true,
+    "plugin-forge@agent-toolkit": false,
+    "skill-judge@agent-toolkit": false,
     "qmd@qmd": true,
-    "portfolio-growth-planner@portfolio-growth-planner": false,
-    "presentation-creator@portfolio-growth-planner": true,
-    "req-api-client@forest-claude-tools": true
+    "account-kb-plugin@account-kb-tools": true,
+    "account-plan-plugin@account-kb-tools": true
   },
   "extraKnownMarketplaces": {
     "forest-claude-tools": {
@@ -122,45 +123,17 @@
       },
       "autoUpdate": true
     },
-    "worktrunk": {
-      "source": {
-        "source": "github",
-        "repo": "max-sixty/worktrunk"
-      }
-    },
-    "morph": {
-      "source": {
-        "source": "github",
-        "repo": "morphllm/morph-claude-code-plugin"
-      },
-      "autoUpdate": true
-    },
-    "duckdb-skills": {
-      "source": {
-        "source": "github",
-        "repo": "duckdb/duckdb-skills"
-      },
-      "autoUpdate": true
-    },
-    "mem0-plugins": {
-      "source": {
-        "source": "github",
-        "repo": "mem0ai/mem0"
-      },
-      "autoUpdate": true
-    },
     "qmd": {
       "source": {
         "source": "github",
         "repo": "tobi/qmd"
       }
     },
-    "portfolio-growth-planner": {
+    "account-kb-tools": {
       "source": {
-        "source": "github",
-        "repo": "caylent/portfolio-growth-planner"
-      },
-      "autoUpdate": true
+        "source": "directory",
+        "path": "/Users/forest/code/account-tools"
+      }
     },
     "oliver-kriska": {
       "source": {
@@ -182,9 +155,7 @@
   "mcpServers": {
     "qmd": {
       "command": "qmd",
-      "args": [
-        "mcp"
-      ]
+      "args": ["mcp"]
     }
   }
 }

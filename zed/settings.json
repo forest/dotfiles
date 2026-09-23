@@ -51,12 +51,17 @@
     "enabled_in_text_threads": false,
   },
   "agent": {
+    "sandbox_permissions": {
+      "allow_unsandboxed": true
+    },
     "dock": "left",
     "use_modifier_to_send": true,
     "default_profile": "write",
     "default_model": {
+      "effort": "high",
+      "enable_thinking": true,
       "provider": "zed.dev",
-      "model": "claude-sonnet-4",
+      "model": "claude-sonnet-5",
     },
   },
   "base_keymap": "VSCode",
