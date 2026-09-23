@@ -2,3 +2,4 @@ zshrc.local
 Brewfile.lock.json
 zed/prompts/*.mdb
 .tokensave
+agents/skills/synced/
