@@ -93,4 +93,5 @@ alias lt='eza --header --no-filesize --no-git --no-user --no-time --no-permissio
 alias lta='eza --long --header --git --no-user --tree --git-ignore'
 
 # amp
-alias amp-runner='amp --no-tui --runner-id local --discover-dirs --amp-env'
+alias amp-runner='amp --no-tui --runner-id local --amp-env'
+alias amp-runner-global='amp --no-tui --runner-id local --discover-dirs --amp-env'

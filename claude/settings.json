@@ -67,7 +67,6 @@
     ],
     "defaultMode": "auto"
   },
-  "model": "haiku",
   "enableAllProjectMcpServers": true,
   "hooks": {
     "PreToolUse": [
@@ -139,7 +138,8 @@
       "source": {
         "source": "github",
         "repo": "oliver-kriska/claude-elixir-phoenix"
-      }
+      },
+      "autoUpdate": true
     }
   },
   "alwaysThinkingEnabled": true,
@@ -155,7 +155,10 @@
   "mcpServers": {
     "qmd": {
       "command": "qmd",
-      "args": ["mcp"]
+      "args": [
+        "mcp"
+      ]
     }
-  }
+  },
+  "model": "opus"
 }
