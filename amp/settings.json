@@ -1,0 +1,109 @@
+{
+  "amp.workspaces": [
+    {
+      "path": "/Users/forest/code/account-steward",
+      "allowAllMcpServers": true
+    }
+  ],
+  "amp.skills.disableClaudeCodeSkills": true,
+  "amp.git.commit.coauthor.enabled": false,
+  "amp.mcpTrustedServers": [
+    {
+      "serverName": "mishka-chelekom",
+      "specHash": "8da45682c3e50949c4a571454b9df9e8164fa24a6103c730f02420fc15ee0f82",
+      "allow": true
+    },
+    {
+      "serverName": "tidewave",
+      "specHash": "0c411c149fc79d884dfa66277cbaaabca8f39ff619d6634fb673a9417115f7bd",
+      "allow": true
+    }
+  ],
+  "amp.mcpServers": {
+    "tidewave": {
+      "url": "http://localhost:4000/tidewave/mcp"
+    }
+  },
+  "amp.pstack.models": {
+    "feature": {
+      "model": "openai/gpt-5.6-sol",
+      "effort": "high"
+    },
+    "bug-fix": {
+      "model": "openai/gpt-5.6-sol",
+      "effort": "high"
+    },
+    "hillclimb": {
+      "model": "openai/gpt-6.1-sol",
+      "effort": "xhigh"
+    },
+    "why-investigator": {
+      "model": "openai/gpt-5.6-sol",
+      "effort": "high"
+    },
+    "swarm-worker": {
+      "model": "openai/gpt-5.6-sol",
+      "effort": "high"
+    },
+    "arena-runners": [
+      {
+        "model": "openai/gpt-5.6-sol",
+        "effort": "high"
+      },
+      {
+        "model": "openai/gpt-6.1-sol",
+        "effort": "high"
+      },
+      {
+        "model": "openai/gpt-6-astra",
+        "effort": "xhigh"
+      }
+    ],
+    "arena-cross-judge": [
+      {
+        "model": "openai/gpt-5.6-sol",
+        "effort": "high"
+      },
+      {
+        "model": "openai/gpt-6.1-sol",
+        "effort": "high"
+      },
+      {
+        "model": "openai/gpt-6-astra",
+        "effort": "xhigh"
+      }
+    ],
+    "architect-runners": [
+      {
+        "model": "openai/gpt-5.6-sol",
+        "effort": "high"
+      },
+      {
+        "model": "openai/gpt-6.1-sol",
+        "effort": "high"
+      },
+      {
+        "model": "openai/gpt-6-astra",
+        "effort": "xhigh"
+      }
+    ],
+    "interrogate-reviewers": [
+      {
+        "model": "openai/gpt-5.6-sol",
+        "effort": "high"
+      },
+      {
+        "model": "openai/gpt-6.1-sol",
+        "effort": "high"
+      },
+      {
+        "model": "openai/gpt-6-astra",
+        "effort": "xhigh"
+      }
+    ],
+    "hardest": {
+      "model": "openai/gpt-6-astra",
+      "effort": "xhigh"
+    }
+  }
+}

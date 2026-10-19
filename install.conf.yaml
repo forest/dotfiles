@@ -27,6 +27,7 @@
     ~/.codex/skills: codex/skills
     # ~/.codex/config.toml: codex/config.toml
     ~/.codex/hooks.json: codex/hooks.json
+    ~/.config/amp/settings.json: amp/settings.json
     ~/.config/aliases.zsh: zsh/aliases.zsh
     ~/.config/direnv: direnv
     ~/.config/lazygit/config.yml:
