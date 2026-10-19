@@ -28,7 +28,7 @@
       "Bash(mix credo:*)",
       "Bash(mix sobelow:*)",
       "Bash(mix assets.build:*)",
-      "Bash(mix ash.*:*)",
+      "Bash(mix ash.*)",
       "Bash(curl:*)"
     ],
     "deny": [
