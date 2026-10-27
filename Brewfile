@@ -43,9 +43,11 @@ brew "starship"
 brew "wget"
 brew "yh"
 
+tap "abue-ammar/tinycast"
+cask "abue-ammar/tinycast/tinycast"
+
 cask "font-victor-mono"
 cask "ngrok"
-cask "warp"
 
 tap "1password/tap"
 cask "1password-cli"
