@@ -134,5 +134,7 @@ Every time you are asked to make a change follow:
 
 ## Commit and Push
 
-- Commit often, in small ordered commits.
+- Commit only when asked, or when a phase must land on its own.
+- Fold fixes into the commit they belong to. Push clean commits, not iterations.
 - Each commit says why, what changed, and how you proved it.
+- Ask before pushing.
